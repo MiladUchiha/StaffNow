@@ -4,6 +4,7 @@ import Animation from '../context/Animation'
 import './globals.css'
 import '../../public/main.scss'
 import { Roboto } from "next/font/google"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 const roboto = Roboto({
@@ -20,7 +21,7 @@ export default function RootLayout({ children }) {
     <html  lang="en" className={roboto.className} >
       <body  >
         <Animation>
-       
+       <SpeedInsights/>
         
         <Toaster richColors/> {children}
         </Animation>
