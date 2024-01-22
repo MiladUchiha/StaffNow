@@ -46,8 +46,8 @@ const AboutTabs = () => {
             </p>
             <p className="font-rubik">
               Many desktop publishing packages and web page editors now use
-              Lorem Ipsum as their default model text, and a search for 'lorem
-              ipsum' will uncover many web sites still in their infancy.
+              Lorem Ipsum as their default model text, and a search for lorem
+              ipsum will uncover many web sites still in their infancy.
             </p>
           </TabPanel>
         </div>

@@ -13,7 +13,7 @@ const BlockFeaturesOne = () => {
             </h2>
           </div>
           <p className="mt-30 pe-xl-5">
-            No wires means you're not stuck playing Quest 2 at home. You’re free
+            No wires means youre not stuck playing Quest 2 at home. Youre free
             to take all the games, workouts, shows, experiences and more on the
             road with you.
           </p>

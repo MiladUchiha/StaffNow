@@ -22,12 +22,12 @@ const AboutThree = () => {
           </div>
           {/*  /.title-style-two */}
           <p>
-            Whether you're a theatre, stadium, intimate music venue, church,
+            Whether youre a theatre, stadium, intimate music venue, church,
             gala or concert hall, our seating chart tooi accurately represent
             your venue and seating layout.
           </p>
           <p className="mt-30">
-            It's easy to incorporate socialy distanced spaces, add tables, edit
+            Its easy to incorporate socialy distanced spaces, add tables, edit
             the numbering or have.
           </p>
         </div>

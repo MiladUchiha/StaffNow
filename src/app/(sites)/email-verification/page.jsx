@@ -26,7 +26,7 @@ export default function Component() {
           </Button>
         </CardContent>
         <div className="mt-4 text-center text-sm">
-          Didn't receive the code?
+       
           <Link className="underline ml-1" href="#">
             Resend Code
           </Link>

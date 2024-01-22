@@ -86,7 +86,7 @@ function ChevronsUpDownIcon(props) {
   )
 }
 
-const addMissionForm = ({ user, className }) => {
+const AddMissionForm = ({ user, className }) => {
 
   const [open, setOpen] = useState(false)
   const [openn, setOpenn] = useState(false)
@@ -260,4 +260,4 @@ const addMissionForm = ({ user, className }) => {
   )
 }
 
-export default addMissionForm
+export default AddMissionForm

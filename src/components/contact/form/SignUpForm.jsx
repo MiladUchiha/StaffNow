@@ -158,7 +158,7 @@ const SignUpForm = () => {
                 />
 
                 <label htmlFor="acceptTerms">
-                  By clicking "SIGN UP" I agree to the Terms and Conditions and
+                  By clicking SIGN UP I agree to the Terms and Conditions and
                   Privacy Policy.
                 </label>
                 {errors.acceptTerms && (

@@ -101,15 +101,15 @@ export default function Nav() {
                 <p>
                   This page, together with our Privacy Policy and the
                   Website Terms of Use tells you information about us and
-                  the legal terms and conditions (the "Terms") on which we
+                  the legal terms and conditions (the Terms) on which we
                   make available to you our online ticket-selling solution
-                  (the "Service").
+                  (the Service).
                 </p>
                 <h3>2. Information about us</h3>
                 <p>
                   Tickettailor.com and buytickets.at and any of their
                   sub-domains is a site operated by Ticket Tailor, which is
-                  the trading name of Zimma Ltd ("we", “our”, “us”). We are
+                  the trading name of Zimma Ltd (we, our, us). We are
                   registered in England and Wales under company number
                   07583551 and have our registered office at Unit 6, 14A
                   Andre St, London, E8 2AA. Our VAT number is GB184622203.
