@@ -3,20 +3,20 @@ import Image from "next/image";
 const FeatureContent = [
   {
     icon: "121",
-    title: "Appoinments",
-    subTitle: `Online video meetings image Online Video Meetings SimplyBook`,
+    title: "Registera ditt företag",
+    subTitle: `Starta genom att registrera ditt företag och skapa en nogrann profil som beskriver din verksamhet.`,
     bgColor: "#FF4A8B",
   },
   {
     icon: "122",
-    title: "Class Booking",
-    subTitle: `Add video meeting links to your appointments with the Zoom Ror Teleport integrations.`,
+    title: "Bevaka projekt",
+    subTitle: `Få tillgång till en rad projekt som matchar din expertis och kapacitet.`,
     bgColor: "#6D49FF",
   },
   {
     icon: "123",
-    title: "Fast Support",
-    subTitle: `Customize your virtual office with personalized page URLs, logos, colors and more.`,
+    title: "Välj uppderag",
+    subTitle: `Välj projekt som intresserar dig, initiera dialog och nå överenskommelse.`,
     bgColor: "#FFB951",
   },
 ];

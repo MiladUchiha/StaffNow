@@ -1,17 +1,13 @@
 'use client'
-
+import { usePathname } from 'next/navigation';
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 const logo = "/logo.png";
 
 const HeaderLanding = () => {
-
-
+  const pathname = usePathname();
   const [navbar, setNavbar] = useState(false);
-
- 
-
   const changeBackground = () => {
     if (typeof window !== "undefined") {
       if (window.scrollY >= 90) {
@@ -46,9 +42,18 @@ const HeaderLanding = () => {
             <span className="ml-2 text-3xl font-bold tracking-wide text-gray-800">StaffNow</span>
           </Link>
           <div className="flex text-center items-center justify-end flex-1 ml-5 space-x-8">
-            <Link href="/login">
-              Logga in
-            </Link>
+            {pathname === "/" ? (
+              <Link href="/login">
+               
+                  Logga in
+                
+              </Link>
+            ) : (
+             null
+            )
+            }
+            
+            
            
 
 

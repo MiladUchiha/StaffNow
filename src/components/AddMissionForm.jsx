@@ -121,7 +121,7 @@ const AddMissionForm = ({ user, className }) => {
 
 
   return (
-    <div className={cn("flex justify-center  items-center min-h-screen bg-gray-100", className)}>
+    <div className={cn("flex justify-center items-center min-h-screen bg-gray-100", className)}>
       <main key="1" className="space-y-8 max-w-xl sm:w-1/3">
         <Card>
           <form onSubmit={handleSubmit}>

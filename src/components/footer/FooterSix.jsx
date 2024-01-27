@@ -2,17 +2,10 @@ import React from "react";
 import Link from "next/link";
 
 const socialContent = [
-  {
-    icon: "fa-facebook",
-    link: "https://www.facebook.com/",
-  },
-  {
-    icon: "fa-twitter",
-    link: "https://twitter.com/",
-  },
+ 
   {
     icon: "fa-linkedin",
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/company/amm-staff-ab-www-staffnow-se/",
   },
 ];
 import Image from "next/image";
@@ -22,15 +15,15 @@ const FooterSix = () => {
       <div className="col-lg-4">
         <div className="logo">
           <Link     href="/">
-            <Image width={138} height={47} style={{width:'100%',height:'fit-content'}}     src="/images/logo/deski_06.svg" alt="logo" />
+            <h3>StaffNow</h3>
           </Link>
         </div>
       </div>
       {/* End .col */}
 
       <div className="col-lg-4">
-        <div className="title">Find us on Social Media</div>
-        <ul className="d-flex justify-content-center social-icon">
+        <div className="title">Nå oss på sociala medier</div>
+        <ul className="flex space-x-3 justify-content-center social-icon">
           {socialContent.map((val, i) => (
             <li key={i}>
               <a href={val.link} target="_blank" rel="noreferrer">
@@ -44,10 +37,10 @@ const FooterSix = () => {
       {/* End .col */}
 
       <div className="col-lg-4">
-        <div className="title">We’r always happy to help.</div>
+        <div className="title">info@staffnow.se</div>
         <div className="text-center">
           <a href="mailto:ib-themes21@gmail.com" className="email">
-            ask@jdeski.com
+          
           </a>
         </div>
       </div>

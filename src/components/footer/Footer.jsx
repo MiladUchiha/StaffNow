@@ -11,7 +11,7 @@ const Footer = () => {
         data-aos-duration="1200"
       >
         <Link     href="/" className="logo">
-          <Image  width="110" height="49" src="/images/logo/deski_02.svg" alt="image" />
+          <h3>StaffNow</h3>
         </Link>
       </div>
       {/* /.about-widget */}
@@ -47,7 +47,7 @@ const Footer = () => {
         data-aos-duration="1200"
         data-aos-delay="100"
       >
-        <h5 className="footer-title">About us</h5>
+        <h5 className="footer-title">Om oss</h5>
         <ul>
           <li>
             <Link     href="/about-cs">About us</Link>
@@ -76,11 +76,16 @@ const Footer = () => {
         <h5 className="footer-title">Address</h5>
         <ul>
           <li>
-            <a href="#">companyinfo@mail.com</a>
+            <a href="#">info@staffnow.se</a>
           </li>
           <li>
-            <a href="#" className="mobile-num">
-              +761 412 3224
+            <a  className="mobile-num">
+              +46 72 396 83 26
+            </a>
+          </li>
+          <li>
+            <a  className="mobile-num">
+              +46 73 477 3003
             </a>
           </li>
         </ul>

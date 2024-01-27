@@ -8,9 +8,9 @@ const CallToActionFour = () => {
       <div className="col-lg-6">
         <div className="title-style-one">
           <h6 className="font-rubik" style={{ color: "#787CFF" }}>
-            Start your free trial.
+            Vi hör av oss.
           </h6>
-          <h2>New here? Start your free trial now.</h2>
+          <h2>Vill du veta mer? Lämna ditt email.</h2>
         </div>
         {/* /.title-style-one */}
       </div>
@@ -18,7 +18,7 @@ const CallToActionFour = () => {
         <div className="form-wrapper">
           <FormEvent />
           <p className="font-rubik">
-            Already a member? <Link     href="login">Sign in.</Link>
+            Redan kund? <Link     href="login">Logga in.</Link>
           </p>
         </div>
         {/* /.form-wrapper */}

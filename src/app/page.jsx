@@ -1,10 +1,20 @@
 import Link from "next/link";
-import HeaderLanding from "@/components/header/landing/HeaderLanding";
+
 import FaqClassic from "@/components/faq/FaqClassicTwo";
 import SocialTwo from "@/components/social/SocialTwo";
 import CounterOne from "@/components/counter/CounterOne";
 import CallToActionFour from "@/components/call-to-action/CallToActionFour";
+import FeatureNine from "../components/features/FeatureNine";
+import FancyFeatureTewentyTwo from "@/components/features/FancyFeatureTewentyTwo"
+
 import Footer from "@/components/footer/Footer";
+import FooterTwo from "@/components/footer/FooterTwo";
+import FooterThree from "@/components/footer/FooterThree";
+import FooterFour from "@/components/footer/FooterFour";
+import FooterFive from "@/components/footer/FooterFive";
+import FooterSix from "@/components/footer/FooterSix";
+import FooterSeven from "@/components/footer/FooterSeven";
+import FooterEight from "@/components/footer/FooterEight";
 import CopyRight from "@/components/footer/CopyRight";
 
 import Image from "next/image";
@@ -21,7 +31,7 @@ export default async function Home() {
     <div className="main-page-wrapper">
 
       {/* End Page SEO Content */}
-      <HeaderLanding />
+      
 
       {/* End Header */}
 
@@ -31,31 +41,20 @@ export default async function Home() {
   ============================================== */}
       <div className="hero-banner-one">
         <div className="hero-upper-container">
-          <div className="icon-box-one">
-            <Image width={29} height={27} src="/images/logo/01.png" alt="logo" />
-          </div>
-          <div className="icon-box-two">
-            <Image width={42} height={36} src="/images/logo/02.png" alt="logo" />
-          </div>
-          <div className="icon-box-three">
-            <Image width={30} height={30} src="/images/logo/03.png" alt="logo" />
-          </div>
-          <div className="icon-box-four">
-            <Image width={40} height={40} src="/images/logo/04.png" alt="logo" />
-          </div>
-          <div className="icon-box-five">
-            <Image width={40} height={35} src="/images/logo/05.png" alt="logo" />
-          </div>
-          <div className="icon-box-six">
-            <Image width={54} height={53} src="/images/logo/06.png" alt="logo" />
-          </div>
-          <div className="icon-box-seven">
-            <Image width={26} height={26} src="/images/logo/07.png" alt="logo" />
-          </div>
-          <div className="icon-box-eight">
-            <Image width={30} height={30} src="/images/logo/08.png" alt="logo" />
-          </div>
+          
 
+          <div className="bubble-one"></div>
+          <div className="bubble-two"></div>
+          <div className="bubble-three"></div>
+          <div className="bubble-four"></div>
+          <div className="bubble-five"></div>
+          <div className="bubble-six"></div>
+          <div className="bubble-one"></div>
+          <div className="bubble-two"></div>
+          <div className="bubble-three"></div>
+          <div className="bubble-four"></div>
+          <div className="bubble-five"></div>
+          <div className="bubble-six"></div>
           <div className="bubble-one"></div>
           <div className="bubble-two"></div>
           <div className="bubble-three"></div>
@@ -252,140 +251,87 @@ export default async function Home() {
    =============================================
       Fancy Feature Three
   ============================================== */}
-      <div className="fancy-feature-three pt-200 md-pt-80">
+  <div className="fancy-feature-nine">
+        <Image
+        width={14}
+        height={19}
+          src="/images/shape/107.svg"
+          alt="shape"
+          className="shapes shape-one"
+        />
+        <Image
+        width={20}
+        height={17}
+          src="/images/shape/108.svg"
+          alt="shape"
+          className="shapes shape-two"
+        />
+        <Image
+        width={16}
+        height={24}
+          src="/images/shape/109.svg"
+          alt="shape"
+          className="shapes shape-three"
+        />
+        <Image
+        width={16}
+        height={24}
+          src="/images/shape/110.svg"
+          alt="shape"
+          className="shapes shape-four"
+        />
+        <Image
+        width={18}
+        height={22}
+          src="/images/shape/111.svg"
+          alt="shape"
+          className="shapes shape-five"
+        />
+        <Image
+        width={23}
+        height={18}
+          src="/images/shape/112.svg"
+          alt="shape"
+          className="shapes shape-six"
+        />
+
+        <div className="container">
+          <div className="title-style-five text-center mb-60 md-mb-30">
+            <h6>Kom igång med ditt bemanning</h6>
+            <h2>
+              <span>3 enkla steg att bemanna ditt projekt </span>
+            </h2>
+          </div>
+          {/* End title */}
+
+          <FeatureNine />
+        </div>
+      </div>
+      <div className="fancy-feature-twentyTwo mt-200 md-mt-120">
         <div className="container">
           <div className="row">
-          <div className="col-lg-6">
-              <div className="clients-feedback-classic md-mt-80">
-                <div
-                  className="feedback-wrapper"
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
-                >
-                  <Image width={71} height={71}
-                    src="/images/media/img_02.png"
-                    alt="image"
-                    className="media-meta"
-                  />
-                  <p>
-                  Registrera ditt företag och skapa en profil på Staffnow. Berätta om din organisation och de 
-                  specifika behoven du har för bemanning.
-                   Ange kriterier såsom bransch, kompetensnivåer och projektets varaktighet.
-                  </p>
-                  
-                </div>
-                
-                <div
-                  className="feedback-wrapper"
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
-                >
-                  <Image width={71} height={71}
-                    src="/images/media/img_03.png"
-                    alt="image"
-                    className="media-meta"
-                  />
-                  <h6 className="name">Rashed Ka.</h6>
-                  <p>
-                    it’s a great exprience to work with deski. They’r vey humble
-                    and expert & the service has been excellent & super.
-                  </p>
-                  
-                  
-                </div>{" "}
-                {/* /.feedback-wrapper */}
-                <div
-                  className="feedback-wrapper"
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
-                >
-                  <Image width={71} height={71}
-                    src="/images/media/img_04.png"
-                    alt="image"
-                    className="media-meta"
-                  />
-                  <p>
-                    it’s a great exprience to work with deski. They’r vey humble
-                    and expert & the service has been excellent & super.
-                  </p>
-                  <h6 className="name">Zubayer Hasan</h6>
-                  <span className="font-rubik disg-info">
-                    Front-end coder HeloShape.
+            <div
+              className="col-xl-7 col-md-8 m-auto"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
+              <div className="title-style-eight text-center mb-40 md-mb-10">
+                <h2>
+                  3 enkla steg att hitta{" "}
+                  <span>
+                    kunder <Image width={313} height={67} src="/images/shape/191.svg" alt="shape" />
                   </span>
-                </div>
-                {/* /.feedback-wrapper */}
+                </h2>
               </div>
-              {/* /.clients-feedback-classic */}
             </div>
+          </div>
 
-            <div className="col-lg-6">
-              <div className="clients-feedback-classic md-mt-80">
-                <div
-                  className="feedback-wrapper"
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
-                >
-                  <Image width={71} height={71}
-                    src="/images/media/img_02.png"
-                    alt="image"
-                    className="media-meta"
-                  />
-                  <p>
-                    it’s a great exprience to work with deski. They’r vey humble
-                    and expert & the service has been excellent & super.
-                  </p>
-                  <h6 className="name">Rena Singleton</h6>
-                  <span className="font-rubik disg-info">
-                    Former Assistant Jamuna Group.
-                  </span>
-                </div>{" "}
-                {/* /.feedback-wrapper */}
-                <div
-                  className="feedback-wrapper"
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
-                >
-                  <Image width={71} height={71}
-                    src="/images/media/img_03.png"
-                    alt="image"
-                    className="media-meta"
-                  />
-                  <p>
-                    it’s a great exprience to work with deski. They’r vey humble
-                    and expert & the service has been excellent & super.
-                  </p>
-                  <h6 className="name">Rashed Ka.</h6>
-                  <span className="font-rubik disg-info">
-                    UI designer Baper Inc.
-                  </span>
-                </div>{" "}
-                {/* /.feedback-wrapper */}
-                <div
-                  className="feedback-wrapper"
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
-                >
-                  <Image width={71} height={71}
-                    src="/images/media/img_04.png"
-                    alt="image"
-                    className="media-meta"
-                  />
-                  <p>
-                    it’s a great exprience to work with deski. They’r vey humble
-                    and expert & the service has been excellent & super.
-                  </p>
-                  <h6 className="name">Zubayer Hasan</h6>
-                  <span className="font-rubik disg-info">
-                    Front-end coder HeloShape.
-                  </span>
-                </div>
-                {/* /.feedback-wrapper */}
-              </div>
-              {/* /.clients-feedback-classic */}
-            </div>
+          <div className="row justify-content-center">
+            <FancyFeatureTewentyTwo />
           </div>
         </div>
       </div>
+     
       {/* /.fancy-feature-three */}
 
       {/* 
@@ -414,15 +360,11 @@ export default async function Home() {
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
-              <div className="title-style-one">
-                <h6 className="font-rubik">Find your answers</h6>
-                <h2>Have any thought? Look here.</h2>
+              <div className="title-style-four ">
+                <h6 className="font-rubik">Hitta dina svar</h6>
+                <h2>Vanliga förekommande frågor.</h2>
               </div>
-              {/* /.title-style-one */}
-              <Link href="/faq" className="theme-btn-one mt-50 md-mt-30">
-                {" "}
-                Go to Faq
-              </Link>
+              
             </div>
             {/* End .col */}
             <div className="col-lg-6">
@@ -456,9 +398,9 @@ export default async function Home() {
               "
               >
                 <h2 className="font-gilroy-bold">
-                  Don’t find the answer? contact us for any query.
+                  Har du fler funderingar? Kontakta oss. 
                 </h2>
-                <Link href="/contact-pm"> Contact us</Link>
+                <Link href="/contact-pm">Kontakta oss</Link>
                 <div className="bubble-one"></div>
                 <div className="bubble-two"></div>
                 <div className="bubble-three"></div>
@@ -476,7 +418,7 @@ export default async function Home() {
         <footer className="theme-footer-one pt-130 md-pt-70">
           <div className="top-footer">
             <div className="container">
-              <Footer />
+              <FooterSix />
             </div>
             {/* /.container */}
           </div>

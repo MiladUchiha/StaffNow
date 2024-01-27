@@ -9,12 +9,12 @@ import * as Yup from "yup";
 const ContactForm = () => {
   // for validation
   const validationSchema = Yup.object().shape({
-    firstName: Yup.string().required("First Name is required"),
-    lastName: Yup.string().required("Last name is required"),
-    sendMessage: Yup.string().required("Please,leave us a message."),
+    firstName: Yup.string().required("Skriv ditt förnamn"),
+    lastName: Yup.string().required("Skriv ditt efternamn"),
+    sendMessage: Yup.string().required("Skriv ditt meddelande"),
     email: Yup.string()
-      .required("Email is required")
-      .email("Entered value does not match email format"),
+      .required("Skriv ditt email")
+      .email("Skriv ett giltigt email"),
   });
 
   const formOptions = { resolver: yupResolver(validationSchema) };
@@ -34,10 +34,10 @@ const ContactForm = () => {
       <div className="row controls">
         <div className="col-md-6">
           <div className="input-group-meta form-group mb-60">
-            <label>First Name</label>
+            <label>Förnamn</label>
             <input
               type="text"
-              placeholder="First Name"
+              placeholder="Förnamn"
               name="firstName"
               {...register("firstName")}
               className={`${errors.firstName ? "is-invalid" : ""}`}
@@ -53,10 +53,10 @@ const ContactForm = () => {
 
         <div className="col-md-6">
           <div className="input-group-meta form-group mb-60">
-            <label>Last Name</label>
+            <label>Efternamn</label>
             <input
               type="text"
-              placeholder="Last Name"
+              placeholder="Efternamn"
               name="lastName"
               {...register("lastName")}
               className={`${errors.lastName ? "is-invalid" : ""}`}
@@ -70,9 +70,9 @@ const ContactForm = () => {
 
         <div className="col-12">
           <div className="input-group-meta form-group mb-60">
-            <label>Email Address</label>
+            <label>Email adress</label>
             <input
-              placeholder="Enter Your Email"
+              placeholder="Skriv ditt email"
               name="email"
               type="text"
               {...register("email")}
@@ -87,9 +87,9 @@ const ContactForm = () => {
 
         <div className="col-12">
           <div className="input-group-meta form-group lg mb-40">
-            <label>Message</label>
+            <label>Meddelande</label>
             <textarea
-              placeholder="Your message goes here.."
+              placeholder="Skriv ditt meddelande här..."
               name="sendMessage"
               type="text"
               {...register("message")}
@@ -106,7 +106,7 @@ const ContactForm = () => {
 
         <div className="col-12">
           <button type="submit" className="theme-btn-two">
-            Send Message
+            Skicka meddelande
           </button>
         </div>
         {/* End .col */}

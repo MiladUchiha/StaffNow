@@ -11,28 +11,28 @@ import {
 
 const FaqContent = [
   {
-    title: "How the affiliate programe works?",
-    desc: `mea case duis tollit et. Etiam nusquam set minium eu sea, ei tale paulo elab. Noluisse mnesarch Et is vero incorrupte eos deserunt quaeren.`,
+    title: "Vad är Staffnow?",
+    desc: ` Staffnow är en digital plattform som förenklar bemanningsprocessen, genom att effektivt matcha uppdragsgivare med bemanningsföretag för specifika projektbehov.`,
     expand: "a",
   },
   {
-    title: "How delete my account?",
-    desc: `mea case duis tollit et. Etiam nusquam set minium eu sea, ei tale paulo elab. Noluisse mnesarch Et is vero incorrupte eos deserunt quaeren.`,
+    title: "Vilken typ av projekt kan jag hitta på Staffnow?",
+    desc: `Staffnow specialiserar sig på att tillhandahålla bemanning för en mängd olika projekt inom olika branscher, från kortvariga uppdrag till längre projekt.`,
     expand: "b",
   },
   {
-    title: "How to invite people with refferel link?",
-    desc: `mea case duis tollit et. Etiam nusquam set minium eu sea, ei tale paulo elab. Noluisse mnesarch Et is vero incorrupte eos deserunt quaeren.`,
+    title: "Hur säkerställer Staffnow kvaliteten på bemanningsföretag?",
+    desc: `Vi genomför noggranna kontroller och validering av alla bemanningsföretag som registrerar sig på vår plattform för att garantera hög kvalitet och pålitlighet.`,
     expand: "c",
   },
   {
-    title: "Is ios app available for the iphone?",
-    desc: `mea case duis tollit et. Etiam nusquam set minium eu sea, ei tale paulo elab. Noluisse mnesarch Et is vero incorrupte eos deserunt quaeren.`,
+    title: "Hur hanterar Staffnow personuppgifter?",
+    desc: `Vi tar dataskydd och integritet på största allvar. Läs vår integritetspolicy för information om hur vi skyddar och hanterar dina uppgifter.`,
     expand: "d",
   },
   {
-    title: "  How to create customer panel?",
-    desc: `mea case duis tollit et. Etiam nusquam set minium eu sea, ei tale paulo elab. Noluisse mnesarch Et is vero incorrupte eos deserunt quaeren.`,
+    title: "Vilka kostnader är förknippade med att använda Staffnow?",
+    desc: `För att få detaljerad information om våra prissättningsmodeller, besök vår avdelning för prissättning eller kontakta oss för en personlig konsultation.`,
     expand: "e",
   },
 ];

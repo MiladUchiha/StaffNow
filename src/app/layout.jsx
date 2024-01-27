@@ -5,7 +5,7 @@ import './globals.css'
 import '../../public/main.scss'
 import { Roboto } from "next/font/google"
 import { SpeedInsights } from "@vercel/speed-insights/next"
-
+import HeaderLanding from "@/components/header/landing/HeaderLanding";
 
 const roboto = Roboto({
   weight: ['300','400','500', '700'],
@@ -23,7 +23,9 @@ export default function RootLayout({ children }) {
         <Animation>
        <SpeedInsights/>
         
-        <Toaster richColors/> {children}
+        <Toaster richColors/>
+        <HeaderLanding/>
+         {children}
         </Animation>
       </body>
     </html>
