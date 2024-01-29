@@ -1,4 +1,5 @@
 import "aos/dist/aos.css";
+import { Analytics } from '@vercel/analytics/react';
 import {Toaster } from 'sonner'
 import Animation from '../context/Animation'
 import './globals.css'
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
         
         <Toaster richColors/>
         <HeaderLanding/>
+        <Analytics/>
          {children}
         </Animation>
       </body>
