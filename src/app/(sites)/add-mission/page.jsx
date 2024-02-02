@@ -1,7 +1,7 @@
-import { getCurrentUser } from "@/lib/session"
-import  getbemannaByEmail  from "@/lib/getbemannaByEmail"
+import { getCurrentUser } from "../../../lib/session"
+import  getbemannaByEmail  from "../../../lib/getbemannaByEmail"
 import { redirect } from "next/navigation"
-import AddMissionForm from "@/components/AddMissionForm"
+import AddMissionForm from "../../../components/AddMissionForm"
 
 
 const page = async () => {
