@@ -16,9 +16,6 @@ export default function LoginForm() {
         password: '',
     });
     const router = useRouter()
-
- 
-
   const handleSubmit = async (e) => {
     e.preventDefault()
     signIn('credentials',

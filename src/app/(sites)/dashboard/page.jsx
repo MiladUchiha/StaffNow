@@ -1,10 +1,10 @@
-import { getCurrentUser } from "@/lib/session"
-import getbemannaByEmail from "@/lib/getbemannaByEmail"
-import getbemanningsByEmail from "@/lib/getbemanningsByEmail"
+import { getCurrentUser } from "../../../lib/session"
+import getbemannaByEmail from "../../../lib/getbemannaByEmail"
+import getbemanningsByEmail from "../../../lib/getbemanningsByEmail"
 import { redirect } from "next/navigation"
-import ClientDash from '@/components/ClientDash'
-import ContracterDash from '@/components/ContracterDash'
-import prisma from '@/lib/prismadb'
+import ClientDash from '../../../components/ClientDash'
+import ContracterDash from '../../../components/ContracterDash'
+import prisma from '../../../lib/prismadb'
 
 const page = async () => {
   

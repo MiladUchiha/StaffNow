@@ -1,11 +1,16 @@
-import BemannasForm from "@/components/BemannasForm";
-import { getCurrentUser } from "@/lib/session";
+
+import RegisterSimpleContainer from "../../../components/Other/Authentication/RegisterSimple";
+
+import { getCurrentUser } from "../../../lib/session";
 import { redirect } from "next/navigation";
-
-
-export default async function CompanyRegister() {
+const RegisterSimple = async () => {
   const session = await getCurrentUser();
-  if (session) redirect("/dashboard");
+  if (session) {
+    redirect("/dashboard");
+  }
+  
 
-  return <BemannasForm/>;
-}
+  return <RegisterSimpleContainer />;
+};
+
+export default RegisterSimple;

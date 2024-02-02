@@ -2,8 +2,8 @@
  * v0 by Vercel.
  * @see https://v0.dev/t/NOLWzBrZHrS
  */
-import { CardTitle, CardHeader, CardContent, CardFooter, Card, CardDescription } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+import { CardTitle, CardHeader, CardContent, CardFooter, Card, CardDescription } from "../components/ui/card"
+import { Button } from "../components/ui/button"
 import  Link  from "next/link"
 
 import Uppdragskort from "./Uppdragskort"

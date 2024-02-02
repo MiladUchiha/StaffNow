@@ -1,16 +1,14 @@
-import BemanningsForm from "@/components/BemanningsForm";
-import { getCurrentUser } from "@/lib/session";
+import RegisterSimpleContainer from "../../../components/Other/Authentication/RegisterSimpleBemanning";
+import { getCurrentUser } from "../../../lib/session";
 import { redirect } from "next/navigation";
-
-
-
-export default async function CompanyRegister() {
+const RegisterSimple = async () => {
   const session = await getCurrentUser();
+  if (session) {
+    redirect("/dashboard");
+  }
+  
 
+  return <RegisterSimpleContainer />;
+};
 
-  if (session) redirect("/dashboard");
-
-  return <BemanningsForm 
-    
-  />;
-}
+export default RegisterSimple;

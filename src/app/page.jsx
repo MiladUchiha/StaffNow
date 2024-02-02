@@ -1,21 +1,16 @@
 import Link from "next/link";
 
-import FaqClassic from "@/components/faq/FaqClassicTwo";
-import SocialTwo from "@/components/social/SocialTwo";
-import CounterOne from "@/components/counter/CounterOne";
-import CallToActionFour from "@/components/call-to-action/CallToActionFour";
-import FeatureNine from "../components/features/FeatureNine";
-import FancyFeatureTewentyTwo from "@/components/features/FancyFeatureTewentyTwo"
+import HeaderLanding from "../components/header/landing/HeaderLanding";
 
-import Footer from "@/components/footer/Footer";
-import FooterTwo from "@/components/footer/FooterTwo";
-import FooterThree from "@/components/footer/FooterThree";
-import FooterFour from "@/components/footer/FooterFour";
-import FooterFive from "@/components/footer/FooterFive";
-import FooterSix from "@/components/footer/FooterSix";
-import FooterSeven from "@/components/footer/FooterSeven";
-import FooterEight from "@/components/footer/FooterEight";
-import CopyRight from "@/components/footer/CopyRight";
+import FaqClassic from "../components/faq/FaqClassicTwo";
+
+import FeatureNine from "../components/features/FeatureNine";
+import FancyFeatureTewentyTwo from "../components/features/FancyFeatureTewentyTwo"
+
+
+import FooterSix from "../components/footer/FooterSix";
+
+import CopyRight from "../components/footer/CopyRight";
 
 import Image from "next/image";
 
@@ -29,6 +24,7 @@ export default async function Home() {
   return (
 
     <div className="main-page-wrapper">
+      <HeaderLanding />
 
       {/* End Page SEO Content */}
       
@@ -170,6 +166,7 @@ export default async function Home() {
                Uppdragsgivare
                 </h3>
                 <p>
+                  
                 Förenkla din rekryteringsprocess med Staffnow. 
                 Upptäck en värld av kvalificerade och erfarna bemanningsföretag och frilansare, 
                 redo att möta dina behov. 
@@ -338,18 +335,7 @@ export default async function Home() {
    =============================================
     Call To Action
   ============================================== */}
-      <div className="fancy-short-banner-one">
-        <div className="container">
-          <CallToActionFour />
-        </div>
-        {/* /.container */}
-        <div className="bubble-one"></div>
-        <div className="bubble-two"></div>
-        <div className="bubble-three"></div>
-        <div className="bubble-four"></div>
-        <div className="bubble-five"></div>
-        <div className="bubble-six"></div>
-      </div>
+      
       {/* /.fancy-short-banner-one */}
 
       {/* 

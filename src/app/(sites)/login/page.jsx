@@ -1,16 +1,12 @@
-import LoginForm from "@/components/LoginForm";
-import { getCurrentUser } from "@/lib/session";
+import { getCurrentUser } from "../../../lib/session";
 import { redirect } from "next/navigation";
+import LoginSimpleContainer from "../../../components/Other/Authentication/LoginSimple";
 
-
-
-export default async function Home() {
+const  page = async () => {
   const session = await getCurrentUser();
   if (session) redirect("/dashboard");
-  return (
-    <main>
-      <LoginForm />
-    </main>
-  );
-}
+  
+  return <LoginSimpleContainer />;
+};
 
+export default page;

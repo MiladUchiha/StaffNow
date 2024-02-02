@@ -14,21 +14,15 @@ model User {
   id             String    @id @default(auto()) @map("_id") @db.ObjectId
   email             String    @unique
   emailVerified     Boolean?   @default(false)
-  ActivationToken   ActivateToken[]
+  emailVerificationToken String? @unique
+  resetPasswordToken String? @unique
+  resetPasswordTokenExpiry DateTime?
   hashedPassword          String    // You should hash and salt passwords for security
   bemanningsKonto            BemanningsKonto?
   bemannasKonto            BemannasKonto?
   // Add any other common fields for users
 }
-model ActivateToken {
-  id             String    @id @default(auto()) @map("_id") @db.ObjectId
-  token          String    @unique
-  activatedAt    DateTime?
-  createdAt      DateTime  @default(now())
-  updatedAt      DateTime  @updatedAt
-  user           User      @relation(fields: [userId], references: [id])
-  userId         String    @db.ObjectId @unique
-}
+
 
 model BemanningsKonto {
   id             String    @id @default(auto()) @map("_id") @db.ObjectId
