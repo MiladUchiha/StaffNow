@@ -6,16 +6,16 @@ import { toast } from 'sonner'
  * v0 by Vercel.
  * @see https://v0.dev/t/bglRpKVVF76
  */
-import { CardHeader, CardContent, CardFooter, Card } from "@/components/ui/card"
+import { CardHeader, CardContent, CardFooter, Card } from "../components/ui/card"
 import { CaretSortIcon, CheckIcon } from "@radix-ui/react-icons"
-import { Label } from "@/components/ui/label"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Button } from "@/components/ui/button"
-import { PopoverTrigger, PopoverContent, Popover } from "@/components/ui/popover"
+import { Label } from "../components/ui/label"
+import { Input } from "../components/ui/input"
+import { Textarea } from "../components/ui/textarea"
+import { Button } from "../components/ui/button"
+import { PopoverTrigger, PopoverContent, Popover } from "../components/ui/popover"
 import * as React from "react"
-import { CommandInput, CommandEmpty, CommandItem, CommandGroup, Command } from "@/components/ui/command"
-import { cn } from "@/lib/utils"
+import { CommandInput, CommandEmpty, CommandItem, CommandGroup, Command } from "../components/ui/command"
+import { cn } from "../lib/utils"
 const frameworks = [
   {
     value: "next.js",
