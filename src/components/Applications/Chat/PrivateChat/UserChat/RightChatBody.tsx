@@ -4,7 +4,7 @@ import { useAppDispatch, useAppSelector } from "@/Redux/Hooks";
 import { fetchChatMemberAsync, setChats, setSelectedUser } from "@/Redux/Reducers/ChatSlice";
 import { ImagePath } from "@/Constant";
 import { AllMemberType, ChatsTypes, MessageTypes } from "@/Types/ChatType";
-
+import Image from "next/image";
 const RightChatBody = () => {
   const bottomRef = useRef<null | HTMLDivElement>(null);
   const [scroll, setScroll] = useState(0);
@@ -31,7 +31,7 @@ const RightChatBody = () => {
     dispatch(fetchChatMemberAsync());
     fetchChatAsync();
     setScroll(1);
-  }, [dispatch, allMembers.length, chats.length]);
+  }, [dispatch, allMembers.length, chats.length, fetchChatAsync]);
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -48,7 +48,7 @@ const RightChatBody = () => {
               const participators = allMembers.find((x: AllMemberType) => x.id === item.sender);
               return (
                 <div className={`msg ${item.sender === currentUser?.id ? "right" : "left"}-msg`} key={id}>
-                  {item?.name ? <div className="msg-img" /> : <img src={`${ImagePath}/${participators?.image}`} className="rounded-circle img-30 h-auto" alt="user" />}
+                  {item?.name ? <div className="msg-img" /> : <Image src={`${ImagePath}/${participators?.image}`} className="rounded-circle img-30 h-auto" alt="user" />}
                   <div className="msg-bubble mx-2">
                     <div className="msg-info">
                       <div className="msg-info-name">{!item?.sender ? "Theresa Webb" : selectedUser?.name}</div>
@@ -60,7 +60,7 @@ const RightChatBody = () => {
               );
             })
           ) : (
-            <img className="w-100" src={`${ImagePath}/start-conversion.jpg`} alt="start conversion" />
+            <Image className="w-100" src={`${ImagePath}/start-conversion.jpg`} alt="start conversion" />
           )}
         </div>
         <SendMessage />

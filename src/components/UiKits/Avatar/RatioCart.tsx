@@ -2,7 +2,7 @@ import CommonCardHeader from "@/CommonComponent/CommonCardHeader";
 import { ImagePath, Ratio } from "@/Constant";
 import { RatioData, Ratios } from "@/Data/Uikits/avatars";
 import { Card, CardBody, Col } from "reactstrap";
-
+import Image from "next/image";
 const RatioCart = () => {
   return (
     <Col md="6">
@@ -11,11 +11,11 @@ const RatioCart = () => {
         <CardBody className="avatar-showcase">
           <div className="avatars">
             <div className="avatar ratio">
-              <img className="b-r-8 img-100" src={`${ImagePath}/avtar/11.jpg`} alt="image" />
+              <Image className="b-r-8 img-100" src={`${ImagePath}/avtar/11.jpg`} alt="image" />
             </div>
             {Ratios.map(({ className, src}, index) => (
               <div className="avatar ratio" key={index}>
-                <img className={`b-r-8 ${className}`} src={`${ImagePath}${src}`} alt="image" />
+                <Image className={`b-r-8 ${className}`} src={`${ImagePath}${src}`} alt="image" />
               </div>
             ))}
           </div>

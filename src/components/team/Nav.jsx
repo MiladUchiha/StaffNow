@@ -3,7 +3,7 @@
 
 
 
-import React from 'react'
+import React from 'react';
 import ScrollspyNav from "react-scrollspy-nav";
 export default function Nav() {
   return (

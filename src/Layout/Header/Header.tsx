@@ -12,7 +12,7 @@ export const Header = () => {
 
   useEffect(() => {
     dispatch(headerResponsive());
-  }, []);
+  });
 
   return (
     <Row className={`page-header ${toggleSidebar ? "close_icon" : ""}`} id="page-header">

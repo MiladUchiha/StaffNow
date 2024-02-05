@@ -1,9 +1,10 @@
 import { Href, ImagePath, OrderConfirmed, OrderID } from "@/Constant";
+import Image from "next/image";
 
 const SubmitShippingForm = () => {
   return (
       <div className="order-confirm">
-        <img src={`${ImagePath}/gif/dashboard-8/successful.gif`} alt="popper"/>
+        <Image src={`${ImagePath}/gif/dashboard-8/successful.gif`} alt="popper"/>
         <h5>{OrderConfirmed}</h5>
         <p className="mb-0">An email with your orders specifics will be sent to you as order confirmation.</p>
         <p className="text-center f-w-500 mt-2">{OrderID}:

@@ -18,7 +18,7 @@ const OutlineDarkAndLightAlerts = () => {
         <CardBody>
           <Alert color="" isOpen={visible} toggle={onDismiss} className="txt-primary border-primary">
             <Clock />
-            <p>One of <strong>YouTube's</strong> most crucial ranking factors is Watch Time.</p>
+            <p>One of <strong>YouTubes</strong> most crucial ranking factors is Watch Time.</p>
           </Alert>
           <Alert color="transparent" isOpen={visibleAlert} className="txt-success border-success outline-2x alert-icons" toggle={onDismissAlert}>
             <ThumbsUp />

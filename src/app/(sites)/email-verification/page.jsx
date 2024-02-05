@@ -2,10 +2,10 @@
  * v0 by Vercel.
  * @see https://v0.dev/t/XTRA4UKd02w
  */
-import { CardHeader, CardContent, Card } from "@/components/ui/card"
-import { Label } from "@/components/ui/label"
-import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
+import { CardHeader, CardContent, Card } from "../../../components/ui/card"
+import { Label } from "../../../components/ui/label"
+import { Input } from "../../../components/ui/input"
+import { Button } from "../../../components/ui/button"
 import Link from "next/link"
 
 export default function Component() {

@@ -27,7 +27,7 @@ const TranslucentToasts = () => {
                 <small className="text-muted d-sm-block d-none">11 mins ago</small>
                 <Button close className="p-0" onClick={() => setOpen(false)}></Button>
               </div>
-              <ToastBody className="toast-dark"> Hello, I'm a web-designer.</ToastBody>
+              <ToastBody className="toast-dark"> Hello, Im a web-designer.</ToastBody>
             </Toast>
             {TranslucentToastDataList.map((data, index) => (
               <CommonToast item={data} key={index} />

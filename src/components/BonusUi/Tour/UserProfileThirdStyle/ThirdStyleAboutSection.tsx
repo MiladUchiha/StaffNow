@@ -1,7 +1,7 @@
 import { Href, ImagePath } from "@/Constant";
 import Link from "next/link";
 import { Col, Row } from "reactstrap";
-
+import Image from "next/image";
 export const ThirdStyleAboutSection = () => {
   const PainterTourParagraph = "you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet."
   
@@ -12,14 +12,14 @@ export const ThirdStyleAboutSection = () => {
         <Col sm="6">
           <Link href={Href}>
             <div className="tour-blog">
-              <img className="img-fluid rounded" src={`${ImagePath}/other-images/mountain.jpg`} alt="mountain" />
+              <Image className="img-fluid rounded" src={`${ImagePath}/other-images/mountain.jpg`} alt="mountain" />
             </div>
           </Link>
         </Col>
         <Col sm="6">
           <Link href={Href}>
             <div className="tour-blog">
-              <img className="img-fluid rounded" src={`${ImagePath}/other-images/sea.jpg`} alt="sea" />
+              <Image className="img-fluid rounded" src={`${ImagePath}/other-images/sea.jpg`} alt="sea" />
             </div>
           </Link>
         </Col>

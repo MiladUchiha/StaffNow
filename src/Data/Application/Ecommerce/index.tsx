@@ -8,6 +8,7 @@ import { TableColumn } from "react-data-table-component";
 import { Clock, CreditCard, Gift, MoreVertical, Truck } from "react-feather";
 import { Rating } from "react-simple-star-rating";
 import { Badge } from "reactstrap";
+import Image from "next/image";
 
 export const BecomeMemberData = [
   {
@@ -282,7 +283,7 @@ export const OrderHistoryData = [
 ];
 
 const OrderHistoryImage: React.FC<OrderHistoryImageType> = ({ name }) => {
-  return <img className="img-fluid img-30 my-3 rounded-3" src={`${ImagePath}/product/${name}`} alt="#" />;
+  return <Image className="img-fluid img-30 my-3 rounded-3" src={`${ImagePath}/product/${name}`} alt="#" />;
 };
 
 const OrderDataHistory: React.FC<OrderHistoryImageType> = ({ name, tag }) => {

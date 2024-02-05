@@ -1,6 +1,6 @@
 import { MixLayoutComponentProp } from '@/Types/ThemeCustomizerTypes'
 import CommonUL from './CommonUL'
-import React from 'react'
+import React from 'react';
 
 const BgDark :React.FC<MixLayoutComponentProp> = ({ handleCustomizerMix_Background, mixLayout }) => {
   return (

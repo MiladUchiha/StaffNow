@@ -11,7 +11,7 @@ const PrivateChatContainer = () => {
   useEffect(() => {
     dispatch(fetchChatMemberApiData());
     dispatch(fetchChatApiData());
-  }, []);
+  });
 
   return (
     <Container fluid>

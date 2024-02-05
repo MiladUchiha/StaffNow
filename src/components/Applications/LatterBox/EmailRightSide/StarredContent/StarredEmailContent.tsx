@@ -4,7 +4,7 @@ import { useAppDispatch, useAppSelector } from '@/Redux/Hooks';
 import { handleEnvelope, handleInterview, removeFromFavorite } from '@/Redux/Reducers/LetterBoxSlice';
 import { CommonDataType } from '@/Types/LatterBoxType';
 import { Badge, Input, Label } from 'reactstrap';
-
+import Image from "next/image";
 const StarredEmailContent :React.FC<CommonDataType> = ({data,ids}) => {
     const {faIcon } = useAppSelector((state) => state.letterBox);
     const dispatch = useAppDispatch()
@@ -20,7 +20,7 @@ const StarredEmailContent :React.FC<CommonDataType> = ({data,ids}) => {
             <SVG className={`important-mail ${data.star ? "active" : ""}`} iconId="fill-star" />
           </div>
           <div className="rounded-border">
-          {data.image && <img src={`${ImagePath}/user/${data.image}`} alt="user" />}
+          {data.image && <Image src={`${ImagePath}/user/${data.image}`} alt="user" />}
             {data.shortName && <div className={data.color === "success" ? "circle-success" : ""}>
               <p className={`txt-${data.color}`}>{data.shortName}</p>
             </div>}
@@ -36,7 +36,7 @@ const StarredEmailContent :React.FC<CommonDataType> = ({data,ids}) => {
             <div className="inbox-width d-flex gap-2">
               {data.badge &&
                 data.badge.map((item, i) => (
-                  <div className="inbox-width">
+                  <div className="inbox-width" key={2}>
                     <Badge color="" className={`badge-light-${item.color} text-${item.color === "light" ? "light-dark" : item.color }`} key={i}> {item.title} </Badge>
                   </div>
                 ))}

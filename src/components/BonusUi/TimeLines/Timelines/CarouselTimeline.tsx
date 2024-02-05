@@ -3,7 +3,7 @@ import { CarouselDataList } from '@/Data/BonusUi/Timeline';
 import { useState } from 'react';
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { Badge, Carousel, CarouselControl, CarouselIndicators, CarouselItem } from 'reactstrap';
-
+import Image from 'next/image';
 const CarouselTimeline = () => {
 const CarouselSpanText: string = "Spend some time looking up current design trend.";
 
@@ -31,7 +31,7 @@ const CarouselSpanText: string = "Spend some time looking up current design tren
   const slides = CarouselDataList.map((item, index) => {
     return (
       <CarouselItem onExiting={() => setAnimating(true)} onExited={() => setAnimating(false)} key={index}>
-        <img src={`${ImagePath}/${item.image}`} alt='office-work' className='d-block w-100 h-100' />
+        <Image src={`${ImagePath}/${item.image}`} alt='office-work' className='d-block w-100 h-100' />
       </CarouselItem>
     );
   });

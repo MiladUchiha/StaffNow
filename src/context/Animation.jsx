@@ -1,6 +1,6 @@
 'use client'
 import AOS from "aos";
-import React from 'react'
+import React from 'react';
 import { useEffect } from 'react'
 const Animation = ({children}) => {
     useEffect(() => {

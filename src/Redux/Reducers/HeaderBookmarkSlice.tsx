@@ -1,5 +1,5 @@
 import { BookMarkData } from "../../Data/Layout";
-import { BookmarkSliceType, BookmarkedDataType } from "@/Types/LayoutTypes";
+import { BookmarkSliceType, BookmarkedDataType } from "../../Types/LayoutTypes";
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState:BookmarkSliceType = {

@@ -3,7 +3,7 @@
 'use client'
 
 
-import React from 'react'
+import React from 'react';
 
 export default function CommingSoonForm() {
     const handleSubmit = (event) => {

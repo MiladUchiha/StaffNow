@@ -10,6 +10,7 @@ import { Button, Col, FormGroup, Input, Label, Row } from "reactstrap";
 import axios from "axios";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export const RegisterForm = ({ logoClass }) => {
   const [show, setShow] = useState(false);
@@ -50,8 +51,8 @@ export const RegisterForm = ({ logoClass }) => {
     <div>
       <div>
         <Link className={`logo ${logoClass}`} href={`/`}>
-          <img className="img-fluid for-light" src={`${ImagePath}/logo/logo.png`} alt="looginpage" />
-          <img className="img-fluid for-dark" src={`${ImagePath}/logo/logo_dark.png`} alt="looginpage" />
+          <Image className="img-fluid for-light" src={`${ImagePath}/logo/logo.png`} alt="looginpage" />
+          <Image className="img-fluid for-dark" src={`${ImagePath}/logo/logo_dark.png`} alt="looginpage" />
         </Link>
       </div>
       <div className="login-main">

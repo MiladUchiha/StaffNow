@@ -1,7 +1,7 @@
 
 
 'use client'
-import React from 'react'
+import React from 'react';
 import Coupon from '../e-commerce/cart/Coupon';
 import CartTotal from '../e-commerce/cart/CartTotal';
 import CartProduct from '../e-commerce/cart/CartProduct';

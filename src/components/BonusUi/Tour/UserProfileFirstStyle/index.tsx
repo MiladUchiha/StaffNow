@@ -3,7 +3,7 @@ import { Card, Col } from "reactstrap";
 import CommonTourSocialMedia from "../Common/CommonTourSocialMedia";
 import { FollowSection } from "./FollowSection";
 import { InfoSection } from "./InfoSection";
-
+import Image from "next/image";
 const UserProfileFirstStyle = () => {
   return (
     <Col sm="12">
@@ -11,7 +11,7 @@ const UserProfileFirstStyle = () => {
         <div className="cardheader"></div>
         <div className="user-image">
           <div className="avatar">
-            <img alt="" src={`${ImagePath}/user/7.jpg`} className="step1" />
+            <Image alt="" src={`${ImagePath}/user/7.jpg`} className="step1" />
           </div>
           <div className="icon-wrapper">
             <i className="icofont icofont-pencil-alt-5 step2"></i>

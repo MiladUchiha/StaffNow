@@ -1,7 +1,7 @@
 import { ImagePath } from "@/Constant";
 import { SolidBorderStyleDataList } from "@/Data/Form&Table/Form";
 import { Card, Col, Form, FormGroup, Input, Label, Row } from "reactstrap";
-
+import Image from "next/image";
 const SolidBorderStyleForm = () => {
   return (
     <Form className="mega-inline border-style megaoptions-border-space-sm">
@@ -16,7 +16,7 @@ const SolidBorderStyleForm = () => {
                     <div className="flex-grow-1">
                       <span className="d-flex list-behavior-1">
                         <span className="flex-shrink-0 ms-2">
-                          <img className="tab-img b-r-0 img-fluid" src={`${ImagePath}/${image}`} alt="home" />
+                          <Image className="tab-img b-r-0 img-fluid" src={`${ImagePath}/${image}`} alt="home" />
                         </span>
                         <span className="flex-grow-1">
                           <span className="mb-0">{spanText}</span>

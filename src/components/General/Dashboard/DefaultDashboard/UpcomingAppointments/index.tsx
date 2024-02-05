@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Card, CardBody, Col, Row } from "reactstrap";
 import DashboardCommonHeader from "../../common/DashboardCommonHeader";
 import UpcomingDatePicker from "./UpcomingDatePicker";
-
+import Image from "next/image";
 const UpcomingAppointments = () => {
 const { i18LangStatus } = useAppSelector((store) => store.langSlice);
   return (
@@ -19,7 +19,7 @@ const { i18LangStatus } = useAppSelector((store) => store.langSlice);
                 {UpcomingData.map((data, i) => (
                   <li className="d-flex align-items-center" key={i}>
                     <div className="flex-shrink-0">
-                      <img src={`${ImagePath}/dashboard/user/${data.img}`} alt="userImage"  />
+                      <Image src={`${ImagePath}/dashboard/user/${data.img}`} alt="userImage"  />
                     </div>
                     <div className="flex-grow-1">
                       <Link href={`/${i18LangStatus}/chat/private_chat`}>

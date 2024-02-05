@@ -3,7 +3,7 @@ import { CustomContentList, Href, ImagePath, MollyBoake } from "@/Constant";
 import { CustomData } from "@/Data/Uikits/lists";
 import { Card, CardBody, Col, ListGroup, ListGroupItem } from "reactstrap";
 import { DynamicCustomContentList } from "./DynamicCustomContentList";
-
+import Image from "next/image";
 const CustomContentLists = () => {
   return (
     <Col md="12">
@@ -14,7 +14,7 @@ const CustomContentLists = () => {
             <ListGroupItem tag="a" href={Href} className="list-group-item-action active bg-primary">
               <div className="d-flex w-100 justify-content-between align-items-center">
                 <div className="list-wrapper">
-                  <img className="list-img" src={`${ImagePath}/user/1.jpg`} alt="profile" />
+                  <Image className="list-img" src={`${ImagePath}/user/1.jpg`} alt="profile" />
                   <div className="list-content">
                     <h6>{MollyBoake}</h6>
                     <p>MollyBoake@rhyta.com</p>

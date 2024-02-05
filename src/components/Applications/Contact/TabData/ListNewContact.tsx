@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Col, Nav, NavLink } from 'reactstrap';
 import SearchNotFoundClass from './SearchNotFoundClass';
 import { ImagePath } from '@/Constant';
-
+import Image from 'next/image';
 const ListNewContact :React.FC<ListNewContactPropsType> = ({ users, userCallback }) => {
   const [dynamicTab, setDynamicTab] = useState(0);
 
@@ -19,7 +19,7 @@ const ListNewContact :React.FC<ListNewContactPropsType> = ({ users, userCallback
             return (
               <NavLink className={dynamicTab === index ? 'active' : ''} onClick={() => setDynamicTab(index)} key={index} >
                 <div className='d-flex' onClick={() => ContactDetails(user)}>
-                  <img className='p-0 img-fluid img-50 m-r-20 rounded-circle update_img_0' src= {`${user.avatar}`} alt= 'userImage'  />
+                  <Image className='p-0 img-fluid img-50 m-r-20 rounded-circle update_img_0' src= {`${user.avatar}`} alt= 'userImage'  />
                   <div className='flex-grow-1' >
                     <h6>
                       <span className="first_name_0">{user.name}</span>

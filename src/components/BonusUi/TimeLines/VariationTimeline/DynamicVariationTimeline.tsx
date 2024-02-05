@@ -1,7 +1,7 @@
 import { ImagePath } from "@/Constant";
 import { VariationTimeLineDataList } from "@/Data/BonusUi/Timeline";
 import { Fragment } from "react";
-
+import Image from "next/image";
 export const DynamicVariationTimeline = () => {
   return (
     <Fragment>
@@ -24,7 +24,7 @@ export const DynamicVariationTimeline = () => {
                   {data.image.map((item, index) => (
                     <li key={index}>
                       <div className="recent-img-wrap">
-                        <img src={`${ImagePath}/${item}`} className="me-0" alt="chair" />
+                        <Image src={`${ImagePath}/${item}`} className="me-0" alt="chair" />
                       </div>
                     </li>
                   ))}

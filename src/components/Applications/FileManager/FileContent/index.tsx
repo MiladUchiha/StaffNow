@@ -5,7 +5,7 @@ import { Card, CardHeader } from "reactstrap";
 import SearchBar from "../SearchBar";
 import { FileContentButtonActions } from "./FileContentButtonActions";
 import FileMainContent from "./FileMainContent";
-
+import Image from "next/image";
 const FileContent = () => {
   const { myFile, searchTerm } = useAppSelector((state) => state.fileManager);
 
@@ -22,7 +22,7 @@ const FileContent = () => {
           <FileContentButtonActions />
         </div>
       </CardHeader>
-      {fileList.length ? <FileMainContent fileList={fileList} /> : <img className="img-fluid mx-auto my-4" src={`${ImagePath}/search-not-found.png`} alt="image" />}
+      {fileList.length ? <FileMainContent fileList={fileList} /> : <Image className="img-fluid mx-auto my-4" src={`${ImagePath}/search-not-found.png`} alt="image" />}
       <ToastContainer />
     </Card>
   );

@@ -1,7 +1,7 @@
 import ChangePasswordForm from '../../../components/mail/changePasswordForm';
 import ResetPasswordForm from '../../../components/mail/resetPasswordForm';
 import prisma from '../../../lib/prismadb';
-import React from 'react';
+import React from 'react';;
 
 
 

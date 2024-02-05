@@ -3,7 +3,7 @@ import { RegisterStepData } from "@/Data/Pages";
 import { useAppSelector } from "@/Redux/Hooks";
 import { RegisterWizadListProp } from "@/Types/AuthType";
 import Link from "next/link";
-
+import Image from "next/image";
 export const RegisterWizadList:React.FC<RegisterWizadListProp> = ({ level }) => {
   const { i18LangStatus } = useAppSelector((state) => state.langSlice);
 
@@ -11,8 +11,8 @@ export const RegisterWizadList:React.FC<RegisterWizadListProp> = ({ level }) => 
     <ul className="theme-scrollbar anchor">
       <li>
         <Link className="logo text-start ps-0" href={`/${i18LangStatus}/dashboard/default_dashboard`}>
-          <img className="for-light" src={`${ImagePath}/logo/logo.png`} alt="looginpage"  />
-          <img className="for-dark" src={`${ImagePath}/logo/logo_dark.png`} alt="looginpage" />
+          <Image className="for-light" src={`${ImagePath}/logo/logo.png`} alt="looginpage"  />
+          <Image className="for-dark" src={`${ImagePath}/logo/logo_dark.png`} alt="looginpage" />
         </Link>
       </li>
       {RegisterStepData.map((data, index) => (
@@ -28,7 +28,7 @@ export const RegisterWizadList:React.FC<RegisterWizadListProp> = ({ level }) => 
         </li>
       ))}
       <li>
-        <img src={`${ImagePath}/login/icon.png`} alt="looginpage" />
+        <Image src={`${ImagePath}/login/icon.png`} alt="looginpage" />
       </li>
     </ul>
   );

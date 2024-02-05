@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Fragment } from "react";
 import { Rating } from "react-simple-star-rating";
 import { Badge, Card, CardBody, Col } from "reactstrap";
-
+import Image from "next/image";
 const CardsClass = () => {
   return (
     <Fragment>
@@ -20,7 +20,7 @@ const CardsClass = () => {
               <div className="job-search">
                 <CardBody>
                   <div className="d-flex">
-                    <img className="img-40 b-r-0 img-fluid m-r-20" src={`${ImagePath}/${item.logo}`} alt="job"/>
+                    <Image className="img-40 b-r-0 img-fluid m-r-20" src={`${ImagePath}/${item.logo}`} alt="job"/>
                     <div className="flex-grow-1">
                       <h6 className="f-w-600">
                         <Link href={Href}>{item.job_name}</Link>

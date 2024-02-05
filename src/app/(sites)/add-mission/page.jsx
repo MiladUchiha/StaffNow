@@ -1,24 +1,16 @@
+
+import React from "react";
 import { getCurrentUser } from "../../../lib/session"
 import  getbemannaByEmail  from "../../../lib/getbemannaByEmail"
 import { redirect } from "next/navigation"
-import AddMissionForm from "../../../components/AddMissionForm"
-
+import NewProjectContainer from "../../../components/Applications/Project/NewProject"
 
 const page = async () => {
   const session = await getCurrentUser()
-  const user = await getbemannaByEmail(session?.email)
   if (!session) redirect("/login")
+  const user = await getbemannaByEmail(session.email)
   
-  
+  return <NewProjectContainer user={user} />
+};
 
-  return (
-    <>
-      <AddMissionForm 
-        user={user}
-      />
-    
-    </>
-  )
-}
-
-export default page
+export default page;

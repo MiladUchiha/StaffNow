@@ -1,6 +1,6 @@
 import { Field, ErrorMessage } from "formik";
 import { Col, FormGroup, Label, Row } from "reactstrap";
-import { EnterSomeDetails } from "@/Constant";
+import { EnterSomeDetails } from "../../../../Constant";
 
 export const DescriptionSection = () => {
   return (

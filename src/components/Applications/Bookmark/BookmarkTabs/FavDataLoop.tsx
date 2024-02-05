@@ -6,7 +6,7 @@ import { useAppDispatch, useAppSelector } from "@/Redux/Hooks";
 import { setBookMarkList, setBookmark } from "@/Redux/Reducers/BookmarkTabSlice";
 import { BookMarkData } from "@/Types/BookmarkType";
 import SearchNotFoundClass from "../../Contact/TabData/SearchNotFoundClass";
-
+import Image from "next/image";
 const FavDataLoop = () => {
   const { bookmark, bookMarkList } = useAppSelector((state) => state.bookmarkTab);
   const dispatch = useAppDispatch();
@@ -28,7 +28,7 @@ const FavDataLoop = () => {
           <Col xxl="3" md="4" className="col-ed-4" key={myBookData.id}>
             <Card className="card-with-border bookmark-card o-hidden">
               <div className="details-website">
-                <img className="img-fluid" src={`${ImagePath}/${myBookData.image}`} alt="Image" />
+                <Image className="img-fluid" src={`${ImagePath}/${myBookData.image}`} alt="Image" />
                 <div className={`favourite-icon favourite_0 ${myBookData.fillStar ? "favourite" : ""}`}>
                   <a href={Href}>
                     <i className="fa fa-star" onClick={() => removeFromFavorite(myBookData)}></i>

@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import React, { Fragment, useState } from "react";
 import { Card, CardBody, Col } from "reactstrap";
 import { GoogleMap, InfoWindow, useJsApiLoader } from "@react-google-maps/api";

@@ -3,7 +3,7 @@ import { Card, Col } from "reactstrap";
 import FollowSection from "./FollowSection";
 import { InfoSection } from "./InfoSection";
 import UserSocialMedia from "./UserSocialMedia";
-
+import Image from "next/image";
 const UserData = () => {
   return (
     <Col sm="12">
@@ -11,7 +11,7 @@ const UserData = () => {
         <div className="cardheader"></div>
         <div className="user-image">
           <div className="avatar">
-            <img alt="" src={`${ImagePath}/user/7.jpg`} />
+            <Image alt="" src={`${ImagePath}/user/7.jpg`} />
           </div>
           <div className="icon-wrapper">
             <i className="icofont icofont-pencil-alt-5"></i>

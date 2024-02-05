@@ -4,13 +4,13 @@ import { CardBody, Collapse } from "reactstrap";
 import LikesViewButton from "./LikesViewButton";
 import MessagesAndNotification from "./MessagesAndNotification";
 import SocialGroup from "./SocialGroup";
-
+import Image from "next/image";
 const MyProfileClassCollapse :React.FC<MyProfileClassCollapseProp> = ({ isFilter }) => {
   return (
     <Collapse isOpen={isFilter}>
       <CardBody className="socialprofile filter-cards-view">
         <div className="d-flex">
-          <img className="img-50 img-fluid m-r-20 rounded-circle" src={`${ImagePath}/user/1.jpg`} alt="user" />
+          <Image className="img-50 img-fluid m-r-20 rounded-circle" src={`${ImagePath}/user/1.jpg`} alt="user" />
           <MessagesAndNotification />
         </div>
         <LikesViewButton />
@@ -22,7 +22,7 @@ const MyProfileClassCollapse :React.FC<MyProfileClassCollapseProp> = ({ isFilter
         <div className="customers text-center social-group">
           <SocialGroup />
         </div>
-        <img className="img-fluid mt-5" alt="" src={`${ImagePath}/social-app/timeline-3.png`} />                            
+        <Image className="img-fluid mt-5" alt="" src={`${ImagePath}/social-app/timeline-3.png`} />                            
       </CardBody>
     </Collapse>
   );

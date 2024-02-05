@@ -1,7 +1,7 @@
 import { ImagePath, WeAreComingSoon } from "@/Constant";
 import { Container } from "reactstrap";
 import CountdownData from "./CountdownData";
-
+import Image from "next/image";
 const ComingSoonBgVideoContainer = () => {
   return (
     <div className="page-wrapper compact-wrapper">
@@ -11,7 +11,7 @@ const ComingSoonBgVideoContainer = () => {
             <source src={"/assets/video/auth-bg.mp4"} type="video/mp4" />
           </video>
           <div className="comingsoon-inner text-center">
-            <img src={`${ImagePath}/other-images/logo-login.png`} alt="" />
+            <Image src={`${ImagePath}/other-images/logo-login.png`} alt="" />
             <h5>{WeAreComingSoon}</h5>
             <div className="countdown">
               <CountdownData />

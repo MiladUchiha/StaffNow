@@ -6,14 +6,14 @@ import EducationClass from "./Education";
 import ExperienceClass from "./Experience";
 import PersonalDetail from "./PersonalDetail";
 import UploadFileClass from "./UploadFile";
-
+import Image from "next/image";
 const JobApply = () => {
   return (
     <Card>
       <div className="job-search">
         <CardBody className="pb-0">
           <div className="d-flex">
-            <img className="img-40 b-r-0 img-fluid  m-r-20" src={`${ImagePath}/job-search/1.jpg`} alt=""/>
+            <Image className="img-40 b-r-0 img-fluid  m-r-20" src={`${ImagePath}/job-search/1.jpg`} alt=""/>
             <div className="flex-grow-1">
               <h6 className="f-w-600">
                 <Link href={Href}>{JobUIDesigner}</Link>

@@ -3,6 +3,7 @@ import { OrganizationData } from '@/Data/Application/Contacts';
 import { Fragment } from 'react';
 import { TabPane } from 'reactstrap';
 
+import Image from 'next/image';
 const TabOrg = () => {
   
   return (
@@ -11,7 +12,7 @@ const TabOrg = () => {
         <TabPane tabId={item.activeTab} key={i}>
            <div className="profile-mail">
           <div className="d-flex">
-            <img className="img-100 img-fluid m-r-20 rounded-circle update_img_0" src={`${ImagePath}/user/${item.image}`} alt="" />
+            <Image className="img-100 img-fluid m-r-20 rounded-circle update_img_0" src={`${ImagePath}/user/${item.image}`} alt="" />
             <div className="flex-grow-1 mt-0">
               <h5><span className="first_name_0">{item.name}</span></h5>
               <p className="email_add_0">{item.email}</p>

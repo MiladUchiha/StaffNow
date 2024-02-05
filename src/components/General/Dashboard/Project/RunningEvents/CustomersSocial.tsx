@@ -1,5 +1,5 @@
 import { ImagePath } from "@/Constant";
-
+import Image from "next/image";
 const CustomersSocial = () => {
   const imgData = [1, 2, 3];
   
@@ -9,7 +9,7 @@ const CustomersSocial = () => {
         <ul className="simple-list">
           {imgData.map((data, i) => (
             <li className="d-inline-block" key={i}>
-              <img className="rounded-circle" src={`${ImagePath}/dashboard-2/user/${data}.png`} alt="user" />
+              <Image className="rounded-circle" src={`${ImagePath}/dashboard-2/user/${data}.png`} alt="user" />
             </li>
           ))}
           <li className="d-inline-block">

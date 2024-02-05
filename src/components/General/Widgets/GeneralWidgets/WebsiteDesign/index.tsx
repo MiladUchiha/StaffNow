@@ -4,7 +4,7 @@ import { useAppSelector } from "@/Redux/Hooks";
 import Link from "next/link";
 import { Button, Card, CardBody, Col, Progress } from "reactstrap";
 import WebsiteRatting from "./WebsiteRatting";
-
+import Image from "next/image";
 const WebsiteDesign = () => {
 const { i18LangStatus } = useAppSelector((store) => store.langSlice);
   return (
@@ -15,7 +15,7 @@ const { i18LangStatus } = useAppSelector((store) => store.langSlice);
           <div>
             <div className="d-flex align-items-center gap-2">
               <div className="flex-shrink-0">
-                <img src={`${ImagePath}/dashboard-2/user/16.png`} alt="user" />
+                <Image src={`${ImagePath}/dashboard-2/user/16.png`} alt="user" />
               </div>
               <div className="flex-grow-1">
                 <Link href={`/${i18LangStatus}/ecommerce/product_page`}><h5>{SquareDashboard}</h5></Link>

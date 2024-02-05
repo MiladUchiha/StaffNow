@@ -1,5 +1,6 @@
 import { Col, Row } from "reactstrap";
 import { ImagePath, ProjectDescription } from "@/Constant";
+import Image from "next/image";
 
 const UserDetails = () => {
   return (
@@ -7,7 +8,7 @@ const UserDetails = () => {
       <Col md="4">
         <div className="d-flex">
           <div className="media-left">
-            <img className="media-object rounded-circle img-60" src={`${ImagePath}/user/1.jpg`} alt="user" />
+            <Image className="media-object rounded-circle img-60" src={`${ImagePath}/user/1.jpg`} alt="user" />
           </div>
           <div className="flex-grow-1 m-l-20">
             <h4 className="media-heading">Johan Deo</h4>
@@ -17,8 +18,8 @@ const UserDetails = () => {
       </Col>
       <Col md="8">
         <div className="text-md-end" id="project">
-          <h6>{ProjectDescription}</h6>
-          <p>You're Only As Good As Your Last Collection, Which Is An EnormousPressure. Jeans Represent Democracy In Fashion.Fashion Is AboutDressing According To What's Fashionable.</p>
+          <h6>pro</h6>
+          <p>Youre Only As Good As Your Last Collection, Which Is An EnormousPressure. Jeans Represent Democracy In Fashion.Fashion Is AboutDressing According To Whats Fashionable.</p>
         </div>
       </Col>
     </Row>

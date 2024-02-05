@@ -3,7 +3,7 @@ import { HoverImageDataList } from "@/Data/Miscellaneous/Gallery";
 import Link from "next/link";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import { CardBody, Row } from "reactstrap";
-
+import Image from "next/image";
 export const ImageHoverEffectsCardBody = (props: {data:number}) => {
   return (
     <CardBody className="pb-1">
@@ -16,7 +16,7 @@ export const ImageHoverEffectsCardBody = (props: {data:number}) => {
                   {({ ref, open }) => (
                     <Link href={Href} onClick={open}>
                       <div className="overflow-hidden">
-                        <img ref={ref as React.MutableRefObject<HTMLImageElement>} src={`${ImagePath}/${item}`} alt="" className="w-100 h-100" />
+                        <Image ref={ref as React.MutableRefObject<HTMLImageElement>} src={`${ImagePath}/${item}`} alt="" className="w-100 h-100" />
                       </div>
                     </Link>
                   )}

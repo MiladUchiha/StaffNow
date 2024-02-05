@@ -3,7 +3,7 @@ import { TodayTasksData } from "@/Data/General/Dashboard/Project";
 import { useAppSelector } from "@/Redux/Hooks";
 import Link from "next/link";
 import { CommonDropdown } from "../../common/CommonDropdown";
-
+import Image from "next/image";
 const TodayTasksBody = () => {
 const { i18LangStatus } = useAppSelector((store) => store.langSlice);
   return (
@@ -17,15 +17,15 @@ const { i18LangStatus } = useAppSelector((store) => store.langSlice);
           <div className="d-flex align-items-center gap-2">
             <div className="flex-shrink-0">
               {!data.img1 ? (
-                <img src={`${ImagePath}/dashboard-2/user/${data.img}`} alt="user"/>
+                <Image src={`${ImagePath}/dashboard-2/user/${data.img}`} alt="user"/>
               ) : (
                 <div className="customers social-group">
                   <ul>
                     <li className="d-inline-block">
-                      <img className="rounded-circle border-0" src={`${ImagePath}/dashboard-2/user/${data.img}`} alt="users" />
+                      <Image className="rounded-circle border-0" src={`${ImagePath}/dashboard-2/user/${data.img}`} alt="users" />
                     </li>
                     <li className="d-inline-block">
-                      <img className="rounded-circle" src={`${ImagePath}/dashboard-2/user/${data.img1}`} alt="users" />
+                      <Image className="rounded-circle" src={`${ImagePath}/dashboard-2/user/${data.img1}`} alt="users" />
                     </li>
                   </ul>
                 </div>

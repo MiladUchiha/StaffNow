@@ -1,6 +1,6 @@
 import { Custom, ImagePath } from "@/Constant";
 import { Col, Input, Label } from "reactstrap";
-
+import Image from "next/image";
 const CustomImagesWithRadio = () => {
   return (
     <Col xxl="3" sm="6">
@@ -9,7 +9,7 @@ const CustomImagesWithRadio = () => {
         <div className="img-checkbox">
           <Input className="main-img-cover" id="img-radio-1" type="radio" name="radio6"/>
           <Label className="mb-0" htmlFor="img-radio-1" check>
-            <img src={`${ImagePath}/switch/5.jpg`} alt="coffee-beans" />
+            <Image src={`${ImagePath}/switch/5.jpg`} alt="coffee-beans" />
           </Label>
         </div>
       </div>

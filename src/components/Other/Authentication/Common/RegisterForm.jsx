@@ -6,6 +6,7 @@ import { Typeahead } from "react-bootstrap-typeahead";
 import { Field, Form, Formik } from "formik";
 import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image";
 import { Button, Col, FormGroup, Input, Label, Row } from "reactstrap";
 import axios from "axios";
 import { toast } from "sonner";
@@ -47,8 +48,8 @@ export const RegisterForm = ({ logoClass }) => {
     <div>
       <div>
         <Link className={`logo ${logoClass}`} href={`/`}>
-          <img className="img-fluid for-light" src={`${ImagePath}/logo/logo.png`} alt="looginpage" />
-          <img className="img-fluid for-dark" src={`${ImagePath}/logo/logo_dark.png`} alt="looginpage" />
+          <Image className="img-fluid for-light" src={`${ImagePath}/logo/logo.png`} alt="looginpage" />
+          <Image className="img-fluid for-dark" src={`${ImagePath}/logo/logo_dark.png`} alt="looginpage" />
         </Link>
       </div>
       <div className="login-main">

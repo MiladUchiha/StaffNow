@@ -1,6 +1,6 @@
 import { ImagePath, USMeeting } from "@/Constant";
 import { MeetupHoveringList } from "@/Data/BonusUi/Timeline";
-
+import Image from "next/image";
 export const MeetupHoveringTimeline = () => {
   return (
     <li className="timeline-event">
@@ -14,7 +14,7 @@ export const MeetupHoveringTimeline = () => {
             {MeetupHoveringList.map(({ image, name, number }, index) => (
               <div className="designer-profile" key={index}>
                 <div className="designer-wrap">
-                  <img className="designer-img" src={`${ImagePath}/${image}`} alt="profile" />
+                  <Image className="designer-img" src={`${ImagePath}/${image}`} alt="profile" />
                   <div className="designer-content">
                     <h6>{name}</h6>
                     <p>{number}</p>

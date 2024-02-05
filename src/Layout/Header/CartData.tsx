@@ -4,6 +4,7 @@ import { cartDetailsList } from "@/Data/Layout";
 import Link from "next/link";
 import { X } from "react-feather";
 import { Button, Input, InputGroup } from "reactstrap";
+import Image from "next/image";
 
 export const CartData = () => {
   return (
@@ -15,7 +16,7 @@ export const CartData = () => {
           {cartDetailsList.map((item, index) => (
             <li key={index}>
               <div className="d-flex">
-                <img className="img-fluid b-r-5 me-3 img-60" src={`${ImagePath}/other-images/cart-img.jpg`} alt="" />
+                <Image className="img-fluid b-r-5 me-3 img-60" src={`${ImagePath}/other-images/cart-img.jpg`} alt="" />
                 <div className="flex-grow-1">
                   <span className="f-w-600">{item}</span>
                   <div className="qty-box">

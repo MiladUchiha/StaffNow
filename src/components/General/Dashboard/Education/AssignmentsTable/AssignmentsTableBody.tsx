@@ -4,7 +4,7 @@ import { AssignmentsTableBodyType } from "@/Types/DashboardType";
 import Link from "next/link";
 import { Input, Label, Progress } from "reactstrap";
 import { CommonDropdown } from "../../common/CommonDropdown";
-
+import Image from "next/image";
 const AssignmentsTableBody :React.FC<AssignmentsTableBodyType>= ({currentItems}) => {
   const { i18LangStatus } = useAppSelector((state) => state.langSlice);
 
@@ -24,7 +24,7 @@ const AssignmentsTableBody :React.FC<AssignmentsTableBodyType>= ({currentItems})
           <td>
             <div className="d-flex align-items-center">
               <div className="flex-shrink-0">
-                <img src={`${ImagePath}/dashboard-4/user/${data.image}`} alt="user"/>
+                <Image src={`${ImagePath}/dashboard-4/user/${data.image}`} alt="user"/>
               </div>
               <div className="flex-grow-1 ms-2">
                 <Link href={`/${i18LangStatus}/ecommerce/product_page`}><h6>{data.name}</h6></Link>

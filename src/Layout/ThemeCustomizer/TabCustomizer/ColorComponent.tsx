@@ -14,7 +14,7 @@ const ColorComponent = () => {
       document.documentElement.style.setProperty("--theme-secondary", colorBackground2);
       ConfigDB.data.color.primary_color = colorBackground1;
       ConfigDB.data.color.secondary_color = colorBackground2;
-    }, []);
+    });
   
     const addColor = (default_color: string, secondary_color: string) => {
       ConfigDB.data.color.primary_color = default_color;

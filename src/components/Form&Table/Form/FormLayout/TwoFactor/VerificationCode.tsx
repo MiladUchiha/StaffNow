@@ -1,6 +1,7 @@
 import { Call, Href, ImagePath, OtpCode, OtpCodeSent, Resend, VerificationCodeHeading, Verify } from "@/Constant";
 import { useState } from "react";
 import { Button, Col, Form, Input, Row } from "reactstrap";
+import Image from "next/image";
 
 const VerificationCode = () => {
   const numbersData: number[] = [1, 2, 3, 4, 5, 6];
@@ -20,7 +21,7 @@ const VerificationCode = () => {
       <div className="card-wrapper border rounded-3 h-100">
         <div className="authenticate">
           <h4>{VerificationCodeHeading}</h4>
-          <img className="img-fluid" src={`${ImagePath}/forms/authenticate.png`} alt="authenticate" />
+          <Image className="img-fluid" src={`${ImagePath}/forms/authenticate.png`} alt="authenticate" />
           <span>{OtpCodeSent}</span>
           <span>+91********70</span>
           <Form  onSubmit={(event) => event.preventDefault()}>

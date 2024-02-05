@@ -1,7 +1,7 @@
 import { BlogWithoutDetailHeading, ImagePath } from "@/Constant";
 import { BlodData } from "@/Data/Miscellaneous/Blog";
 import { Card, Col, Row } from "reactstrap";
-
+import Image from "next/image";
 const BlogWithDetails = () => {
   return (
     <Col xl="6" className="set-col-12 box-col-12">
@@ -9,7 +9,7 @@ const BlogWithDetails = () => {
         <Card key={index}>
           <Row className="blog-box blog-list">
             <Col sm="5">
-              <img className="img-fluid sm-100-w" src={`${ImagePath}/blog/blog-${data.image}.jpg`} alt="images"/>
+              <Image className="img-fluid sm-100-w" src={`${ImagePath}/blog/blog-${data.image}.jpg`} alt="images"/>
             </Col>
             <Col sm="7">
               <div className="blog-details">

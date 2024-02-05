@@ -17,7 +17,7 @@ const { i18LangStatus } = useAppSelector((store) => store.langSlice);
             {RecentCustomerData.map((data, i) => (
               <li className="d-flex align-items-center gap-2" key={i}>
                 <div className="flex-shrink-0">
-                  <img src={`${ImagePath}/dashboard-3/user/${data.image}`} alt="users" />
+                  <Image src={`${ImagePath}/dashboard-3/user/${data.image}`} alt="users" />
                 </div>
                 <div className="flex-grow-1">
                   <Link href={`/${i18LangStatus}/ecommerce/cart`}><h5>{data.name}</h5></Link>

@@ -1,4 +1,4 @@
-import { CryptoDashboard, DailyOrders, DailyRevenue, Href, OrdersValue, PodcastWebdesign, SocialPostDesign, TotalSell, WebsiteDesign } from "@/Constant";
+import { CryptoDashboard, DailyOrders, DailyRevenue, Href, OrdersValue, PodcastWebdesign, SocialPostDesign, TotalSell, WebsiteDesign } from "../../../../Constant";
 import { ApexOptions } from "apexcharts";
 
 const primary = "#7A70BA";

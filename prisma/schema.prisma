@@ -58,17 +58,19 @@ model BemannasKonto {
 
 model Mission {
   id             String    @id @default(auto()) @map("_id") @db.ObjectId
+  title         String
   jobTitle       String
-  jobCategory    String
+  payway        String
+  priority      String
+  area          String
   antalPersonal  String
   description    String
-  address         String
   startDate      String
   endDate        String
-  timmar         String
   createdAt      DateTime  @default(now())
   updatedAt      DateTime  @updatedAt
- 
-   bemannasKontoId     String    @db.ObjectId
+  done          Boolean   @default(false)
+
+  bemannasKontoId     String    @db.ObjectId
   bemannasKonto       BemannasKonto @relation(fields: [bemannasKontoId], references: [id])
 }

@@ -125,7 +125,7 @@ const AddMissionForm = ({ user, className }) => {
       <main key="1" className="space-y-8 max-w-xl sm:w-1/3">
         <Card>
           <form onSubmit={handleSubmit}>
-          <CardHeader className="font-bold text-lg">Lägga till uppdrag</CardHeader>
+          <CardHeader className="font-bold text-lg">Lägga till uppdrag {user.name}</CardHeader>
           <CardContent className="grid gap-4">
             
             <Popover open={open} onOpenChange={setOpen}>

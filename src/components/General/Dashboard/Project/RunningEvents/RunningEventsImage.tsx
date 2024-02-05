@@ -1,12 +1,12 @@
 import { ImagePath } from "@/Constant";
 import { Col } from "reactstrap";
-
+import Image from "next/image";
 const RunningEventsImage = () => {
   return (
     <Col xs="6" className="running-events">
-      <img src={`${ImagePath}/dashboard-2/round.png`} alt="dashboard" />
+      <Image src={`${ImagePath}/dashboard-2/round.png`} alt="dashboard" />
       <div>
-        <img className="running-events-image" src={`${ImagePath}/dashboard-2/events-bg.png`} alt="dashboard"/>
+        <Image className="running-events-image" src={`${ImagePath}/dashboard-2/events-bg.png`} alt="dashboard"/>
       </div>
     </Col>
   );

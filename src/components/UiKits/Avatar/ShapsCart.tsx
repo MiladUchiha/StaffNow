@@ -2,7 +2,7 @@ import CommonCardHeader from "@/CommonComponent/CommonCardHeader";
 import { ImagePath, Shapes } from "@/Constant";
 import { Shaps, ShapsData } from "@/Data/Uikits/avatars";
 import { Card, CardBody, Col } from "reactstrap";
-
+import Image from "next/image";
 const ShapsCart = () => {
   return (
     <Col xl="4" md="6">
@@ -11,11 +11,11 @@ const ShapsCart = () => {
         <CardBody className="avatar-showcase">
           <div className="avatars">
             <div className="avatar">
-              <img className="img-100 b-r-8" src={`${ImagePath}/avtar/4.jpg`} alt="image" />
+              <Image className="img-100 b-r-8" src={`${ImagePath}/avtar/4.jpg`} alt="image" />
             </div>
             {Shaps.map(({ className, src }, index) => (
               <div className="avatar" key={index}>
-                <img className={`${className} b-r-30`} src={`${ImagePath}${src}`} alt="image" />
+                <Image className={`${className} b-r-30`} src={`${ImagePath}${src}`} alt="image" />
               </div>
             ))}
           </div>

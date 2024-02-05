@@ -11,7 +11,7 @@ const GroupChatContainer = () => {
   useEffect(() => {
     dispatch(fetchChatMemberApiData());
     dispatch(fetchChatApiData());
-  }, []);
+  });
 
   return (
     <Container fluid>

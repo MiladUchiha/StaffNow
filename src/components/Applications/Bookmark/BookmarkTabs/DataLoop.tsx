@@ -6,6 +6,7 @@ import { Card, Col, Row } from "reactstrap";
 import SweetAlert from "sweetalert2";
 import SearchNotFoundClass from "../../Contact/TabData/SearchNotFoundClass";
 import DescriptionData from "./DescriptionData";
+import Image from "next/image";
 
 const DataLoop = () => {
   const { bookmark } = useAppSelector((state) => state.bookmarkTab);
@@ -52,7 +53,7 @@ const DataLoop = () => {
           <Col xxl="3" md="4" sm="6" key={index} className="col-ed-4">
             <Card className="card-with-border bookmark-card o-hidden">
               <div className="details-website">
-                <img className="img-fluid" src={`${ImagePath}/${data.image}`} alt="image" />
+                <Image className="img-fluid" src={`${ImagePath}/${data.image}`} alt="image" />
                 <div className={`favourite-icon favourite_0 ${data.fillStar ? "favourite" : ""}`} onClick={() => addToFavorites(data)}>
                   <a href={Href}><i className="fa fa-star"></i></a>
                 </div>

@@ -2,7 +2,7 @@ import { Href, ImagePath } from "@/Constant";
 import { WhishListProduct } from "@/Data/Application/Ecommerce";
 import { Rating } from "react-simple-star-rating";
 import { Button, Col, Row } from "reactstrap";
-
+import Image from "next/image";
 export const WishlistData = () => {
 
   return (
@@ -11,7 +11,7 @@ export const WishlistData = () => {
         <Col xl="4" md="6" key={index}>
           <div className="prooduct-details-box">
             <div className="d-flex">
-              <img className="align-self-center img-fluid img-60" src={`${ImagePath}/ecommerce/${item.image}`} alt="#" />
+              <Image className="align-self-center img-fluid img-60" src={`${ImagePath}/ecommerce/${item.image}`} alt="#" />
               <div className="flex-grow-1 ms-3">
                 <div className="product-name">
                   <h6><a href={Href}>{item.name}</a></h6>

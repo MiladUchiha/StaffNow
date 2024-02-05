@@ -3,7 +3,7 @@ import { ImNotSure, ImagePath, RemoveMyAccount, UniqueToasts, YourAccountWillBeP
 import { UniqueToastData } from "@/Data/BonusUi/Toaste";
 import { useState } from "react";
 import { Button, Card, CardBody, Col, Toast, ToastBody } from "reactstrap";
-
+import Image from "next/image";
 const UniqueToast = () => {
   const [open, setOpen] = useState(true);
   
@@ -14,7 +14,7 @@ const UniqueToast = () => {
         <CardBody className="toast-rtl">
           <Toast fade isOpen={open}>
             <div className="toast-header toast-img">
-              <img className="rounded me-2" src={`${ImagePath}/other-images/profile.png`} alt="profile" />
+              <Image className="rounded me-2" src={`${ImagePath}/other-images/profile.png`} alt="profile" />
               <strong className="me-auto">Mofi theme</strong>
               <Button close className="p-0" onClick={() => setOpen(false)}></Button>
             </div>

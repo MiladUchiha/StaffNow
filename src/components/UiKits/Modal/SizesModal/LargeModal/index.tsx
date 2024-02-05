@@ -13,7 +13,7 @@ const LargeModal = () => {
       <Button color="success" onClick={largeScreenToggle}>{LargeModals}</Button>
       <CommonModal size="lg" isOpen={largeScreen} toggle={largeScreenToggle} sizeTitle="Large modal" modalBodyClassName="dark-modal">
         <div className="large-modal-header mb-2"><ChevronsRight /><h5 className="f-w-600">{StartWithYourGoals}</h5></div>
-        <p className="modal-padding-space mb-0">No matter how talented you are as a content writer or creator, you will always fail if you don't have a clear set of goals.</p>
+        <p className="modal-padding-space mb-0">No matter how talented you are as a content writer or creator, you will always fail if you dont have a clear set of goals.</p>
         <p className="modal-padding-space mb-0">First of all, without goals, there is no way to determine your success. Additionally, you lack direction.</p>
         <p className="modal-padding-space mb-2">Together with your team, respond to the following questions to make sure they are:</p>
         <div className="large-modal-body"><CornerUpRight /><p className="ps-1 mb-2">What must you achieve, and by when?</p></div>

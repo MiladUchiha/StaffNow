@@ -4,7 +4,7 @@ import { CurrentItemsType } from "@/Types/DashboardType";
 import Link from "next/link";
 import { Input, Label } from "reactstrap";
 import { CommonDropdown } from "../../common/CommonDropdown";
-
+import Image from "next/image";
 export const ProjectsTableBody :React.FC<CurrentItemsType> = ({currentItems}) => {
   const { i18LangStatus } = useAppSelector((state) => state.langSlice);
 
@@ -21,7 +21,7 @@ export const ProjectsTableBody :React.FC<CurrentItemsType> = ({currentItems}) =>
           <td>
             <div className="d-flex align-items-center">
               <div className="flex-shrink-0">
-                <img src={`${ImagePath}/dashboard/project/${item.image}.png`} alt="" />
+                <Image src={`${ImagePath}/dashboard/project/${item.image}.png`} alt="" />
               </div>
               <div className="flex-grow-1 ms-2">
                 <Link href={`/${i18LangStatus}/ecommerce/product_page`}>

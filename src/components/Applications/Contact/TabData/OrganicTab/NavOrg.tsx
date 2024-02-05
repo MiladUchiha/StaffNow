@@ -3,7 +3,7 @@ import { OrganizationData } from "@/Data/Application/Contacts";
 import { NavOrgPropType } from "@/Types/ContactType";
 import { useState } from "react";
 import { Col, Nav, NavItem, NavLink } from "reactstrap";
-
+import Image from "next/image";
 const NavOrg :React.FC<NavOrgPropType> = ({ callback }) => {
   const [organizationTab, setOrganizationTab] = useState("1");
   const handleTabs = (tab: string) => {
@@ -18,7 +18,7 @@ const NavOrg :React.FC<NavOrgPropType> = ({ callback }) => {
           <NavItem id="myTab" key={item.id}>
             <NavLink href={Href} className={organizationTab === item.activeTab ? "active" : ""} onClick={() => handleTabs(item.activeTab)}>
                 <div className="d-flex">
-                <img className="p-0 img-50 img-fluid m-r-20 rounded-circle" src={`${ImagePath}/user/${item.image}`} alt="Image" />
+                <Image className="p-0 img-50 img-fluid m-r-20 rounded-circle" src={`${ImagePath}/user/${item.image}`} alt="Image" />
                 <div className="flex-grow-1">
                   <h3>{item.name}</h3>
                   <p>{item.email}</p>

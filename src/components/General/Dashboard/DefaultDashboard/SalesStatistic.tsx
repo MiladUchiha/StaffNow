@@ -4,7 +4,7 @@ import ReactApexChart from "react-apexcharts";
 import { Card, CardBody, Col, Row } from "reactstrap";
 import { CommonDropdown } from "../common/CommonDropdown";
 import DashboardCommonHeader from "../common/DashboardCommonHeader";
-
+import Image from "next/image";
 const SalesStatistic = () => {
   return (
     <Col xxl="7" xl="12" className="box-col-12 proorder-xl-8 proorder-md-9">
@@ -16,7 +16,7 @@ const SalesStatistic = () => {
               <Col xs="3" className="statistic-icon" key={i}>
                 <div className="light-card balance-card widget-hover">
                   <div className="icon-box">
-                    <img src={`${ImagePath}/dashboard/icon/${data.img}`} alt="icons" />
+                    <Image src={`${ImagePath}/dashboard/icon/${data.img}`} alt="icons" />
                   </div>
                   <div>
                     <span className="f-w-500 f-light">{data.title}</span>

@@ -2,7 +2,7 @@
 'use client'
 
 import ScrollspyNav from 'react-scrollspy-nav'
-import React from 'react'
+import React from 'react';
 
 export default function DocScrollNavTwo() {
   return (

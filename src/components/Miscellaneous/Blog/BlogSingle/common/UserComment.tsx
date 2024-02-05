@@ -2,7 +2,7 @@ import { ImagePath } from "@/Constant";
 import { UserCommentPropsType } from "@/Types/BlogType";
 import { Col, Row } from "reactstrap";
 import { ChildUserComment } from "../ChildUserComment";
-
+import Image from "next/image";
 const UserComment: React.FC<UserCommentPropsType> = ({ ImageSrc, userReplay, text }) => {
 
   return (
@@ -11,7 +11,7 @@ const UserComment: React.FC<UserCommentPropsType> = ({ ImageSrc, userReplay, tex
         <ul className="mx-0">
           <li>
             <div className="d-flex align-self-center">
-              <img className="align-self-center" src={`${ImagePath}/blog/${ImageSrc}`} alt="Generic placeholder" />
+              <Image className="align-self-center" src={`${ImagePath}/blog/${ImageSrc}`} alt="Generic placeholder" />
               <div className="flex-grow-1">
                 <Row>
                   <Col md="4" className="xl-100">

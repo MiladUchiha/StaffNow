@@ -1,7 +1,7 @@
 import { DalbultCaslin, ImagePath } from "@/Constant";
 import { TabContentProp } from "@/Types/UikitsType";
 import { CardBody, TabContent, TabPane } from "reactstrap";
-
+import Image from "next/image";
 export const MaterialLeftSideTabContent:React.FC<TabContentProp> = ({ basicTab }) => {
   return (
     <div className="material-content">
@@ -12,7 +12,7 @@ export const MaterialLeftSideTabContent:React.FC<TabContentProp> = ({ basicTab }
         <TabPane tabId="2">
          <p className="mb-0"></p>
          <div className="flex-space flex-wrap align-items-center">
-          <img className="tab-img" src={`${ImagePath}/ecommerce/08.jpg`} alt="profile"/>
+          <Image className="tab-img" src={`${ImagePath}/ecommerce/08.jpg`} alt="profile"/>
            <ul className="d-flex flex-column gap-1">
              <li> <strong> Name: </strong> Jully Catlin</li>
              <li><strong>Visit Us: </strong> 50006 Ehrenberg/Parker,Arkansas-85334</li>
@@ -26,7 +26,7 @@ export const MaterialLeftSideTabContent:React.FC<TabContentProp> = ({ basicTab }
             <div className="main-inbox"> 
               <div className="header-inbox justify-content-start gap-2">
                 <div className="header-left-inbox">
-                  <div className="inbox-img"><img src={`${ImagePath}/ecommerce/07.jpg`} alt="profile" /></div>
+                  <div className="inbox-img"><Image src={`${ImagePath}/ecommerce/07.jpg`} alt="profile" /></div>
                 </div>
                 <div className="inbox-content"> 
                   <h6>{DalbultCaslin}</h6>
@@ -41,7 +41,7 @@ export const MaterialLeftSideTabContent:React.FC<TabContentProp> = ({ basicTab }
           </CardBody>
         </TabPane>
         <TabPane tabId="4">
-          <p><strong> In this situation, you would probably do two things:</strong> exit the page, or look for the trusty search bar. If you decide to stick around, a proper search function should take your query and send you to your destination. Problem solved. It's not a perfect experience, but it's a hard one to avoid on larger websites that simply can't link to every piece of content from the homepage.</p>
+          <p><strong> In this situation, you would probably do two things:</strong> exit the page, or look for the trusty search bar. If you decide to stick around, a proper search function should take your query and send you to your destination. Problem solved. Its not a perfect experience, but its a hard one to avoid on larger websites that simply cant link to every piece of content from the homepage.</p>
         </TabPane>
       </TabContent>
     </div>

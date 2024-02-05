@@ -4,7 +4,7 @@ import { ScrollableContentData } from "@/Data/BonusUi/Scrollable";
 import ScrollBar from "react-perfect-scrollbar";
 import { Card, CardBody, Col, ListGroup, ListGroupItem } from "reactstrap";
 import { DynamicScrollableContent } from "./DynamicScrollableContent";
-
+import Image from "next/image";
 const ScrollableContent = () => {
   return (
     <Col xxl="4" md="12">
@@ -15,7 +15,7 @@ const ScrollableContent = () => {
             <ListGroup className="main-lists-content">
               <ListGroupItem tag="a" className="list-group-item-action active list-hover-primary" href={Href}>
                 <div className="list-wrapper gap-0">
-                  <img className="list-img" src={`${ImagePath}/user/9.jpg`} alt="profile" />
+                  <Image className="list-img" src={`${ImagePath}/user/9.jpg`} alt="profile" />
                   <div className="list-content">
                     <h6>Molly Boake</h6>
                     <p>MollyBoake@rhyta.com</p><small>5 days ago</small></div>

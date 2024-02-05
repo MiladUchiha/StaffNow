@@ -1,6 +1,6 @@
 import { ErrorMessage, Field } from "formik";
 import { Col, FormGroup, Label, Row } from "reactstrap";
-import { ProjectStatus, ProjectProgress, ProjectProgressPlaceholder, FixPrice, Hourly, Priority, Low, Medium, High, Urgent, PriorityPlaceholder } from "@/Constant";
+import { ProjectStatus, ProjectProgress, ProjectProgressPlaceholder, FixPrice, Hourly, Priority, Low, Medium, High, Urgent, PriorityPlaceholder } from "../../../../Constant";
 
 export const ProjectSection = () => {
   return (

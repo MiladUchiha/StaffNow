@@ -7,7 +7,7 @@ var react_bootstrap_typeahead_1 = require("react-bootstrap-typeahead");
 var Constant_1 = require("@/Constant");
 var Blog_1 = require("@/Data/Miscellaneous/Blog");
 var react_simplemde_editor_1 = require("react-simplemde-editor");
-exports.FormPost = function () {
+var FormPost = function () {
     return (React.createElement(reactstrap_1.Form, { className: " needs-validation" },
         React.createElement(reactstrap_1.Row, null,
             React.createElement(reactstrap_1.Col, { sm: "12" },
@@ -30,3 +30,6 @@ exports.FormPost = function () {
                                 ":"),
                             React.createElement(react_simplemde_editor_1["default"], { id: "editor_container", value: Constant_1.BlogPostText, options: { autofocus: true, spellChecker: false } }))))))));
 };
+FormPost.displayName = "FormPost";
+
+exports.FormPost = FormPost;

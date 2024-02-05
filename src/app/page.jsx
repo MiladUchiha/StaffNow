@@ -63,7 +63,7 @@ export default async function Home() {
             <div className="row">
               <div className="col-xl-8 col-lg-10 m-auto">
                 <h1 className=" sm:text-5xl text-3xl font-gilroy-bold">
-                <span className=" text-blue-600 underline">StaffNow</span> bemanna och bli bemannad 
+                <span className=" text-blue-600 underline">StaffNow</span>  -Effektiva lösningar för projektbemanning
                 </h1>
                 <p className="hero-sub-heading">
                Staffnow marknadens smartaste lösning för bemanning

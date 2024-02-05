@@ -1,13 +1,13 @@
 import { ImagePath } from "@/Constant";
 import { GroupChatHeader } from "@/Data/Application/Chats";
-
+import Image from "next/image";
 const GroupImages = () => {
   return (
     <div className="chat-time group-chat">
       <ul>
         {GroupChatHeader.map((data, i) => (
           <li key={i}>
-            <img className="img-fluid rounded-circle" src={`${ImagePath}/${data}`} alt="user" />
+            <Image className="img-fluid rounded-circle" src={`${ImagePath}/${data}`} alt="user" />
           </li>
         ))}
         <li>

@@ -4,6 +4,7 @@ import { useAppDispatch, useAppSelector } from "@/Redux/Hooks";
 import { handleResponsiveToggle } from "@/Redux/Reducers/LayoutSlice";
 import Link from "next/link";
 import { Col } from "reactstrap";
+import Image from "next/image";
 
 export const HeaderLogo = () => {
   const dispatch = useAppDispatch();
@@ -13,7 +14,7 @@ export const HeaderLogo = () => {
     <Col className="header-logo-wrapper p-0">
       <div className="logo-wrapper">
         <Link href={`/${i18LangStatus}/sample_page`}>
-          <img className="img-fluid" src={`${ImagePath}/logo/logo.png`} alt="" />
+          <Image className="img-fluid" src={`${ImagePath}/logo/logo.png`} alt="" />
         </Link>
       </div>
       <div className="toggle-sidebar" onClick={()=>dispatch(handleResponsiveToggle())}>

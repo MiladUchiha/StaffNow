@@ -5,7 +5,7 @@ import Link from "next/link";
 import ReactApexChart from "react-apexcharts";
 import { Input, Label } from "reactstrap";
 import { CommonDropdown } from "../../common/CommonDropdown";
-
+import Image from "next/image";
 const RecentProjectsTableBody = () => {
 const { i18LangStatus } = useAppSelector((store) => store.langSlice);
   return (
@@ -25,7 +25,7 @@ const { i18LangStatus } = useAppSelector((store) => store.langSlice);
             <ul>
               {data.images.map((item, i) => (
                 <li className="d-inline-block" key={i}>
-                  {item.image !== "" ? <img className="img-30 rounded-circle" src={`${ImagePath}/dashboard-2/user/${item.image}`} alt="users" /> : <p className="bg-light rounded-circle">5+</p>}
+                  {item.image !== "" ? <Image className="img-30 rounded-circle" src={`${ImagePath}/dashboard-2/user/${item.image}`} alt="users" /> : <p className="bg-light rounded-circle">5+</p>}
                 </li>
               ))}
             </ul>

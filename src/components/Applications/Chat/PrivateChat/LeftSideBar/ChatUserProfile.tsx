@@ -4,7 +4,7 @@ import { changeChat, createNewChatAsync } from "@/Redux/Reducers/ChatSlice";
 import { Badge } from "reactstrap";
 import { AllMemberType, ChatsTypes } from "@/Types/ChatType";
 import SearchNotFoundClass from "@/Components/Applications/Contact/TabData/SearchNotFoundClass";
-
+import Image from "next/image";
 const ChatUserProfile = () => {
   const { members, selectedUser, currentUser, chats } = useAppSelector((state) => state.chat);
   var activeChat = 0;
@@ -29,7 +29,7 @@ const ChatUserProfile = () => {
               <li className={`common-space ${activeChat === item.id ? "active" : ""}`} key={id} onClick={() => changeChatClick(item.id)}>
                 <div className="chat-time">
                   <div className="active-profile">
-                    <img className="img-fluid rounded-circle" src={`${ImagePath}/${item.image}`} alt="user" />
+                    <Image className="img-fluid rounded-circle" src={`${ImagePath}/${item.image}`} alt="user" />
                     <div className={`status bg-${item.online}`} />
                   </div>
                   <div>

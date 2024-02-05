@@ -2,7 +2,7 @@ import { ImagePath } from '@/Constant'
 import { SocialWidgetsData } from '@/Data/General/Widgets/General'
 import ReactApexChart from 'react-apexcharts'
 import { Card, CardBody, Col } from 'reactstrap'
-
+import Image from "next/image";
 const SocialWidget = () => {
   return (
     <>
@@ -13,7 +13,7 @@ const SocialWidget = () => {
               <div className="d-flex align-items-center justify-content-between">
                 <div className="d-flex align-items-center gap-2">
                   <div className="social-icons">
-                    <img src={`${ImagePath}/dashboard/social/${data.image}.png`} alt={data.alt}/>
+                    <Image src={`${ImagePath}/dashboard/social/${data.image}.png`} alt={data.alt}/>
                   </div>
                   <span className='f-w-600'>{data.title}</span>
                 </div>

@@ -3,6 +3,7 @@ import { CheckAll, Href, ImagePath, Messages } from "@/Constant";
 import { MessageData } from "@/Data/Layout";
 import Link from "next/link";
 import { Badge } from "reactstrap";
+import Image from "next/image";
 
 export const MessageBox = () => {
   return (
@@ -17,7 +18,7 @@ export const MessageBox = () => {
           {MessageData.map((item, index) => (
             <li className={`d-flex b-light1-${item.color} gap-2`} key={index}>
               <div className="flex-shrink-0">
-                <img src={`${ImagePath}/dashboard-2/user/${item.image}`} alt="Graph" />
+                <Image src={`${ImagePath}/dashboard-2/user/${item.image}`} alt="Graph" />
               </div>
               <div className="flex-grow-1">
                 <Link href={Href}>

@@ -1,6 +1,7 @@
 import { ImagePath } from "@/Constant";
 import { ImageWithRadioDataList } from "@/Data/Form&Table/Form";
 import { Col, Input, Label } from "reactstrap";
+import Image from "next/image";
 
 const DynamicImagesWithRadio = () => {
   return (
@@ -12,7 +13,7 @@ const DynamicImagesWithRadio = () => {
           <div className="img-checkbox">
             <Input className="main-img-cover" id={id} type="radio" name="radio6" defaultChecked={defaultChecked} disabled={disabled} />
             <Label className="mb-0" htmlFor={id} check>
-              <img src={`${ImagePath}/switch/${src}.jpg`} alt={alt} />
+              <Image src={`${ImagePath}/switch/${src}.jpg`} alt={alt} />
             </Label>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import { ImagePath } from "@/Constant";
 import { OfferBorderStyleDataList } from "@/Data/Form&Table/Form";
 import { Card, Col, Form, FormGroup, Input, Label, Row } from "reactstrap";
-
+import Image from "next/image";
 const OfferStyleBorderForm = () => {
   return(
     <Form className="mega-inline offer-style">
@@ -16,7 +16,7 @@ const OfferStyleBorderForm = () => {
                     <span className="flex-grow-1">
                       <span className="d-flex list-behavior-1">
                         <span className="flex-shrink-0">
-                          <img className="tab-img b-r-0 img-fluid" src={`${ImagePath}/${image}`} alt="image"/>
+                          <Image className="tab-img b-r-0 img-fluid" src={`${ImagePath}/${image}`} alt="image"/>
                         </span>
                         <span className="flex-grow-1">
                           <span className="mb-0">{spanText}</span>

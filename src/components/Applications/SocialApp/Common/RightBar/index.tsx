@@ -5,7 +5,7 @@ import FollowingsCard from "./FollowingsCard";
 import FriendsCard from "./FriendsCard";
 import LatestPhotos from "./LatestPhotos";
 import ProfileIntroCard from "./ProfileIntroCard";
-
+import Image from "next/image";
 const RightBar = () => {
   return (
     <>
@@ -27,7 +27,7 @@ const RightBar = () => {
         </Col>
         <Col xl="12" lg="4" md="6" sm="12" className="xl-50 box-col-6">
           <Card>
-            <img className="img-fluid rounded-3 w-100" src={`${ImagePath}/social-app/timeline-4.png`} alt="timeline"/>
+            <Image className="img-fluid rounded-3 w-100" src={`${ImagePath}/social-app/timeline-4.png`} alt="timeline"/>
           </Card>
         </Col>
       </div>

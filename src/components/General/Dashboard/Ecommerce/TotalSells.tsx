@@ -3,6 +3,7 @@ import { TopSellData } from "@/Data/General/Dashboard/Ecommerce";
 import ReactApexChart from "react-apexcharts";
 import { Card, CardBody, Col } from "reactstrap";
 import DashboardCommonHeader from "../common/DashboardCommonHeader";
+import Image from "next/image";
 
 const TotalSells = () => {
   return (
@@ -14,7 +15,7 @@ const TotalSells = () => {
             <CardBody className={`pb-0 ${data.class}`}>
               <div className="d-flex align-items-center gap-3">
                 <div className="flex-shrink-0">
-                  <img src={`${ImagePath}/dashboard-3/icon/${data.image}`} alt="icon" />
+                  <Image src={`${ImagePath}/dashboard-3/icon/${data.image}`} alt="icon" />
                 </div>
                 <div className="flex-grow-1">
                   <div className="d-flex align-items-center gap-2">

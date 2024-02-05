@@ -1,5 +1,6 @@
 import { ImagePath } from "@/Constant";
 import { Table } from "reactstrap";
+import Image from "next/image";
 
 const InvoiceHeader = () => {
   return (
@@ -8,8 +9,8 @@ const InvoiceHeader = () => {
         <tbody>
           <tr>
             <td>
-              <img className="img-fluid for-light" src={`${ImagePath}/logo/logo.png`} alt="logo" />
-              <img className="img-fluid for-dark" src={`${ImagePath}/logo/logo_light.png`} alt="logo" />
+              <Image className="img-fluid for-light" src={`${ImagePath}/logo/logo.png`} alt="logo" />
+              <Image className="img-fluid for-dark" src={`${ImagePath}/logo/logo_light.png`} alt="logo" />
               <span style={{ opacity: "0.8", display: "block", marginTop: 10 }} >
                 202-555-0258
               </span>

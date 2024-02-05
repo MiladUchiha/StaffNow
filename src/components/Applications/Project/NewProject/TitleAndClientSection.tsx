@@ -1,6 +1,6 @@
 import { Field, ErrorMessage } from "formik";
 import { Col, FormGroup, Label, Row } from "reactstrap";
-import { ClientName, ClientNamePlaceholder, ProjectTitle, ProjectTitlePlaceholder } from "@/Constant";
+import { ClientName, ClientNamePlaceholder, ProjectTitle, ProjectTitlePlaceholder } from "../../../../Constant";
 
 export const TitleAndClientSection = () => {
   return (

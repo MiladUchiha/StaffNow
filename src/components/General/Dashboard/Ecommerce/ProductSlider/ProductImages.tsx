@@ -1,20 +1,20 @@
 import { Col, Row } from "reactstrap";
 import { Carousel } from "react-responsive-carousel";
 import { ImagePath } from "@/Constant";
-
+import Image from "next/image";
 const ProductImages = () => {
   return (
     <Col sm="6">
       <div className="product-page-main p-0">
         <Carousel className="owl-carousel owl-theme" showStatus={false} showIndicators={false} showArrows={false}>
           <div className="item">
-            <img className="img-fluid" src={`${ImagePath}/dashboard-3/slider/4.png`} />
+            <Image className="Image-fluid" src={`${ImagePath}/dashboard-3/slider/4.png`} />
           </div>
           <div className="item">
-            <img className="img-fluid" src={`${ImagePath}/dashboard-3/slider/5.png`} />
+            <Image className="img-fluid" src={`${ImagePath}/dashboard-3/slider/5.png`} />
           </div>
           <div className="item">
-            <img className="img-fluid" src={`${ImagePath}/dashboard-3/slider/6.png`} />
+            <Image className="img-fluid" src={`${ImagePath}/dashboard-3/slider/6.png`} />
           </div>
         </Carousel>
       </div>

@@ -2,7 +2,7 @@ import { ImagePath } from "@/Constant";
 import { CarouselDataProp, CommonCarouselProp } from "@/Types/BonusUiType";
 import { useState } from "react";
 import { Carousel, CarouselCaption, CarouselControl, CarouselIndicators, CarouselItem } from "reactstrap";
-
+import Image from "next/image";
 const CommonCarousel :React.FC<CommonCarouselProp> = ({ dark,data, control, indecators, caption, slide, interval, ride, fade ,lightCaption}) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
@@ -27,7 +27,7 @@ const CommonCarousel :React.FC<CommonCarouselProp> = ({ dark,data, control, inde
   const slides = data.map((item:CarouselDataProp) => {
     return (
       <CarouselItem onExiting={() => setAnimating(true)} onExited={() => setAnimating(false)} key={item.id}>
-        <img src={`${ImagePath}/${item.image}`} alt="drawing-room" className="d-block w-100 h-100" />
+        <Image src={`${ImagePath}/${item.image}`} alt="drawing-room" className="d-block w-100 h-100" />
         {caption && <CarouselCaption className={`d-none d-md-block ${lightCaption ? "carousel-opacity":""}`} captionText={item.captionText} captionHeader={item.captionHeader} />}
       </CarouselItem>
     );

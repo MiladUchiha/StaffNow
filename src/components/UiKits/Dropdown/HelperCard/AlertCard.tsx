@@ -13,7 +13,7 @@ export const AlertCard = () => {
         <DropdownMenu className="dropdown-block p-3 dark-form">
           <li>
             <h6 className="fs-6 fw-bold pb-2">{Danger}</h6>
-            <DropdownItem className="p-0 helper-truncate" href={Href}>TIt's a danger path.</DropdownItem>
+            <DropdownItem className="p-0 helper-truncate" href={Href}>TIts a danger path.</DropdownItem>
           </li>
         </DropdownMenu>
       </Dropdown>

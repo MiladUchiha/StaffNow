@@ -9,6 +9,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { Button, FormGroup, Input, Label } from "reactstrap";
 import { toast } from "sonner";
+import Image from "next/image";
 
 export default function LoginForm({ password, logoClass, validation }) {
   const [data, setData] = useState({
@@ -45,7 +46,7 @@ export default function LoginForm({ password, logoClass, validation }) {
     <div>
       <div>
         <Link className={` logo ${logoClass ? logoClass : " "} flex`} href={`/`} >
-          <img className="img-fluid for-light" src={`logo.png`} width={100} height={100} alt="looginpage" />
+          <Image className="img-fluid for-light" src={`logo.png`} width={100} height={100} alt="looginpage" />
           <span className="ml-2 text-3xl font-bold tracking-wide text-gray-800">StaffNow</span>
 
         </Link>

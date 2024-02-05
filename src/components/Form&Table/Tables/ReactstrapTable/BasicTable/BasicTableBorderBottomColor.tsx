@@ -3,6 +3,7 @@ import { BasicTableWithBorderBottomColor, ImagePath } from "@/Constant";
 import { BasicTableBody, BasicTableBorderColor, BasicTableHead } from "@/Data/Form&Table/Table/ReactstrapTable/BasicTable";
 import { Badge, Card, Col } from "reactstrap";
 import CommonTable from "./Common/CommonTable";
+import Image from "next/image";
 
 const BasicTableBorderBottomColor = () => {
   return (
@@ -14,7 +15,7 @@ const BasicTableBorderBottomColor = () => {
             <tr className={`border-bottom-${data.color}`} key={data.id}>
               <th scope="row">{data.id}</th>
               <td>
-                <img className="img-30 me-2" src={`${ImagePath}/${data.image}`} alt="users" />
+                <Image className="img-30 me-2" src={`${ImagePath}/${data.image}`} alt="users" />
                 {data.firstname}
               </td>
               <td>{data.lastName}</td>

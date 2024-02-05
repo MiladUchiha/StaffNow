@@ -4,7 +4,7 @@ import { ClientActivityBodyType } from "@/Types/DashboardType";
 import Link from "next/link";
 import { Input, Label, Progress } from "reactstrap";
 import { CommonDropdown } from "../../common/CommonDropdown";
-
+import Image from "next/image";
 const ClientActivityTableBody :React.FC<ClientActivityBodyType> = ({currentItems}) => {
 const { i18LangStatus } = useAppSelector((store) => store.langSlice);
   return (
@@ -20,7 +20,7 @@ const { i18LangStatus } = useAppSelector((store) => store.langSlice);
           <td className="px-0">
             <div className="d-flex align-items-center">
               <div className="flex-shrink-0">
-                <img src={`${ImagePath}/dashboard-2/svg-icon/${data.image}`} alt="icons"/>
+                <Image src={`${ImagePath}/dashboard-2/svg-icon/${data.image}`} alt="icons"/>
               </div>
               <div className="flex-grow-1 ms-2">
                 <Link href={`/${i18LangStatus}/ecommerce/product_page`}><h5>{data.title}</h5></Link>
@@ -34,7 +34,7 @@ const { i18LangStatus } = useAppSelector((store) => store.langSlice);
               {data.images.map((item, i) => (
                 <li className="d-inline-block" key={i}>
                   {item !== "" ? (
-                    <img className="img-30 rounded-circle" src={`${ImagePath}/dashboard-2/user/${item}`} alt="user" />
+                    <Image className="img-30 rounded-circle" src={`${ImagePath}/dashboard-2/user/${item}`} alt="user" />
                   ) : (
                     <p className="bg-light rounded-circle">5+</p>
                   )}

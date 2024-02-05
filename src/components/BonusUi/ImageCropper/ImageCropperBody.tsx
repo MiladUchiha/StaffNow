@@ -6,7 +6,7 @@ import { useDebounceEffect } from "./useDebounceEffect";
 import { DownloadCrop, HiddenDownload } from "@/Constant";
 import { CropControl } from "./CropControl";
 import { Button } from "reactstrap";
-
+import Image from "next/image";
 const centerAspectCrop = (mediaWidth: number, mediaHeight: number, aspect: number) => {
   return centerCrop(makeAspectCrop({ unit: "%", width: 90 }, aspect, mediaWidth, mediaHeight), mediaWidth, mediaHeight);
 };
@@ -77,7 +77,7 @@ const ImageCropperBody = () => {
       <CropControl imgSrc={imgSrc} scale={scale} setScale={setScale} rotate={rotate} setRotate={setRotate} aspect={aspect} onSelectFile={onSelectFile} handleToggleAspectClick={handleToggleAspectClick} />
       {!!imgSrc && (
         <ReactCrop crop={crop} onChange={(_, percentCrop) => setCrop(percentCrop)} onComplete={(c) => setCompletedCrop(c)} aspect={aspect}>
-          <img ref={imgRef} alt="Crop me" src={imgSrc} style={imgStyle} onLoad={onImageLoad} />
+          <Image ref={imgRef} alt="Crop me" src={imgSrc} style={imgStyle} onLoad={onImageLoad} />
         </ReactCrop>
       )}
       {!!completedCrop && (

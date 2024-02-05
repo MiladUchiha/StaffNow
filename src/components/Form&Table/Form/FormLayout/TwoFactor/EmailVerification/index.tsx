@@ -2,6 +2,7 @@ import { ImagePath } from "@/Constant";
 import { Card, CardBody, Col, Row } from "reactstrap";
 import VerificationCode from "../VerificationCode";
 import EmailVerificationContent from "./EmailVerificationContent";
+import Image from "next/image";
 
 const EmailVerification = () => {
   return (
@@ -14,7 +15,7 @@ const EmailVerification = () => {
                 <Row className="g-1">
                   <Col xxl="4" className="box-col-5">
                     <div className="authenticate">
-                      <img className="img-fluid" src={`${ImagePath}/forms/email.png`} alt="image"/>
+                      <Image className="img-fluid" src={`${ImagePath}/forms/email.png`} alt="image"/>
                     </div>
                   </Col>
                   <EmailVerificationContent/>

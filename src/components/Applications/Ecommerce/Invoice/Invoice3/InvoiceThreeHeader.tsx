@@ -1,5 +1,6 @@
 import { Table } from "reactstrap";
 import { ImagePath, Invoice } from "@/Constant";
+import Image from "next/image";
 
 const InvoiceThreeHeader = () => {
   return (
@@ -8,7 +9,7 @@ const InvoiceThreeHeader = () => {
         <tbody>
           <tr>
             <td style={{ padding: "30px 0" }}>
-              <img src={`${ImagePath}/logo/logo.png`} alt="logo" />
+              <Image src={`${ImagePath}/logo/logo.png`} alt="logo" />
               <address style={{ opacity: "0.8", width: "36%", marginTop: 10, fontStyle: "normal" }}>
                 <span style={{ fontSize: 16, lineHeight: "1.5", fontWeight: 500}} >1982 Harvest Lane New York, NY12210 United State</span>
               </address>

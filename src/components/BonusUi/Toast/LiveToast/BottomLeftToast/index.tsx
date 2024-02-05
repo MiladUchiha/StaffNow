@@ -1,7 +1,7 @@
 import { BottomLeftToasts, ImNotSure, ImagePath, RemoveMyAccount, YourAccountWillBePermanentlyDeleted } from "@/Constant";
 import { useState } from "react";
 import { Button, Toast, ToastBody } from "reactstrap";
-
+import Image from "next/image";
 const BottomLeftToast = () => {
   const [open, setOpen] = useState(false);
   const toggle = () => {
@@ -16,7 +16,7 @@ const BottomLeftToast = () => {
       <div className="toast-container position-fixed start-0 bottom-0 p-3 toast-index toast-rtl">
         <Toast fade isOpen={open}>
           <div className="toast-header toast-img">
-            <img className="rounded me-2" src={`${ImagePath}/avtar/profile.png`} alt="profile" />
+            <Image className="rounded me-2" src={`${ImagePath}/avtar/profile.png`} alt="profile" />
             <strong className="me-auto">Mofi theme</strong>
             <Button close onClick={() => setOpen(false)}></Button>
           </div>

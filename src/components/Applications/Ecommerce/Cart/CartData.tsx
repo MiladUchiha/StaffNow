@@ -8,7 +8,7 @@ import CartAction from "./CartAction";
 import { useAppDispatch, useAppSelector } from "@/Redux/Hooks";
 import { CartType } from "@/Types/EcommerceType";
 import { removeCartData } from "@/Redux/Reducers/CartSlice";
-
+import Image from "next/image";
 export const CartData = () => {
   const dispatch = useAppDispatch();
   const { symbol } = useAppSelector((state) => state.product);
@@ -25,7 +25,7 @@ export const CartData = () => {
               <tbody>
                 {cart.map((item, index) => (
                   <tr key={index}>
-                    <td><img className="img-fluid img-40" src={`${ImagePath}/ecommerce/${item.image}`} alt={Href} /></td>
+                    <td><Image className="img-fluid img-40" src={`${ImagePath}/ecommerce/${item.image}`} alt={Href} /></td>
                     <td><div className="product-name"><a href={Href}>{item.name}</a></div></td>
                     <td>{symbol}{item.price}</td>
                     <CartQuantityButton item={item} />

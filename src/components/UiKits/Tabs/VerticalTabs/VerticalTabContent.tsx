@@ -26,8 +26,8 @@ export const VerticalTabContent:React.FC<TabContentProp> = ({basicTab}) => {
         </TabPane>
         <TabPane tabId="4">
           <ul className="d-flex flex-column gap-1 p-sm-0 pt-2">
-            <li><strong> Site purpose</strong> Like a mission statement, a website's purpose gives the primary reason for the site's existence in the world. Whether for education, advocacy, service provision, community organizing, etc.</li>
-            <li><strong> Features</strong> It's important to figure out as many of these in advance as you can for the sake of a more coherent design. </li>
+            <li><strong> Site purpose</strong> Like a mission statement, a websites purpose gives the primary reason for the sites existence in the world. Whether for education, advocacy, service provision, community organizing, etc.</li>
+            <li><strong> Features</strong> Its important to figure out as many of these in advance as you can for the sake of a more coherent design. </li>
           </ul>
         </TabPane>
       </TabContent>

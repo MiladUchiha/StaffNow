@@ -5,7 +5,7 @@ import { useAppSelector } from "@/Redux/Hooks";
 import { ProfileModalType } from "@/Types/UikitsType";
 import Link from "next/link";
 import { Card, CardBody, Col, Modal } from "reactstrap";
-
+import Image from "next/image";
 export const ProfileModal:React.FC<ProfileModalType> = ({ modalOne, modalOneTogggle }) => {
   const { i18LangStatus } = useAppSelector((state) => state.langSlice);
 
@@ -18,7 +18,7 @@ export const ProfileModal:React.FC<ProfileModalType> = ({ modalOne, modalOneTogg
               <CardBody>
                 <div className="social-img-wrap">
                   <div className="social-img">
-                    <img src={`${ImagePath}/other-images/profile.png`} alt="profile" />
+                    <Image src={`${ImagePath}/other-images/profile.png`} alt="profile" />
                   </div>
                   <div className="edit-icon"><SVG iconId="profile-check" /></div>
                 </div>

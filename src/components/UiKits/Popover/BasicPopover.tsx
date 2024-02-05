@@ -17,7 +17,7 @@ const BasicPopover = () => {
           <Button  id="Popover-1" color="primary" className="example-popover" onClick={basicToggle}>{HurryUps}</Button>
           <Popover className="example-popover mb-0 me-0" isOpen={basicPopover} placement="top" target="Popover-1" trigger="click">
             <PopoverHeader>Basic Popover</PopoverHeader>
-            <PopoverBody>If the package restore doesn't help, you can look at the Output window in the Visual Studio.</PopoverBody>
+            <PopoverBody>If the package restore doesnt help, you can look at the Output window in the Visual Studio.</PopoverBody>
           </Popover>
           {BasicPopoverList.map((data) => (
             <CommonPopover key={data.id} item={data} />

@@ -1,6 +1,6 @@
 import { Href, ImagePath, MollyBoake, OfwrriorCompanys } from "@/Constant";
 import { Label, ListGroup, ListGroupItem } from "reactstrap";
-
+import Image from "next/image";
 export const InterviewHoveringTimeline = () => {
   return (
     <li className="timeline-event">
@@ -9,12 +9,12 @@ export const InterviewHoveringTimeline = () => {
         <p className="timeline-thumbnail">March 2023 - Fresher Interview</p>
         <h4>{OfwrriorCompanys}</h4>
         <div className="text-muted">
-          A fresher's interview is to be conducted
+          A freshers interview is to be conducted
           <ListGroup className="main-lists-content">
             <ListGroupItem tag="a" href={Href} className="list-group-item-action border-0 p-0 mb-4">
               <div className="d-flex w-100 justify-content-between align-items-center">
                 <div className="list-wrapper">
-                  <img className="list-img" src={`${ImagePath}/user/1.jpg`} alt="profile" />
+                  <Image className="list-img" src={`${ImagePath}/user/1.jpg`} alt="profile" />
                   <div className="list-content">
                     <h4>{MollyBoake}</h4>
                     <p>MollyBoake@rhyta.com</p>

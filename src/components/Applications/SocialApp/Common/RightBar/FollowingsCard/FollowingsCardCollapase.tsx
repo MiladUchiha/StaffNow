@@ -10,7 +10,7 @@ const FollowingsCardCollapse :React.FC<MyProfileClassCollapseProp> = ({ isFilter
       <CardBody className="social-list filter-cards-view">
         {FollowingData.map((data, index) => (
           <div className="d-flex" key={index}>
-            <img className="img-50 img-fluid m-r-20 rounded-circle" alt="image" src={`${ImagePath}/user/${data.imageName}`}/>
+            <Image className="img-50 img-fluid m-r-20 rounded-circle" alt="image" src={`${ImagePath}/user/${data.imageName}`}/>
             <div className="flex-grow-1">
               <span className="d-block">{data.name}</span>
               <a href={Href}>{AddFriend}</a>

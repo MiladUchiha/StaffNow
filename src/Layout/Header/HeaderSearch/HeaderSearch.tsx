@@ -33,7 +33,7 @@ export const HeaderSearch = () => {
     });
     setArr(suggestionArray);
     dispatch(getLinkItemsArray(suggestionArray));
-  }, []);
+  });
 
   const handleSearch = (e: ChangeEvent<HTMLInputElement>) => {
     if (!searchedWord) setSearchedWord("");

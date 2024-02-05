@@ -2,7 +2,7 @@ import { AddFriend, ImagePath } from "@/Constant";
 import { PeopleKnowData } from "@/Data/Application/SocialApp";
 import { PeopleYouMayKnowProp } from "@/Types/SocialAppType";
 import { Button, Card, CardBody, CardHeader, Col } from "reactstrap";
-
+import Image from "next/image";
 const PeopleYouMayKnow :React.FC<PeopleYouMayKnowProp> = ({heading}) => {
   return (
     <Col sm="12">
@@ -14,7 +14,7 @@ const PeopleYouMayKnow :React.FC<PeopleYouMayKnowProp> = ({heading}) => {
               {PeopleKnowData.map((data, index) => (
                 <li key={index}>
                   <div className="add-friend text-center">
-                    <img className="img-60 img-fluid rounded-circle" alt="user" src={`${ImagePath}/${data.peopleImageName}`} />
+                    <Image className="img-60 img-fluid rounded-circle" alt="user" src={`${ImagePath}/${data.peopleImageName}`} />
                     <span className="d-block f-w-600">{data.peopleName}</span>
                     <Button color="primary" size="xs">{AddFriend}</Button>
                   </div>

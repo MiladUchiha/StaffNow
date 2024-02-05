@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Card, Col, Row } from "reactstrap";
 import NavBarMain from "./NavBarMain";
 import UserProfileIcon from "./UserProfileIcon";
-
+import Image from "next/image";
 const UserProfile :React.FC<SocialAppCallBackType> = ({ callback }) => {
   return (
     <Row>
@@ -13,7 +13,7 @@ const UserProfile :React.FC<SocialAppCallBackType> = ({ callback }) => {
           <div className="cardheader socialheader" />
           <div className="user-image">
             <div className="avatar">
-              <img alt="user" src={`${ImagePath}/user/1.jpg`} />
+              <Image alt="user" src={`${ImagePath}/user/1.jpg`} />
             </div>
             <div className="icon-wrapper">
               <Link href={Href}><i className="icofont icofont-pencil-alt-5" /></Link>

@@ -5,6 +5,7 @@ const initialState = {
   darkMode: false,
   toggleSidebar: false,
   pinedMenu: [""],
+  layoutName: "",
   responsiveSearch: false,
   margin: 0,
 };

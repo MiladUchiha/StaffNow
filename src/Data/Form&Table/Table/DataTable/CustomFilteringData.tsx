@@ -13,7 +13,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Airi Satou
       </>
     ),
@@ -26,7 +26,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/11.png`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/11.png`} alt="user image" />
         Ashton Cox
       </>
     ),
@@ -39,7 +39,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Bradley Greer
       </>
     ),
@@ -52,7 +52,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Brenden Wagner
       </>
     ),
@@ -65,7 +65,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Brielle Williamson
       </>
     ),
@@ -78,7 +78,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Bruno Nash
       </>
     ),
@@ -91,7 +91,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Caesar Vance
       </>
     ),
@@ -104,7 +104,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Cara Stevens
       </>
     ),
@@ -117,7 +117,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/3.png`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/3.png`} alt="user image" />
         Cedric Kelly
       </>
     ),
@@ -130,7 +130,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Cedric Kelly
       </>
     ),
@@ -144,7 +144,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Charde Marshall
       </>
     ),
@@ -157,7 +157,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Colleen Hurst
       </>
     ),
@@ -170,7 +170,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Dai Rios
       </>
     ),
@@ -183,7 +183,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Donna Snider
       </>
     ),
@@ -196,7 +196,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Doris Wilder
       </>
     ),
@@ -209,7 +209,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Finn Camacho
       </>
     ),
@@ -222,7 +222,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Fiona Green
       </>
     ),
@@ -235,7 +235,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Garrett Winters
       </>
     ),
@@ -248,7 +248,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Gavin Cortez
       </>
     ),
@@ -261,7 +261,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Gavin Joyce
       </>
     ),
@@ -274,7 +274,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Gloria Little
       </>
     ),
@@ -287,7 +287,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Haley Kennedy
       </>
     ),
@@ -300,7 +300,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Hermione Butler
       </>
     ),
@@ -313,7 +313,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Herrod Chandler
       </>
     ),
@@ -326,7 +326,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Hope Fuentes
       </>
     ),
@@ -339,7 +339,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Howard Hatfield
       </>
     ),
@@ -352,7 +352,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Jackson Bradshaw
       </>
     ),
@@ -365,7 +365,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Jena Gaines
       </>
     ),
@@ -378,7 +378,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Jenette Caldwell
       </>
     ),
@@ -391,7 +391,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Doris Wilder
       </>
     ),
@@ -404,7 +404,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Finn Camacho
       </>
     ),
@@ -417,7 +417,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Fiona Green
       </>
     ),
@@ -430,7 +430,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Garrett Winters
       </>
     ),
@@ -443,7 +443,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Gavin Cortez
       </>
     ),
@@ -456,7 +456,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Gavin Joyce
       </>
     ),
@@ -469,7 +469,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Gloria Little
       </>
     ),
@@ -482,7 +482,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Haley Kennedy
       </>
     ),
@@ -495,7 +495,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Hermione Butler
       </>
     ),
@@ -508,7 +508,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Herrod Chandler
       </>
     ),
@@ -521,7 +521,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Hope Fuentes
       </>
     ),
@@ -534,7 +534,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Howard Hatfield
       </>
     ),
@@ -547,7 +547,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Jackson Bradshaw
       </>
     ),
@@ -560,7 +560,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Jena Gaines
       </>
     ),
@@ -573,7 +573,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Jenette Caldwell
       </>
     ),
@@ -586,7 +586,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Doris Wilder
       </>
     ),
@@ -599,7 +599,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Finn Camacho
       </>
     ),
@@ -612,7 +612,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Fiona Green
       </>
     ),
@@ -625,7 +625,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Garrett Winters
       </>
     ),
@@ -638,7 +638,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Gavin Cortez
       </>
     ),
@@ -651,7 +651,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Gavin Joyce
       </>
     ),
@@ -664,7 +664,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Tiger Nixon
       </>
     ),
@@ -677,7 +677,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Timothy Mooney
       </>
     ),
@@ -690,7 +690,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Unity Butler
       </>
     ),
@@ -703,7 +703,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Vivian Harrell
       </>
     ),
@@ -716,7 +716,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Yuri Berry
       </>
     ),
@@ -729,7 +729,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Zenaida Frank
       </>
     ),
@@ -742,7 +742,7 @@ export const FilteringTableData = [
   {
     name: (
       <>
-        <img className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
+        <Image className="img-fluid table-avtar" src={`${ImagePath}/user/7.jpg`} alt="user image" />
         Zorita Serrano
       </>
     ),

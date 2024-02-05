@@ -40,7 +40,7 @@ const Menulist: React.FC<MenuListType> = ({ menu, setActiveMenu, activeMenu, lev
         setActiveMenu(temp);
       }
     });  
-  },[])
+  })
 
   return (
     <>

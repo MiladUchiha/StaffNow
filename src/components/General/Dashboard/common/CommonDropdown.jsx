@@ -1,9 +1,10 @@
-import { Href } from "@/Constant";
-import { DashBoardCommonDropdown } from "@/Types/DashboardType";
+"use client";
+import { Href } from "../../../../Constant";
+
 import React, { useState } from "react";
 import { Dropdown, DropdownItem, DropdownMenu, DropdownToggle } from "reactstrap";
 
-export const CommonDropdown :React.FC<DashBoardCommonDropdown> = ({days}) => {
+export const CommonDropdown  = ({days}) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const toggle = () => setDropdownOpen((prevState) => !prevState);
 

@@ -16,7 +16,7 @@ const TourMain = () => {
     return () => {
       clearTimeout(timer);
     };
-  }, []);
+  });
 
   return (
     <>

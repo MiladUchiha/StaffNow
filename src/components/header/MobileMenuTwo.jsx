@@ -346,7 +346,7 @@ export default function MobileMenuTwo() {
           }
         });
       });
-    }, []);
+    });
   return (
     <>
     <div className="mobileMenu text-dark-1">

@@ -16,7 +16,7 @@ const InvoiceFooter = () => {
       </Col>
       <Col md="4">
         <Form className="text-end">
-          <img src={`${ImagePath}/other-images/paypal.png`} alt="PayPal"/>
+          <Image src={`${ImagePath}/other-images/paypal.png`} alt="PayPal"/>
         </Form>
       </Col>
     </Row>

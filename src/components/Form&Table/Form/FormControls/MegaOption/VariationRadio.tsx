@@ -4,7 +4,7 @@ import { ImagePath, VariationRadios } from "@/Constant";
 import { VariationRadioData, VariationRadioDataList } from "@/Data/Form&Table/Form";
 import { VariationRadioProp } from "@/Types/FormType";
 import { Card, CardBody, Col, FormGroup, Input, Label, Row } from "reactstrap";
-
+import Image from "next/image";
 const VariationRadio = () => {
   return (
     <Col xs="12">
@@ -26,7 +26,7 @@ const VariationRadio = () => {
                       </div>
                       {(image || icon) && (
                         <div className="payment-second">
-                          {image && <img className="img-fluid" src={`${ImagePath}/${image}`} alt="ecommerce" />}
+                          {image && <Image className="img-fluid" src={`${ImagePath}/${image}`} alt="ecommerce" />}
                           {icon && <SVG className={`mega-icons stroke-${iconColor}`} iconId={icon} />}
                         </div>
                       )}

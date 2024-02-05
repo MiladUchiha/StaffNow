@@ -27,7 +27,7 @@ const StackingToasts = () => {
                 <small className="txt-danger">just now</small>
                 <Button close className="p-0" onClick={() => setOpen(false)}></Button>
               </div>
-              <ToastBody className="toast-dark">Hello, I'm a web-designer.</ToastBody>
+              <ToastBody className="toast-dark">Hello, Im a web-designer.</ToastBody>
             </Toast>
             {StackingToastDataList.map((data, index) => (
               <CommonToast item={data} key={index} />

@@ -2,7 +2,7 @@ import { Href, ImagePath } from "@/Constant";
 import { GalleryGridImages } from "@/Data/Miscellaneous/Gallery";
 import Link from "next/link";
 import { Gallery, Item } from "react-photoswipe-gallery";
-
+import Image from "next/image";
 export const MyGallery=()=> {
   return (
     <Gallery>
@@ -11,7 +11,7 @@ export const MyGallery=()=> {
           <Item original={`${ImagePath}/${item}`} width="1500" height="850">
             {({ ref, open }) => (
               <Link href={Href} onClick={open}>
-                <img className="img-thumbnail mb-4 p-2" ref={ref as React.MutableRefObject<HTMLImageElement>} src={`${ImagePath}/${item}`} alt="image" />
+                <Image className="img-thumbnail mb-4 p-2" ref={ref as React.MutableRefObject<HTMLImageElement>} src={`${ImagePath}/${item}`} alt="image" />
               </Link>
             )}
           </Item>

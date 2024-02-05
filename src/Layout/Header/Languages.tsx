@@ -30,7 +30,7 @@ const Languages = () => {
         dispatch(setLanguage(language));
       }
     }
-  }, []);
+  });
 
   return (
     <li className="onhover-dropdown">

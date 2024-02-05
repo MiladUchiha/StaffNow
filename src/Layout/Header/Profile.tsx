@@ -4,6 +4,7 @@ import Cookies from "js-cookie";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { LogOut } from "react-feather";
+import Image from "next/image";
 
 export const Profile = () => {
   const router = useRouter();
@@ -15,7 +16,7 @@ export const Profile = () => {
   return (
     <li className="profile-nav onhover-dropdown px-0 py-0">
       <div className="d-flex profile-media align-items-center">
-        <img className="img-30" src={`${ImagePath}/dashboard/profile.png`} alt="" />
+        <Image className="img-30" src={`${ImagePath}/dashboard/profile.png`} alt="" />
         <div className="flex-grow-1">
           <span>Alen Miller</span>
           <p className="mb-0 font-outfit">

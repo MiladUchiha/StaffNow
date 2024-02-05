@@ -2,7 +2,7 @@ import SVG from "@/CommonComponent/SVG";
 import { ImagePath } from "@/Constant";
 import DownloadLink from "react-download-link";
 import SimpleMdeReact from "react-simplemde-editor";
-
+import Image from "next/image";
 const UserFooter = () => {
   const mdeEditorText = `Enter text in the area on the left. For more info, click the ? (help) icon in the menu.`;
 
@@ -15,7 +15,7 @@ const UserFooter = () => {
       <div className="d-inline-block">
         <div className="attchment-file common-flex">
           <div className="common-flex align-items-center">
-            <img src={`${ImagePath}/email-template/pdfs.png`} alt="pdf" />
+            <Image src={`${ImagePath}/email-template/pdfs.png`} alt="pdf" />
             <div className="d-block">
               <p>Offer_Letter.pdf</p>
               <p>200KB</p>

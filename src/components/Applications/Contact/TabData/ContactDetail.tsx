@@ -6,7 +6,7 @@ import { useCallback, useState } from "react";
 import SweetAlert from "sweetalert2";
 import PrintModal from "./PrintModal";
 import SearchNotFoundClass from "./SearchNotFoundClass";
-
+import Image from "next/image";
 const ContactDetailsClass :React.FC<ContactDetailsPropsType> = ({ selectedUser, userEditCallback ,setSelectedUser}) => {
   const [printModal, setPrintModal] = useState(false);
   const printModalToggle = () => setPrintModal(!printModal);
@@ -47,7 +47,7 @@ const ContactDetailsClass :React.FC<ContactDetailsPropsType> = ({ selectedUser, 
       {selectedUser ? (
         <div className="profile-mail">
           <div className="d-flex">
-            <img className="img-100 img-fluid m-r-20 rounded-circle update_img_0" src={`${selectedUser.avatar}`} alt="" />
+            <Image className="img-100 img-fluid m-r-20 rounded-circle update_img_0" src={`${selectedUser.avatar}`} alt="" />
             <div className="flex-grow-1 mt-0">
               <h5><span className="first_name_0">{selectedUser.name}</span> <span className="last_name_0">{selectedUser.surname}</span></h5>
               <p className="email_add_0">{selectedUser.name}{"@gmail.com"}</p>

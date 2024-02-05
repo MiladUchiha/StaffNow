@@ -3,7 +3,7 @@ import { BookmarkFilter, Href, ImagePath } from "@/Constant";
 import NavTab from "./NavTab";
 import { useAppDispatch, useAppSelector } from "@/Redux/Hooks";
 import { setBookmarkFilter } from "@/Redux/Reducers/BookmarkTabSlice";
-
+import Image from "next/image";
 const SideBar = () => {
   const {bookmarkFilter} = useAppSelector((state)=>state.bookmarkTab)
   const dispatch = useAppDispatch()
@@ -19,7 +19,7 @@ const SideBar = () => {
                 <div className="email-app-sidebar left-bookmark">
                   <div className="d-flex">
                     <div className="media-size-email">
-                      <img className="me-3 rounded-circle" src={`${ImagePath}/user/user.png`} alt="user" />
+                      <Image className="me-3 rounded-circle" src={`${ImagePath}/user/user.png`} alt="user" />
                     </div>
                     <div className="flex-grow-1">
                       <h6 className="f-w-600">Mark Jecno</h6>

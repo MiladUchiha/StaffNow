@@ -3,6 +3,7 @@ import { PopulerBankList } from "@/Data/Form&Table/Form";
 import { useAppSelector } from "@/Redux/Hooks";
 import { BankLogoListProp } from "@/Types/FormType";
 import { Col, FormGroup, Input, Label } from "reactstrap";
+import Image from "next/image";
 
 export const BankLogoList :React.FC<BankLogoListProp> = ({ getUserData }) => {
   const { bankDetailsForm } = useAppSelector((state) => state.formWizardTwo);
@@ -18,7 +19,7 @@ export const BankLogoList :React.FC<BankLogoListProp> = ({ getUserData }) => {
               <li key={index}>
                 <Input id={data.bankName} type="radio" name="bankName" value={data.bankName} checked={bankName === data.bankName} onChange={getUserData} />
                 <Label htmlFor={data.bankName} check>
-                  <img src={`${ImagePath}/forms/${data.imageName}`} alt={data.bankName} />
+                  <Image src={`${ImagePath}/forms/${data.imageName}`} alt={data.bankName} />
                   <span>{data.bankName}</span>
                 </Label>
               </li>

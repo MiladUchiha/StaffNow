@@ -3,7 +3,7 @@ import { JobData } from "@/Data/Miscellaneous/JobSearch";
 import Link from "next/link";
 import { Rating } from "react-simple-star-rating";
 import { Badge, Card, CardBody } from "reactstrap";
-
+import Image from "next/image";
 const ListViewCard = () => {
   return (
     <>
@@ -17,7 +17,7 @@ const ListViewCard = () => {
             <div className="job-search">
               <CardBody>
                 <div className="d-flex">
-                  <img className="img-40 b-r-0 img-fluid m-r-20" src={`${ImagePath}/${item.logo}`} alt="job logo"/>
+                  <Image className="img-40 b-r-0 img-fluid m-r-20" src={`${ImagePath}/${item.logo}`} alt="job logo"/>
                   <div className="flex-grow-1">
                     <h6 className="f-w-600">
                       <Link href={Href}>{item.job_name}</Link>

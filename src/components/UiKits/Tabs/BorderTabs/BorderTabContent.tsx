@@ -1,7 +1,7 @@
 import { DalbultCaslin, EmailAddress, ExampleTextarea, ImagePath } from "@/Constant";
 import { TabContentProp } from "@/Types/UikitsType";
 import { CardBody, Form, FormGroup, Input, Label, TabContent, TabPane } from "reactstrap";
-
+import Image from "next/image";
 export const BorderTabContent:React.FC<TabContentProp> = ({basicTab}) => {
   return (
     <TabContent activeTab={basicTab}>
@@ -13,7 +13,7 @@ export const BorderTabContent:React.FC<TabContentProp> = ({basicTab}) => {
           <div className="main-inbox"> 
             <div className="header-inbox"> 
               <div className="header-left-inbox">
-                <div className="inbox-img"><img src={`${ImagePath}/ecommerce/06.jpg`} alt="profile" /></div>
+                <div className="inbox-img"><Image src={`${ImagePath}/ecommerce/06.jpg`} alt="profile" /></div>
                 <div className="inbox-content"> 
                   <h6>{DalbultCaslin}</h6>
                   <p className="text-muted">stroman.rogers@gmail.com</p>

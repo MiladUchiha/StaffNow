@@ -1,7 +1,7 @@
 import { ImagePath } from "@/Constant";
 import { TotalStudentData } from "@/Data/General/Widgets/General";
 import { Card, CardBody, Col, Row } from "reactstrap";
-
+import Image from "next/image";
 const TotalStudents = () => {
   return (
     <Col xl="6" md="12" className="proorder-md-1">
@@ -23,7 +23,7 @@ const TotalStudents = () => {
                     </div>
                   </div>
                   <div className="flex-shrink-0">
-                    <img src={`${ImagePath}/dashboard-4/icon/${data.image}`} alt="student" />
+                    <Image src={`${ImagePath}/dashboard-4/icon/${data.image}`} alt="student" />
                   </div>
                 </div>
               </CardBody>

@@ -1,11 +1,11 @@
 import { CommentsSocialPlaceholder, ImagePath } from "@/Constant";
 import { Button, Input, InputGroup } from "reactstrap";
-
+import Image from "next/image";
 const CommentsBox = () => {
   return (
     <div className="comments-box">
      <div className="d-flex">
-        <img className="img-50 img-fluid m-r-20 rounded-circle" alt="user" src={`${ImagePath}/user/1.jpg`}/>
+        <Image className="img-50 img-fluid m-r-20 rounded-circle" alt="user" src={`${ImagePath}/user/1.jpg`}/>
         <div className="flex-grow-1">
           <InputGroup className="text-box">
             <Input className="input-txt-bx shadow-none" type="text" name="message-to-send" placeholder={CommentsSocialPlaceholder} />

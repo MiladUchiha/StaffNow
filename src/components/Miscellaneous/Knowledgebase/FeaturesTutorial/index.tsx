@@ -3,7 +3,7 @@ import { FeaturesData } from "@/Data/Miscellaneous/Knowledgebase";
 import { Rating } from "react-simple-star-rating";
 import { Card, CardBody, CardFooter, Col, Row } from "reactstrap";
 import ProductHover from "./ProductHover";
-
+import Image from "next/image";
 const FeaturesTutorial = () => {
   return (
     <Col lg="12">
@@ -16,7 +16,7 @@ const FeaturesTutorial = () => {
             <Card className="features-faq product-box">
               <div className="faq-image product-img">
                 <div className="knowledgebase-image">
-                  <img alt="feature" className="img-fluid" src={`${ImagePath}/${item.img}`} />
+                  <Image alt="feature" className="img-fluid" src={`${ImagePath}/${item.img}`} />
                 </div>
                 <ProductHover />
               </div>

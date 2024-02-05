@@ -3,7 +3,7 @@ import { FriendsImages } from "@/Data/Application/SocialApp";
 import { useState } from "react";
 import { Card, CardBody, Collapse } from "reactstrap";
 import HeaderWithIcon from "../HeaderWithIcon";
-
+import Image from "next/image";
 const FriendsCard = () => {
   const [isOpen, setIsOpen] = useState(true);
 
@@ -14,7 +14,7 @@ const FriendsCard = () => {
         <CardBody className="avatar-showcase filter-cards-view">
           {FriendsImages.map((data, index) => (
             <div className="d-inline-block friend-pic" key={index}>
-              <img className="img-50 rounded-circle" src={`${ImagePath}/user/${data}`} alt="images"/>
+              <Image className="img-50 rounded-circle" src={`${ImagePath}/user/${data}`} alt="images"/>
             </div>
           ))}
         </CardBody>

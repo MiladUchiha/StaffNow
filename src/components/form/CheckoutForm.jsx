@@ -1,7 +1,7 @@
 'use client'
 
 
-import React from 'react'
+import React from 'react';
 import BillingDetails from '../e-commerce/checkout/BillingDetails'
 import Payment from '../e-commerce/checkout/Payment'
 

@@ -1,7 +1,7 @@
 import { FREE, ImagePath, PlanSpace, PricingPlan, Selected, TrialVersion } from "@/Constant";
 import { Grid } from "react-feather";
 import { Button } from "reactstrap";
-
+import Image from "next/image";
 const PricingPlans = () => {
   return (
     <ul>
@@ -14,7 +14,7 @@ const PricingPlans = () => {
           <h5>{FREE}</h5>
           <p>{PlanSpace}</p>
           <Button size="xs" outline color="primary">{Selected}</Button>
-          <img className="bg-img" src={`${ImagePath}/dashboard/folder.png`} alt=""/>
+          <Image className="bg-img" src={`${ImagePath}/dashboard/folder.png`} alt=""/>
         </div>
       </li>
     </ul>

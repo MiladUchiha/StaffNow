@@ -4,7 +4,7 @@ import { useAppSelector } from "@/Redux/Hooks";
 import Link from "next/link";
 import { useState } from "react";
 import { Bookmark, Star } from "react-feather";
-
+import Image from "next/image";
 type BookMarkState = Record<string, boolean>;
 
 const FeaturedCoursesBody = () => {
@@ -24,7 +24,7 @@ const FeaturedCoursesBody = () => {
           <td>
             <div className="d-flex align-items-center gap-2">
               <div className="flex-shrink-0">
-                <img src={`${ImagePath}/dashboard-4/featured/${data.image}`} alt="featured" />
+                <Image src={`${ImagePath}/dashboard-4/featured/${data.image}`} alt="featured" />
               </div>
               <div className="flex-grow-1">
                 <Link href={`/${i18LangStatus}/ecommerce/product_page`}><h5>{data.title}</h5></Link>

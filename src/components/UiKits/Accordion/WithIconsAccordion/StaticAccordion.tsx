@@ -10,7 +10,7 @@ export const StaticAccordion = () => {
       </AccordionHeader>
       <AccordionBody accordionId="1">
         <p>
-          <em className="txt-danger"> " This page might not behave as expected because Windows Internet Explorer isn't configured to load unsigned ActiveX controls."</em> or "Allow this page to install an unsigned ActiveX Control? Doing so from untrusted sources may harm your computer." (Both phrased as conditions that may cause future problems.)
+          <em className="txt-danger">  This page might not behave as expected because Windows Internet Explorer isnt configured to load unsigned ActiveX controls.</em> or Allow this page to install an unsigned ActiveX Control? Doing so from untrusted sources may harm your computer. (Both phrased as conditions that may cause future problems.)
         </p>
       </AccordionBody>
     </AccordionItem>

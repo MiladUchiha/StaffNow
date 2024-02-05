@@ -1,4 +1,4 @@
-import { UploadProjectFiles } from "@/Constant";
+import { UploadProjectFiles } from "../../../../Constant";
 import { Dropzone, ExtFile, FileMosaic } from "@dropzone-ui/react";
 import { useState } from "react";
 import { Col, FormGroup, Label, Row } from "reactstrap";

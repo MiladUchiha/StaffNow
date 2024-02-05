@@ -5,7 +5,7 @@ import { SimilarJobsCardsType } from "@/Types/JobSearchType";
 import Link from "next/link";
 import { Rating } from "react-simple-star-rating";
 import { Badge, Card, CardBody, Col, Row } from "reactstrap";
-
+import Image from "next/image";
 const SimilarJobsCards:React.FC<SimilarJobsCardsType> = ({limit,jobClass,ribbon: ribbon,column}) => {
   const { i18LangStatus } = useAppSelector((state) => state.langSlice);
 
@@ -23,7 +23,7 @@ const SimilarJobsCards:React.FC<SimilarJobsCardsType> = ({limit,jobClass,ribbon:
             <div className="job-search">
               <CardBody>
                 <div className="d-flex">
-                  <img className="img-40 b-r-0 img-fluid m-r-20" src={`${ImagePath}/${item.logo}`} alt=""/>
+                  <Image className="img-40 b-r-0 img-fluid m-r-20" src={`${ImagePath}/${item.logo}`} alt=""/>
                   <div className="flex-grow-1">
                     <h6>
                       <Link href={`/${i18LangStatus}/job_search/job_detail`}>{item.job_name}</Link>

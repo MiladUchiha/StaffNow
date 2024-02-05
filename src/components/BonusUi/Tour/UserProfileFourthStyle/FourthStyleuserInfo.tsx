@@ -1,11 +1,11 @@
 import { ImagePath, WilliamJennings } from "@/Constant";
 import { Col } from "reactstrap";
-
+import Image from "next/image";
 export const FourthStyleuserInfo = () => {
   return (
     <Col sm="8">
       <div className="d-flex">
-        <img className="img-thumbnail rounded-circle me-3" src={`${ImagePath}/user/7.jpg"`} alt="Generic placeholder image" />
+        <Image className="img-thumbnail rounded-circle me-3" src={`${ImagePath}/user/7.jpg"`} alt="Generic placeholder image" />
         <div className="flex-grow-1 align-self-center">
           <h5 className="mt-0 user-name">{WilliamJennings}</h5>
           <div className="tour-wrapper">

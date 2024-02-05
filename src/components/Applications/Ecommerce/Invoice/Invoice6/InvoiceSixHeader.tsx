@@ -9,8 +9,8 @@ const InvoiceSixHeader = () => {
         <Col sm="6">
           <div className="d-flex">
             <div className="media-left">
-              <img className="media-object img-60 for-light" src={`${ImagePath}/other-images/logo-login.png`} alt="logo" />
-              <img className="media-object img-60 for-dark" src={`${ImagePath}/other-images/logo-light.png`} alt="logo" />
+              <Image className="media-object img-60 for-light" src={`${ImagePath}/other-images/logo-login.png`} alt="logo" />
+              <Image className="media-object img-60 for-dark" src={`${ImagePath}/other-images/logo-light.png`} alt="logo" />
             </div>
             <div className="flex-grow-1 m-l-20 text-right">
               <h4 className="media-heading">{Mofi} </h4>

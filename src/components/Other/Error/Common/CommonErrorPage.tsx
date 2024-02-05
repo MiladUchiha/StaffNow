@@ -3,7 +3,7 @@ import { useAppSelector } from "@/Redux/Hooks";
 import { CommonErrorPageType } from "@/Types/PagesType";
 import React from "react";
 import { Button, Col, Container } from "reactstrap";
-
+import Image from "next/image";
 const CommonErrorPage: React.FC<CommonErrorPageType> = ({ error, color, src }) => {
   const BackToHomePage: string = "BACK TO HOME PAGE";
   const ErrorContent: string = "The page you are attempting to reach is currently not available. This may be because the page does not exist or has been moved.";
@@ -13,7 +13,7 @@ const CommonErrorPage: React.FC<CommonErrorPageType> = ({ error, color, src }) =
     <div className="page-wrapper compact-wrapper" id="pageWrapper">
       <div className="error-wrapper">
         <Container>
-          <img className="img-100 h-auto" src={`${ImagePath}/other-images/${src}.gif`} alt="" />
+          <Image className="img-100 h-auto" src={`${ImagePath}/other-images/${src}.gif`} alt="" />
           <div className="error-heading">
             <h2 className={`headline font-${color}`}>{error}</h2>
           </div>

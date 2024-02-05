@@ -1,5 +1,6 @@
 import { Col, Input, Label, Row } from 'reactstrap'
 import { CashOnDelivery, CheckPayments, ImagePath, Paypal } from '@/Constant'
+import Image from "next/image";
 
 const CheckPayment = () => {
   return (
@@ -16,7 +17,7 @@ const CheckPayment = () => {
           <Label className="d-block" for="edo-ani2" check>
             <Input className="radio_animated" id="edo-ani2" type="radio" name="rdo-ani" defaultChecked/>
             {Paypal}
-            <img className="img-paypal" src={`${ImagePath}/checkout/paypal.png`} alt="paypal" />
+            <Image className="img-paypal" src={`${ImagePath}/checkout/paypal.png`} alt="paypal" />
           </Label>
         </Col>
       </Row>

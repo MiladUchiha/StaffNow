@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Button, Col } from "reactstrap";
 import { CommonMofiModalTitle } from "../Common/CommonMofiModalTitle";
 import { BalanceModal } from "./BalanceModal";
-
+import Image from "next/image";
 const ModalThird = () => {
   const [modalThird, setModalThird] = useState(false);
   const modalThirdTogggle = () => setModalThird(!modalThird);
@@ -14,7 +14,7 @@ const ModalThird = () => {
         <div className="Mofi-demo-img">
           <CommonMofiModalTitle heading="Modal 3 -" subHeading="Balance Modal" text="Example of Mofi dashboard balance card." />
           <div className="overflow-hidden balance-modal">
-            <img src={`${ImagePath}/alert/balance.png`} alt="learning" />
+            <Image src={`${ImagePath}/alert/balance.png`} alt="learning" />
             <Button color="primary" className="mx-auto mt-3" onClick={modalThirdTogggle}>{ClickOut}</Button>
           </div>
           <BalanceModal modalThird={modalThird} modalThirdToggle={modalThirdTogggle} />

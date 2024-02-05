@@ -5,6 +5,7 @@ import { useState } from "react";
 import { X } from "react-feather";
 import { Rating } from "react-simple-star-rating";
 import { Button, Card, CardBody, Col, Row } from "reactstrap";
+import Image from "next/image";
 
 const ShippedOrders = () => {
   const [shippedOrder, setShippedOrder] = useState(OrderData);
@@ -22,7 +23,7 @@ const ShippedOrders = () => {
             <Col xxl="4" md="6" key={index}>
               <div className="prooduct-details-box">
                 <div className="d-flex">
-                  <img className="align-self-center img-fluid img-60" src={`${ImagePath}/ecommerce/${item.image}`} alt={item.name} />
+                  <Image className="align-self-center img-fluid img-60" src={`${ImagePath}/ecommerce/${item.image}`} alt={item.name} />
                   <div className="flex-grow-1 ms-3">
                     <div className="product-name">
                       <h6><a href={Href}>{item.name}</a></h6>

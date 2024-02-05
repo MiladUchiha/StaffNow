@@ -5,7 +5,7 @@ import { Category } from "./Category/Category";
 import { FilterHeader } from "./FilterHeader";
 import { PriceRange } from "./PriceRange";
 import { SearchBox } from "./SearchBox";
-
+import Image from "next/image";
 const ProductSidebar = () => {
   const { isFilter } = useAppSelector((state) => state.filterData);
 
@@ -21,7 +21,7 @@ const ProductSidebar = () => {
                   <Category />
                   <PriceRange />
                   <div className="product-filter text-center">
-                    <img className="img-fluid banner-product" src={`${ImagePath}/ecommerce/banner.jpg`} alt="" />
+                    <Image className="img-fluid banner-product" src={`${ImagePath}/ecommerce/banner.jpg`} alt="" />
                   </div>
                 </CardBody>
               </div>

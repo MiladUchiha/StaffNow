@@ -1,6 +1,7 @@
 import { Href, ImagePath } from "@/Constant";
 import { ScrollImageType, ScrollVerticalType } from "@/Types/TableType";
 import { TableColumn } from "react-data-table-component";
+import Image from "next/image";
 
 export const ScrollVerticalData = [
   {
@@ -578,7 +579,7 @@ export const ScrollVerticalData = [
 const ScrollImage: React.FC<ScrollImageType> = ({ image, title }) => {
   return (
     <>
-      <img className="img-fluid table-avtar" src={`${ImagePath}/${image}`} alt="userImage" /> {title}
+      <Image className="img-fluid table-avtar" src={`${ImagePath}/${image}`} alt="userImage" /> {title}
     </>
   );
 };

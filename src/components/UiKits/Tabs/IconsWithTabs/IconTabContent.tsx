@@ -1,7 +1,7 @@
 import { EmailAddress, ImagePath } from "@/Constant";
 import { TabContentProp } from "@/Types/UikitsType";
 import { Input, Label, TabContent, TabPane } from "reactstrap";
-
+import Image from "next/image";
 export const IconTabContent:React.FC<TabContentProp> = ({basicTab}) => {
   return (
     <TabContent activeTab={basicTab}>
@@ -11,7 +11,7 @@ export const IconTabContent:React.FC<TabContentProp> = ({basicTab}) => {
       <TabPane tabId="2">
         <div className="pt-3 mb-0">
           <div className="flex-space flex-wrap align-items-center">
-            <img className="tab-img" src={`${ImagePath}/avtar/7.jpg`} alt="profile"/>
+            <Image className="tab-img" src={`${ImagePath}/avtar/7.jpg`} alt="profile"/>
             <ul className="d-flex flex-column gap-1">
               <li><strong>Visit Us:  </strong> 278 Green Avenue Oakland, CA 94612</li>
               <li><strong>Mail Us:</strong> MichaelMMcGowan@teleworm.us</li>
@@ -22,7 +22,7 @@ export const IconTabContent:React.FC<TabContentProp> = ({basicTab}) => {
       </TabPane>
       <TabPane tabId="3">
         <div>
-          <p className="pt-3">Us Technology offers web &amp; mobile development solutions for all industry verticals.Include a short form using fields that'll help your business understand who's contacting them. </p>
+          <p className="pt-3">Us Technology offers web &amp; mobile development solutions for all industry verticals.Include a short form using fields thatll help your business understand whos contacting them. </p>
           <Label check htmlFor="exampleFormControlone">{EmailAddress}</Label>
           <Input id="exampleFormControlone" type="email" placeholder="youremail@gmail.com" />
         </div>

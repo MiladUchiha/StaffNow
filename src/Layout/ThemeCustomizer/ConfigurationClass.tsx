@@ -28,16 +28,16 @@ const ConfigurationClass :React.FC<PropsTypeProp> = ({ toggle, modal }) => {
                                 <div> {'export class ConfigDB '}&#123;</div>
                                 <div>  {'static data'} = &#123;</div>
                                 <div>       {'settings'}&#58; &#123;</div>
-                                <div>           {'layout_type'}&#58; '{configDB.settings.layout_type}',</div>
+                                <div>           {'layout_type'}&#58; {configDB.settings.layout_type},</div>
 
                                 <div>       {'sidebar'}&#58; &#123;</div>
-                                <div>           {'type'}&#58; '{layout}',</div>
+                                <div>           {'type'}&#58; {layout},</div>
                                 <div>           &#125;,</div>
                                 <div>       &#125;,</div>
                                 <div>       {'color'}&#58; &#123;</div>
-                                <div>           {'primary_color'}&#58; '{configDB.color.primary_color}', </div>
-                                <div>           {'secondary_color'}&#58; '{configDB.color.secondary_color}', </div>
-                                <div>           {'mix_background_layout'}&#58; '{configDB.color.mix_background_layout}', </div>
+                                <div>           {'primary_color'}&#58; {configDB.color.primary_color}, </div>
+                                <div>           {'secondary_color'}&#58; {configDB.color.secondary_color}, </div>
+                                <div>           {'mix_background_layout'}&#58; {configDB.color.mix_background_layout}, </div>
                                 <div>       &#125;,</div>
                                 <div>   &#125;</div>
                                 <div> &#125;</div>

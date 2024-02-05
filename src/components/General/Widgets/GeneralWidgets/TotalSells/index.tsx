@@ -4,7 +4,7 @@ import { TopSellData } from "@/Data/General/Widgets/General";
 import ReactApexChart from "react-apexcharts";
 import { Card, CardBody, Col } from "reactstrap";
 import TotalSellsDetails from "./TotalSellsDetails";
-
+import Image from "next/image";
 const TotalSells = () => {
   return (
     <>
@@ -15,7 +15,7 @@ const TotalSells = () => {
             <CardBody className={`pb-0 ${data.class}`}>
               <div className="d-flex align-items-center gap-3">
                 <div className="flex-shrink-0">
-                  <img src={`${ImagePath}/dashboard-3/icon/${data.image}`} alt="icon"/>
+                  <Image src={`${ImagePath}/dashboard-3/icon/${data.image}`} alt="icon"/>
                 </div>
                 <TotalSellsDetails data={data}/>
               </div>

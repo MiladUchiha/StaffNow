@@ -3,7 +3,7 @@ import { DefaultToasts, ImagePath } from "@/Constant";
 import { DefaultToastData } from "@/Data/BonusUi/Toaste";
 import { useState } from "react";
 import { Button, Card, CardBody, Col, Toast, ToastBody } from "reactstrap";
-
+import Image from "next/image";
 const DefaultToast = () => {
   const [open, setOpen] = useState(true);
 
@@ -14,7 +14,7 @@ const DefaultToast = () => {
         <CardBody className="toast-rtl">
           <Toast className="default-show-toast" isOpen={open}>
             <div className="toast-header toast-img">
-              <img className="rounded me-2" src={`${ImagePath}/other-images/profile.png`} alt="profile" />
+              <Image className="rounded me-2" src={`${ImagePath}/other-images/profile.png`} alt="profile" />
               <strong className="me-auto">Mofi theme</strong>
               <small className="d-sm-block d-none">10 min ago</small>
               <Button close className="p-0" onClick={() => setOpen(false)}></Button>

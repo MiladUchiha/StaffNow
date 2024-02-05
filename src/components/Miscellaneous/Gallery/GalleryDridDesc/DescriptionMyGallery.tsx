@@ -2,7 +2,7 @@ import { Href, ImagePath, MyPortfolioTitle } from "@/Constant";
 import { GalleryGridImages } from "@/Data/Miscellaneous/Gallery";
 import Link from "next/link";
 import { Gallery, Item } from "react-photoswipe-gallery";
-
+import Image from "next/image";
 export const DescriptionMyGallery = () => {
   const description :string = "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy." 
 
@@ -13,10 +13,10 @@ export const DescriptionMyGallery = () => {
           <Item original={`${ImagePath}/${item}`} width="1500" height="850" caption={description}>
             {({ ref, open }) => (
               <Link href={Href} onClick={open}>
-                <img className="img-thumbnail border-bottom-0 p-2 rounded-0 rounded-top-1" ref={ref as React.MutableRefObject<HTMLImageElement>} src={`${ImagePath}/${item}`} alt="thumbnail" />
+                <Image className="img-thumbnail border-bottom-0 p-2 rounded-0 rounded-top-1" ref={ref as React.MutableRefObject<HTMLImageElement>} src={`${ImagePath}/${item}`} alt="thumbnail" />
                 <div className="caption border-top-0 p-2">
                   <h4>{MyPortfolioTitle}</h4>
-                  <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+                  <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy.</p>
                 </div>
               </Link>
             )}

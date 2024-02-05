@@ -1,7 +1,7 @@
 import { Button, Col, Row } from "reactstrap";
-import { Add, Cancel } from "@/Constant";
+
 import Link from "next/link";
-import { useAppSelector } from "@/Redux/Hooks";
+import { useAppSelector } from "../../../../Redux/Hooks";
 
 export const ButtonSection = () => {
   const { i18LangStatus } = useAppSelector((state) => state.langSlice);
@@ -10,8 +10,8 @@ export const ButtonSection = () => {
     <Row>
       <Col>
         <div className="text-end">
-          <Button type="submit" color="success" className="me-3">{Add}</Button>
-          <Link className="btn btn-danger" href={`/${i18LangStatus}}/project/project_list`}>{Cancel}</Link>
+          <Button type="submit" color="success" className="me-3">Lägg till</Button>
+          <Link className="btn btn-danger" href={`/${i18LangStatus}}/project/project_list`}>Ångra</Link>
         </div>
       </Col>
     </Row>

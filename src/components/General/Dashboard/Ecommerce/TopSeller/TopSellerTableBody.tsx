@@ -3,7 +3,7 @@ import { useAppSelector } from "@/Redux/Hooks";
 import { TopSellerTableBodyType } from "@/Types/DashboardType";
 import Link from "next/link";
 import { Input, Label } from "reactstrap";
-
+import Image from "next/image";
 const TopSellerTableBody :React.FC<TopSellerTableBodyType> = ({currentItems}) => {
 const { i18LangStatus } = useAppSelector((store) => store.langSlice);
   return (
@@ -19,7 +19,7 @@ const { i18LangStatus } = useAppSelector((store) => store.langSlice);
           <td>
             <div className="d-flex align-items-center gap-2">
               <div className="flex-shrink-0">
-                <img src={`${ImagePath}/dashboard-3/user/${data.image}`} alt="users" />
+                <Image src={`${ImagePath}/dashboard-3/user/${data.image}`} alt="users" />
               </div>
               <div className="flex-grow-1">
                 <Link href={`/${i18LangStatus}/ecommerce/product_page`}>

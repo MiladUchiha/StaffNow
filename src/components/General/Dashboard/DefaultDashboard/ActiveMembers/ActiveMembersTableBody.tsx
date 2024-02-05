@@ -2,7 +2,7 @@ import { ImagePath } from "@/Constant";
 import { ActiveTableData } from "@/Data/General/Dashboard/DefaultDashboard";
 import { useAppSelector } from "@/Redux/Hooks";
 import Link from "next/link";
-
+import Image from "next/image";
 const ActiveMembersTableBody = () => {
 const { i18LangStatus } = useAppSelector((store) => store.langSlice);
   return (
@@ -12,7 +12,7 @@ const { i18LangStatus } = useAppSelector((store) => store.langSlice);
           <td>
             <div className="d-flex align-items-center">
               <div className="flex-shrink-0">
-                <img src={`${ImagePath}/dashboard/user/${data.img}`} alt="userImage" />
+                <Image src={`${ImagePath}/dashboard/user/${data.img}`} alt="userImage" />
               </div>
               <div className="flex-grow-1">
                 <Link href={`/${i18LangStatus}/ecommerce/product`}>

@@ -1,7 +1,7 @@
 import { ImagePath } from "@/Constant";
 import { ImageWithCheckboxDataList } from "@/Data/Form&Table/Form";
 import { Col, Input, Label } from "reactstrap";
-
+import Image from "next/image";
 export const DynamicImagesWithCheckbox = () => {
   return (
     <>
@@ -12,7 +12,7 @@ export const DynamicImagesWithCheckbox = () => {
             <div className="img-checkbox">
               <Input className="main-img-cover" id={id} type="checkbox" name="radio6" defaultChecked={defaultChecked} disabled={disabled} />
               <Label className="mb-0" htmlFor={id} check>
-                <img src={`${ImagePath}/switch/${src}.jpg`} alt={alt} />
+                <Image src={`${ImagePath}/switch/${src}.jpg`} alt={alt} />
               </Label>
             </div>
           </div>

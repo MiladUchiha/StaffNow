@@ -1,6 +1,6 @@
 import { Custom, ImagePath } from "@/Constant";
 import { Col, Input, Label } from "reactstrap";
-
+import Image from "next/image";
 export const CustomImagesWithCheckbox = () => {
   return (
     <Col xxl="3" sm="6">
@@ -9,7 +9,7 @@ export const CustomImagesWithCheckbox = () => {
         <div className="img-checkbox">
           <Input className="main-img-cover" id="img-check-1" type="checkbox" />
           <Label className="mb-0" htmlFor="img-check-1" check>
-            <img src={`${ImagePath}/switch/1.jpg`} alt="coffee-beans" />
+            <Image src={`${ImagePath}/switch/1.jpg`} alt="coffee-beans" />
           </Label>
         </div>
       </div>

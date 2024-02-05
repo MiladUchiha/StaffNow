@@ -5,7 +5,7 @@ import { useAppSelector } from "@/Redux/Hooks";
 import { Fragment } from "react";
 import { Card, CardBody, Col } from "reactstrap";
 import SocialMediaIcons from "../Common/SocialMediaIcons";
-
+import Image from "next/image";
 const AllCards = () => {
 const { i18LangStatus } = useAppSelector((store) => store.langSlice);
   return (
@@ -16,7 +16,7 @@ const { i18LangStatus } = useAppSelector((store) => store.langSlice);
             <CardBody>
               <div className="social-img-wrap">
                 <div className="social-img">
-                  <img className="img-fluid" src={`${ImagePath}/${item.avatar}`} alt="user" />
+                  <Image className="img-fluid" src={`${ImagePath}/${item.avatar}`} alt="user" />
                 </div>
                 <div className="edit-icon">
                   <SVG iconId="profile-check" />

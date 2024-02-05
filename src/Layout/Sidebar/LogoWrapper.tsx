@@ -15,7 +15,7 @@ export const LogoWrapper = () => {
     <>
       <div className="logo-wrapper">
         <Link href={`/${i18LangStatus}/sample_page`}>
-          <img className="img-fluid" src={`${ImagePath}/logo/logo_light.png`} alt="" />
+          <Image className="img-fluid" src={`${ImagePath}/logo/logo_light.png`} alt="" />
         </Link>
         <div className="back-btn" onClick={() => dispatch(handleResponsiveToggle())}>
           <i className="fa fa-angle-left"></i>
@@ -26,7 +26,7 @@ export const LogoWrapper = () => {
       </div>
       <div className="logo-icon-wrapper">
         <Link href={`/${i18LangStatus}/sample_page`}>
-          <img className="img-fluid" src={`${ImagePath}/logo/logo-icon.png`} alt="" />
+          <Image className="img-fluid" src={`${ImagePath}/logo/logo-icon.png`} alt="" />
         </Link>
       </div>
     </>

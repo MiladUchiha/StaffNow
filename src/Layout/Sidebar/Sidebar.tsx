@@ -7,6 +7,7 @@ import { ArrowLeft, ArrowRight } from "react-feather";
 import SimpleBar from "simplebar-react";
 import { LogoWrapper } from "./LogoWrapper";
 import SidebarMenuList from "./SideBarMenuList";
+import Image from "next/image";
 
 export const SideBar = () => {
   const { toggleSidebar, margin } = useAppSelector((state) => state.layout);
@@ -25,7 +26,7 @@ export const SideBar = () => {
             <SimpleBar style={{ width: "80px", height: "350px" }}>
               <li className="back-btn">
                 <Link href={`/${i18LangStatus}/sample_page`}>
-                  <img className="img-fluid" src={`${ImagePath}/logo/logo-icon.png`} alt="" />
+                  <Image className="img-fluid" src={`${ImagePath}/logo/logo-icon.png`} alt="" />
                 </Link>
                 <div className="mobile-back text-end ">
                   <span>Back </span><i className="fa fa-angle-right ps-2" aria-hidden="true"></i>

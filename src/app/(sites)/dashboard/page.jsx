@@ -3,7 +3,7 @@ import getbemannaByEmail from "../../../lib/getbemannaByEmail"
 import getbemanningsByEmail from "../../../lib/getbemanningsByEmail"
 import { redirect } from "next/navigation"
 import ClientDash from '../../../components/ClientDash'
-import ContracterDash from '../../../components/ContracterDash'
+import BemanningDash2 from '../../../components/BemanningDash2'
 import prisma from '../../../lib/prismadb'
 
 const page = async () => {
@@ -32,7 +32,7 @@ const page = async () => {
 
     }
     {bemannings ?
-    <ContracterDash user={bemannings} />  :
+    <BemanningDash2 user={bemannings} />  :
     null
 
     }

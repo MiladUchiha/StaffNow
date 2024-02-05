@@ -4,7 +4,7 @@ import { Button, Col } from "reactstrap";
 import CommonModal from "../../Common/CommonModal";
 import { StaticForm } from "../../StaticBackdropModal/StaticForm";
 import { CommonMofiModalTitle } from "../Common/CommonMofiModalTitle";
-
+import Image from "next/image";
 const ModalTwo = () => {
   const [modalTwo, setModalTwo] = useState(false);
   const modalTwoTogggle = () => setModalTwo(!modalTwo);
@@ -15,7 +15,7 @@ const ModalTwo = () => {
         <div className="Mofi-demo-img">
           <CommonMofiModalTitle heading="Modal 2 -" subHeading="Result Modal" text="Example of Mofi login form." />
           <div className="overflow-hidden">
-            <img className="image-fluid" src={`${ImagePath}/alert/learning.png`} alt="learning" />
+            <Image className="image-fluid" src={`${ImagePath}/alert/learning.png`} alt="learning" />
             <Button color="primary" className="mx-auto mt-3" onClick={modalTwoTogggle}>{ClickOut}</Button>
           </div>
           <CommonModal centered modalBodyClassName="social-profile text-start" isOpen={modalTwo} toggle={modalTwoTogggle}>

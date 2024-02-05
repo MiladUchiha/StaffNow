@@ -4,7 +4,7 @@ import Link from "next/link";
 import Masonry from "react-masonry-css";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import { CardBody } from "reactstrap";
-
+import Image from "next/image";
 export const MasonryGalleryBody = () => {
   const breakpointColumnsObj = {
     default: 4,
@@ -22,7 +22,7 @@ export const MasonryGalleryBody = () => {
               <Item original={`${ImagePath}/${element.src}`} width="700" height="850">
                 {({ ref, open }) => (
                   <Link href={Href} onClick={open}>
-                    <img className="img-thumbnail mb-4" ref={ref as React.MutableRefObject<HTMLImageElement>} src={`${ImagePath}/${element.src}`} alt="images" />
+                    <Image className="img-thumbnail mb-4" ref={ref as React.MutableRefObject<HTMLImageElement>} src={`${ImagePath}/${element.src}`} alt="images" />
                   </Link>
                 )}
               </Item>

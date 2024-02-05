@@ -5,7 +5,7 @@ import { useAppSelector } from "@/Redux/Hooks";
 import { BalanceModalType } from "@/Types/UikitsType";
 import Link from "next/link";
 import { Badge, Card, CardBody, Col, Modal } from "reactstrap";
-
+import Image from "next/image";
 export const BalanceModal:React.FC<BalanceModalType> = ({ modalThird, modalThirdToggle: modalThirdToggle }) => {
   const { i18LangStatus } = useAppSelector((state) => state.langSlice);
 
@@ -16,7 +16,7 @@ export const BalanceModal:React.FC<BalanceModalType> = ({ modalThird, modalThird
           <CardBody>
             <div className="balance-profile">
               <div className="balance-img">
-                <img className="image-fluid" src={`${ImagePath}/dashboard-4/user.png`} alt="user vector" />
+                <Image className="image-fluid" src={`${ImagePath}/dashboard-4/user.png`} alt="user vector" />
                 <Link className="edit-icon" href={`/${i18LangStatus}/users/user_profile`}><SVG iconId="pencil" /></Link>
               </div>
               <span className="f-light d-block">Your Balance</span>

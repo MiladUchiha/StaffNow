@@ -3,6 +3,7 @@ import { CheckAll, Href, ImagePath, NotiFications } from "@/Constant";
 import { NotificationData } from "@/Data/Layout";
 import Link from "next/link";
 import { Badge } from "reactstrap";
+import Image from "next/image";
 
 export const Notification = () => {
   return (
@@ -17,7 +18,7 @@ export const Notification = () => {
           {NotificationData.map((item, index) => (
             <li className="d-flex" key={index}>
               <div className={`flex-shrink-0 bg-light-${item.color}`}>
-                <img src={`${ImagePath}/dashboard/icon/${item.src}`} alt={item.alt} />
+                <Image src={`${ImagePath}/dashboard/icon/${item.src}`} alt={item.alt} />
               </div>
               <div className="flex-grow-1">
                 <Link href={Href}><h6>{item.title}</h6></Link>

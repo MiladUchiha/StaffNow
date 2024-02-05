@@ -5,7 +5,7 @@ import { handleEnvelope, handleInterview } from '@/Redux/Reducers/LetterBoxSlice
 import { CommonDataType } from '@/Types/LatterBoxType';
 import { useState } from 'react';
 import { Badge, Input, Label } from 'reactstrap';
-
+import Image from "next/image";
 const DraftEmailContent :React.FC<CommonDataType> = ({data,ids}) => {
     const { faIcon } = useAppSelector((state) => state.letterBox);
     const [fill,setFill] = useState(false)
@@ -23,7 +23,7 @@ const DraftEmailContent :React.FC<CommonDataType> = ({data,ids}) => {
             <SVG className={`important-mail ${fill ? "active" : ""}`} iconId="fill-star"/>
           </div> 
           <div className="rounded-border">
-            {data.image && <img src={`${ImagePath}/user/${data.image}`} alt="user" />}
+            {data.image && <Image src={`${ImagePath}/user/${data.image}`} alt="user" />}
             {data.shortName && <div className={data.color === "success" ? "circle-success" : ""}>
               <p className={`txt-${data.color}`}>{data.shortName}</p>
             </div>}

@@ -73,5 +73,5 @@ const CreatedByMe = React.forwardRef((props, ref : LegacyRef<HTMLDivElement> | u
     </div>
   );
 })
-
+CreatedByMe.displayName = 'CreatedByMe';
 export default CreatedByMe;

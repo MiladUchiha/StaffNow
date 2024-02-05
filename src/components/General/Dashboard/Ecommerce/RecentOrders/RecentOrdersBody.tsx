@@ -3,7 +3,7 @@ import { useAppSelector } from "@/Redux/Hooks";
 import { RecentOrdersBodyType } from "@/Types/DashboardType";
 import Link from "next/link";
 import { Button, Input, Label } from "reactstrap";
-
+import Image from "next/image";
 const RecentOrdersBody :React.FC<RecentOrdersBodyType> = ({currentItems}) => {
 const { i18LangStatus } = useAppSelector((store) => store.langSlice);
    return (
@@ -19,7 +19,7 @@ const { i18LangStatus } = useAppSelector((store) => store.langSlice);
           <td>
             <div className="d-flex align-items-center gap-2">
               <div className="flex-shrink-0">
-                <img src={`${ImagePath}/dashboard-3/${data.image}`} alt="dashboard-3" />
+                <Image src={`${ImagePath}/dashboard-3/${data.image}`} alt="dashboard-3" />
               </div>
               <div className="flex-grow-1">
                 <Link href={`/${i18LangStatus}/ecommerce/checkout`}><h6>{data.order}</h6></Link>
@@ -31,7 +31,7 @@ const { i18LangStatus } = useAppSelector((store) => store.langSlice);
           <td className="customer-img">
             <div className="d-flex align-items-center gap-2">
               <div className="flex-shrink-0">
-                <img src={`${ImagePath}/dashboard-3/user/${data.image1}`} alt="dashboard-3" />
+                <Image src={`${ImagePath}/dashboard-3/user/${data.image1}`} alt="dashboard-3" />
               </div>
               <div className="flex-grow-1">
                 <h6>{data.name}</h6>

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-
+import Image from "next/image";
 interface Component {
   className?: string;
   src: string;
@@ -33,6 +33,6 @@ const RatioImage = (props: Component) => {
     }
   }, []);
 
-  return <img ref={bgImg} {...props} alt={alt} />;
+  return <Image ref={bgImg} {...props} alt={alt} />;
 };
 export default RatioImage;

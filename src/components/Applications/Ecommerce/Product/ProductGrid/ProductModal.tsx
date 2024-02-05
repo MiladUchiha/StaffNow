@@ -6,7 +6,7 @@ import { Button, Col, Modal, ModalHeader, Row } from "reactstrap";
 import { ModalButtons } from "./ModalButtons";
 import { ModalProductDetails } from "./ModalProductDetails";
 import { ModalQuantity } from "./ModalQuantity";
-
+import Image from "next/image";
 const ProductModal :React.FC<ProductModalInterfaceType> = ({ value, setOpenModal, dataId }) => {
   const [open, setOpen] = useState(value);
   const { productItem } = useAppSelector((state) => state.product);
@@ -30,7 +30,7 @@ const ProductModal :React.FC<ProductModalInterfaceType> = ({ value, setOpenModal
         <Button close onClick={onCloseModal}></Button>
         <Row className="product-box">
           <Col lg="6" className="product-img">
-            <img className="img-fluid" src={`${ImagePath}/ecommerce/${singleProduct.image}`} alt="image" />
+            <Image className="img-fluid" src={`${ImagePath}/ecommerce/${singleProduct.image}`} alt="image" />
           </Col>
           <Col lg="6" className="product-details text-start p-1">
             <ModalProductDetails singleProduct={singleProduct} />

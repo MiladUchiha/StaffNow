@@ -1,7 +1,7 @@
 import { ImagePath } from "@/Constant";
 import { MyProfileClassCollapseProp } from "@/Types/SocialAppType";
 import { CardBody, Collapse } from "reactstrap";
-
+import Image from "next/image";
 const LatestPhotosCollapse :React.FC<MyProfileClassCollapseProp> = ({ isFilter }) => {
   const numbers:number[] = [1, 2, 3, 4, 5, 6, 7, 8];
   
@@ -12,7 +12,7 @@ const LatestPhotosCollapse :React.FC<MyProfileClassCollapseProp> = ({ isFilter }
           {numbers.map((data, index) => (
             <li key={index}>
               <div className="latest-post">
-                <img className="img-fluid" alt="user" src={`${ImagePath}/social-app/post-${data}.png`}/>
+                <Image className="img-fluid" alt="user" src={`${ImagePath}/social-app/post-${data}.png`}/>
               </div>
             </li>
           ))}

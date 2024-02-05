@@ -4,7 +4,7 @@ import Link from "next/link";
 import Masonry from "react-masonry-css";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import { CardBody } from "reactstrap";
-
+import Image from "next/image";
 export const MasonryGalleryWithDescriptionCardBody = () => {
   const description :string = "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy." 
 
@@ -25,10 +25,10 @@ export const MasonryGalleryWithDescriptionCardBody = () => {
                 <Item original={`${ImagePath}/${element.src}`} width="700" height="750" caption={description}>
                   {({ ref, open }) => (
                     <Link href={Href} onClick={open}>
-                      <img className="img-thumbnail p-2 rounded-0 rounded-top-1" ref={ref as React.MutableRefObject<HTMLImageElement>} src={`${ImagePath}/${element.src}`} alt="images" />
+                      <Image className="img-thumbnail p-2 rounded-0 rounded-top-1" ref={ref as React.MutableRefObject<HTMLImageElement>} src={`${ImagePath}/${element.src}`} alt="images" />
                       <div className="caption border-top-0 p-2">
                         <h4 className="mt-0">{PortfolioTitle}</h4>
-                        <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+                        <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy.</p>
                       </div>
                     </Link>
                   )}

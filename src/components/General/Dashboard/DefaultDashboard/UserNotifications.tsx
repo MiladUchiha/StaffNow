@@ -4,7 +4,7 @@ import { useAppSelector } from "@/Redux/Hooks";
 import Link from "next/link";
 import { Card, CardBody, Col } from "reactstrap";
 import DashboardCommonHeader from "../common/DashboardCommonHeader";
-
+import Image from "next/image";
 const UserNotifications = () => {
 const { i18LangStatus } = useAppSelector((store) => store.langSlice);
 
@@ -17,7 +17,7 @@ const { i18LangStatus } = useAppSelector((store) => store.langSlice);
             {NotificationsData.map((data, i) => (
               <li className="d-flex" key={i}>
                 <div className={`flex-shrink-0 bg-light-${data.color}`}>
-                  <img src={`${ImagePath}/dashboard/icon/${data.img}`} alt="Wallet" />
+                  <Image src={`${ImagePath}/dashboard/icon/${data.img}`} alt="Wallet" />
                 </div>
                 <div className="flex-grow-1">
                   <Link href={`/${i18LangStatus}/chat/private_chat`}>

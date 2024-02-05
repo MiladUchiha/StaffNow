@@ -3,7 +3,7 @@ import { useAppSelector } from "@/Redux/Hooks";
 import Link from "next/link";
 import { useState } from "react";
 import { Button, Col, Container, Form, FormGroup, Input, Label, Row } from "reactstrap";
-
+import Image from "next/image";
 const ForgetPasswordContainer = () => {
   const [show, setShow] = useState(false);
   const { i18LangStatus } = useAppSelector((state) => state.langSlice);
@@ -16,8 +16,8 @@ const ForgetPasswordContainer = () => {
             <div>
               <div>
                 <a className="logo" href={`/${i18LangStatus}/dashboard/default_dashboard`}>
-                  <img className="img-fluid for-light" src={`${ImagePath}/logo/logo.png`} alt="loginpage" />
-                  <img className="img-fluid for-dark" src={`${ImagePath}/logo/logo_dark.png`} alt="loginpage" />
+                  <Image className="img-fluid for-light" src={`${ImagePath}/logo/logo.png`} alt="loginpage" />
+                  <Image className="img-fluid for-dark" src={`${ImagePath}/logo/logo_dark.png`} alt="loginpage" />
                 </a>
               </div>
               <div className="login-main">

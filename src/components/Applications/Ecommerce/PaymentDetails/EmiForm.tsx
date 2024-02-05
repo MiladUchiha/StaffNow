@@ -3,6 +3,7 @@ import { Emi, FirstName, ImagePath, LastName, Pincode, Submit } from "@/Constant
 import { Button, Card, CardBody, Col, Form, FormGroup, Row } from "reactstrap";
 import FormGroupCommon from "./Common/FormGroupCommon";
 import SelectCommon from "./Common/SelectCommon";
+import Image from "next/image";
 
 const EmiForm = () => {
   const EmiBankSelect: string[] = ["Bank Name", "SBI", "ICICI", "KOTAK", "BOB"];
@@ -25,9 +26,9 @@ const EmiForm = () => {
               <FormGroup>
                 <Col xs="12">
                   <ul className="payment-opt">
-                    <li><img src={`${ImagePath}/ecommerce/mastercard.png`} alt="" /></li>
-                    <li><img src={`${ImagePath}/ecommerce/visa.png`} alt="" /></li>
-                    <li><img src={`${ImagePath}/ecommerce/paypal.png`} alt="" /></li>
+                    <li><Image src={`${ImagePath}/ecommerce/mastercard.png`} alt="" /></li>
+                    <li><Image src={`${ImagePath}/ecommerce/visa.png`} alt="" /></li>
+                    <li><Image src={`${ImagePath}/ecommerce/paypal.png`} alt="" /></li>
                   </ul>
                 </Col>
               </FormGroup>

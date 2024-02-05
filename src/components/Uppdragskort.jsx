@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Checkbox } from "../components/ui/checkbox"
 import { Label } from "../components/ui/label"
 import { CardTitle, CardHeader, CardContent, CardFooter, Card, CardDescription } from "../components/ui/card"
