@@ -8,7 +8,7 @@ export const VerifyEmailTemplate = ({ email, emailVerificationToken }) => (
         <p>
             För att verifiera ditt mejl, klicka på denna länk och följ instruktionerna:
         </p>
-        <a href={`http://staffnow.se/auth/verify-email?token=${emailVerificationToken}`}>
+        <a href={`https://staff-now.vercel.app/auth/verify-email?token=${emailVerificationToken}`}>
             Klicka här för att verifiera mejl
         </a>
     </div>
