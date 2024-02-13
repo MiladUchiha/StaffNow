@@ -1,4 +1,5 @@
-import { getCurrentUser } from "../../../lib/session"
+import { authOptions } from "@/app/api/auth/[...nextauth]/route"
+import { getServerSession } from "next-auth/next"
 import getbemannaByEmail from "../../../lib/getbemannaByEmail"
 import getbemanningsByEmail from "../../../lib/getbemanningsByEmail"
 import { redirect } from "next/navigation"
@@ -8,10 +9,11 @@ import prisma from '../../../lib/prismadb'
 
 const page = async () => {
   
-    const session = await getCurrentUser()
+    const session = await getServerSession(authOptions)
+    const mainUser = session?.user
     if (!session) redirect('/login')
-    const user = await getbemannaByEmail(session?.email)
-    const bemannings = await getbemanningsByEmail(session?.email)
+    const user = await getbemannaByEmail(mainUser?.email)
+    const bemannings = await getbemanningsByEmail(mainUser?.email)
     if (!user && !bemannings) redirect('/login')
     
      const mission = await prisma.mission.findMany({

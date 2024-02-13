@@ -1,10 +1,11 @@
-
+import { authOptions } from "@/app/api/auth/[...nextauth]/route"
+import { getServerSession } from "next-auth/next"
 import RegisterSimpleContainer from "../../../components/Other/Authentication/RegisterSimple";
 
-import { getCurrentUser } from "../../../lib/session";
+
 import { redirect } from "next/navigation";
 const RegisterSimple = async () => {
-  const session = await getCurrentUser();
+  const session = await getServerSession(authOptions)
   if (session) {
     redirect("/dashboard");
   }

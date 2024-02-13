@@ -1,5 +1,4 @@
 import Link from "next/link";
-
 import HeaderLanding from "../components/header/landing/HeaderLanding";
 
 import FaqClassic from "../components/faq/FaqClassicTwo";
