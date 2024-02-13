@@ -8,19 +8,20 @@ import {  FormGroup, Label, Col, Container, Row } from "reactstrap";
 import ButtonEdit from "../../../Button";
 import { toast } from "sonner";
 import Image from "next/image";
-
+import { set } from "date-fns";
 const LoginSimpleContainer = () => {
+  const [loading, setLoading] = useState(false);
   const [data, setData] = useState({
     email: '',
     password: '',
   });
   const [show, setShow] = useState(false);
 
-''
+
   const router = useRouter()
   const submitHandler = async (e) => {
 
-    
+    setLoading(true)
   
     signIn('credentials',
       {
@@ -29,9 +30,11 @@ const LoginSimpleContainer = () => {
       .then((callback) => {
         if (callback?.error) {
           toast.error(callback.error)
+          setLoading(false)
         }
 
         if (callback?.ok && !callback?.error) {
+          
           toast.success('Du har loggat in!')
           router.push('/dashboard')
           router.refresh()
@@ -83,7 +86,11 @@ const LoginSimpleContainer = () => {
                 
                 <div className="text-end mt-3">
                   
-                  <ButtonEdit color="primary" className="w-100" action="Logga in" />
+                  {loading ? (
+                    <ButtonEdit action="Vänta..." color="primary" className="btn-block" />
+                  ) : (
+                    <ButtonEdit action="Logga in" color="primary" className="btn-block" />
+                  )}
                   </div>
               </FormGroup>
 
