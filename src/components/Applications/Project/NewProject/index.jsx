@@ -1,34 +1,23 @@
 "use client"
 import React from "react";
 import { Card, CardBody, Container } from "reactstrap";
-
 import axios from "axios"
 import { toast } from 'sonner'
-import { NewProjectInitialValue, NewProjectValidation, ProjectListData } from "../../../../Data/Application/Project";
-import { useAppDispatch, useAppSelector } from "../../../../Redux/Hooks";
-import { setCreatedData } from "../../../../Redux/Reducers/ProjectSlice";
-import { CountryDataList, PreFetchData } from "../../../../Data/Form&Table/Form";
+import {  useAppSelector } from "../../../../Redux/Hooks";
+import { CountryDataList} from "../../../../Data/Form&Table/Form";
 import { Formik, Form } from "formik";
 import { Typeahead } from "react-bootstrap-typeahead";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { TitleAndClientSection } from "./TitleAndClientSection";
-import { MultiWithHeaderData, MultiWithHeaderData2 } from "../../../../Data/Form&Table/Form";
 import { Button } from "reactstrap";
-import { ProjectSection } from "./ProjectSection";
-import { DateSection } from "./DateSection";
-import { DescriptionSection } from "./DescriptionSection";
-import { ButtonSection } from "./ButtonSection";
-import UploadProjectFile from "./UploadProjectFile";
 import { EnterSomeDetails } from "../../../../Constant";
 import { Col, FormGroup, Label, Row } from "reactstrap";
-import { ClientName, ClientNamePlaceholder, ProjectTitle, ProjectTitlePlaceholder } from "../../../../Constant";
-import { ErrorMessage, Field } from "formik";
-import { Medium, ProjectSize, ProjectSizePlaceholder, Small, Big, StartingDate, EndingDate } from "../../../../Constant";
+import { Field } from "formik";
+import { Medium,  StartingDate, EndingDate } from "../../../../Constant";
 import { useState } from "react";
 import DatePicker from "react-datepicker";
 import { ProjectStatus, ProjectProgress, ProjectProgressPlaceholder, FixPrice, Hourly, Priority, Low, High, Urgent, PriorityPlaceholder } from "../../../../Constant";
-import { set } from "date-fns";
+
 const NewProjectContainer = ({user}) => {
   
   const [title, setTitle] = useState("");

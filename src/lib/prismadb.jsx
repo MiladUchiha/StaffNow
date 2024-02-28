@@ -1,6 +1,8 @@
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from '@prisma/client'
+import { withAccelerate } from '@prisma/extension-accelerate'
 
-const client = globalThis.prisma || new PrismaClient();
-if (process.env.NODE_ENV === "production") globalThis.prisma = client;
+const client = new PrismaClient().$extends(withAccelerate())
+
+
 
 export default client;

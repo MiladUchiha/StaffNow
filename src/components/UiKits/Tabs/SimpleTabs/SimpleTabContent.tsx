@@ -10,7 +10,7 @@ export const SimpleTabContent: React.FC<TabContentProp> = ({ basicTab }) => {
       </TabPane>
       <TabPane tabId="2">
         <div className="pt-3 mb-0">
-          <div className="flex-space flex-wrap align-items-center"><Image className="tab-img" src={`${ImagePath}/avtar/3.jpg`} alt="profile" />
+          <div className="flex-space flex-wrap align-items-center"><Image width={50} height={50} className="tab-img" src={`${ImagePath}/avtar/3.jpg`} alt="profile" />
             <ul className="d-flex flex-column gap-1">
               <li> <strong>Visit Us:</strong> 2600 Hollywood Blvd,Florida, United States-33020</li>
               <li> <strong>Mail Us:</strong> contact@us@gmail.com</li>

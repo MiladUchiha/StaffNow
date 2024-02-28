@@ -8,7 +8,7 @@ import {  FormGroup, Label, Col, Container, Row } from "reactstrap";
 import ButtonEdit from "../../../Button";
 import { toast } from "sonner";
 import Image from "next/image";
-import { set } from "date-fns";
+
 const LoginSimpleContainer = () => {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState({

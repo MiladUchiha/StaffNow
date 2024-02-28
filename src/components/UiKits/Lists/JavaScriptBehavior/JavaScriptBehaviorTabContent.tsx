@@ -17,7 +17,7 @@ export const JavaScriptBehaviorTabContent:React.FC<TabContentProp> = ({ basicTab
           </div>
         </TabPane>
         <TabPane tabId="2" className="dark-list">
-          <div className="flex-space align-items-center list-light-dark contact-profile"><Image className="tab-img" src={`${ImagePath}/avtar/3.jpg`} alt="profile" />
+          <div className="flex-space align-items-center list-light-dark contact-profile"><Image width={50} height={50} className="tab-img" src={`${ImagePath}/avtar/3.jpg`} alt="profile" />
             <ul className="d-flex flex-column gap-2">
               <li> <strong>Visit Us: </strong>	2600 Hollywood Blvd,Florida, United States-	33020</li>
               <li><strong>Mail Us:</strong>contact@us@gmail.com</li>

@@ -1,5 +1,5 @@
-import SVG from "@/CommonComponent/SVG";
-import { Href, NameAndPhoneNumber } from "@/Constant";
+import SVG from "../../../../../CommonComponent/SVG"
+import { Href, NameAndPhoneNumber } from "../../../../../Constant";
 import React from "react";
 import { Mic } from "react-feather";
 import { Button, Input } from "reactstrap";

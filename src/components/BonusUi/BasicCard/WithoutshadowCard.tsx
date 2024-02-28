@@ -10,7 +10,7 @@ const WithoutshadowCard = () => {
         <CommonCardHeader title={WithoutShadowCards} span={WithoutShadowCardDetails} />
         <CardBody>
           <div className="flex-space flex-wrap align-items-center">
-            <Image className="tab-img" src={`${ImagePath}/avtar/3.jpg`} alt="profile" />
+            <Image height={50} width={50} className="tab-img" src={`${ImagePath}/avtar/3.jpg`} alt="profile" />
             <p><strong>Visit Us: </strong> 2600 Hollywood Blvd,Florida, United States- 33020<br /><strong>Mail Us:</strong>contact@us@gmail.com<br /><strong>Contact Number: </strong>(954) 357-7760</p>
           </div>
         </CardBody>

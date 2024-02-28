@@ -31,10 +31,13 @@
 // Private-chat
 .left-sidebar-wrapper {
   padding: 20px;
+  
   border-radius: 10px 0 0 10px;
+  margin: 5px;
   z-index: 1;
   border: 2px solid var(--white);
   border-right: unset;
+  
 
   [dir="rtl"] & {
     border-left: unset;

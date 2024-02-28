@@ -9,7 +9,7 @@ const LoginBgTwoImageContainer = () => {
     <Container fluid>
       <Row>
         <Col xl="5">
-          <RatioImage className="bg-img-cover bg-center" src={`${ImagePath}/login/3.jpg`} alt="looginpage" />
+          <RatioImage width={50} height={50} className="bg-img-cover bg-center" src={`${ImagePath}/login/3.jpg`} alt="looginpage" />
         </Col>
         <Col xl="7" className="p-0">
           <div className="login-card login-dark">

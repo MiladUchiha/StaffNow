@@ -1,5 +1,5 @@
-import { useAppDispatch } from "@/Redux/Hooks";
-import { fetchChatApiData, fetchChatMemberApiData } from "@/Redux/Reducers/ChatSlice";
+import { useAppDispatch } from "../../../../Redux/Hooks";
+import { fetchChatApiData, fetchChatMemberApiData } from "../../../../Redux/Reducers/ChatSlice";
 import { useEffect } from "react";
 import { Container, Row } from "reactstrap";
 import { LeftSideBar } from "./LeftSideBar";
@@ -14,12 +14,14 @@ const PrivateChatContainer = () => {
   });
 
   return (
-    <Container fluid>
+   
+    <Container fluid  >
       <Row className="g-0">
         <LeftSideBar />
         <UserChat />
       </Row>
     </Container>
+    
   );
 };
 

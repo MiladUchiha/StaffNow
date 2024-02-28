@@ -4,7 +4,7 @@ import RightChatBody from './RightChatBody'
 
 const UserChat = () => {
   return (
-    <Col xxl="9" xl="8" md="7" className="box-col-7">
+    <Col xxl="9" xl="8" md="7" className="box-col-6">
       <Card className="right-sidebar-chat">
         <RightChatHeader />
         <RightChatBody />

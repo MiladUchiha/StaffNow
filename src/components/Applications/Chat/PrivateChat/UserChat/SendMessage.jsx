@@ -1,6 +1,6 @@
-import { TypeMessageHere } from "@/Constant";
-import { useAppDispatch, useAppSelector } from "@/Redux/Hooks";
-import { replyByUserAsync, sendMessageAsync } from "@/Redux/Reducers/ChatSlice";
+import { TypeMessageHere } from "../../../../../Constant";
+import { useAppDispatch, useAppSelector } from "../../../../../Redux/Hooks";
+import { replyByUserAsync, sendMessageAsync } from "../../../../../Redux/Reducers/ChatSlice";
 import data from "@emoji-mart/data";
 import Picker from "@emoji-mart/react";
 import { useState } from "react";
@@ -13,12 +13,12 @@ const SendMessage = () => {
   const { chats, selectedUser, currentUser } = useAppSelector((state) => state.chat);
 
   const dispatch = useAppDispatch();
-  const addEmoji = (emoji: string) => {
+  const addEmoji = (emoji) => {
     const text = `${messageInput}${emoji}`;
     setShowEmojiPicker(false);
     setMessageInput(text);
   };
-  const handleMessageChange = (message: string) => {
+  const handleMessageChange = (message) => {
     setMessageInput(message);
   };
 
@@ -44,7 +44,7 @@ const SendMessage = () => {
       <ChatDropMenu />
       <Input className="msger-input two uk-textarea shadow-none" type="text" placeholder={TypeMessageHere} value={messageInput} onChange={(e) => handleMessageChange(e.target.value)} />
       <div className="open-emoji">
-        {showEmojiPicker ? (<Picker data={data} onEmojiSelect={(e: { native: string; }) => { addEmoji(e.native)}}/>) : null}
+        {showEmojiPicker ? (<Picker data={data} onEmojiSelect={(e) => { addEmoji(e.native)}}/>) : null}
       </div>
       <div className="smiley-box">
         <div className="picker second-btn uk-button px-1" onClick={() => setShowEmojiPicker(!showEmojiPicker)}/>

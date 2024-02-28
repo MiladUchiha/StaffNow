@@ -5,6 +5,7 @@ import Animation from '../context/Animation'
 import './globals.css'
 import '../../public/main.scss'
 import { Roboto } from "next/font/google"
+import { Outfit } from "next/font/google"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import NoSsr from "../utils/NoSsr";
@@ -18,12 +19,18 @@ const roboto = Roboto({
   subsets: ['latin'],
   display: 'swap',
 })
+const outfit = Outfit({
+  weight: ['300','400','500', '700'],
+  style: ['normal'],
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 
 export default function RootLayout({ children }) {
   
   return (
-    <html  lang="en" className={roboto.className} >
+    <html  lang="en" className={outfit.className} >
       <head>
       
 

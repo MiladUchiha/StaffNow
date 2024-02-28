@@ -1,18 +1,18 @@
-import { ImagePath } from "@/Constant";
-import { useAppDispatch, useAppSelector } from "@/Redux/Hooks";
-import { changeChat, createNewChatAsync } from "@/Redux/Reducers/ChatSlice";
+import { ImagePath } from "../../../../../Constant";
+import { useAppDispatch, useAppSelector } from "../../../../../Redux/Hooks";
+import { changeChat, createNewChatAsync } from "../../../../../Redux/Reducers/ChatSlice";
 import { Badge } from "reactstrap";
-import { AllMemberType, ChatsTypes } from "@/Types/ChatType";
-import SearchNotFoundClass from "@/Components/Applications/Contact/TabData/SearchNotFoundClass";
+
+import SearchNotFoundClass from "../../../Contact/TabData/SearchNotFoundClass";
 import Image from "next/image";
 const ChatUserProfile = () => {
   const { members, selectedUser, currentUser, chats } = useAppSelector((state) => state.chat);
   var activeChat = 0;
   if (selectedUser != null) activeChat = selectedUser.id;
   const dispatch = useAppDispatch();
-  const changeChatClick = (selectUser: number) => {
+  const changeChatClick = (selectUser) => {
     const currentUserId = currentUser?.id;
-    const currentChat = chats.find((x:{users:number[]}) => currentUser?.id !== undefined && x.users.includes(currentUser?.id) && x.users.includes(selectUser));
+    const currentChat = chats.find((x) => currentUser?.id !== undefined && x.users.includes(currentUser?.id) && x.users.includes(selectUser));
     if (currentChat) {
       dispatch(changeChat(selectUser));
     } else {
@@ -22,10 +22,10 @@ const ChatUserProfile = () => {
   return (
     <>
       {members && members.length > 0 ? (
-        <ul className="chats-user overflow-y-auto">
+        <ul className="chats-user ">
           {members
-            .filter((x: AllMemberType) => x.id !== currentUser?.id)
-            .map((item: AllMemberType, id: number) => (
+            .filter((x) => x.id !== currentUser?.id)
+            .map((item, id) => (
               <li className={`common-space ${activeChat === item.id ? "active" : ""}`} key={id} onClick={() => changeChatClick(item.id)}>
                 <div className="chat-time">
                   <div className="active-profile">

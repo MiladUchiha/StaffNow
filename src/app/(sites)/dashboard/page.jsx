@@ -1,4 +1,4 @@
-import { authOptions } from "@/app/api/auth/[...nextauth]/route"
+import { authOptions } from "../../../app/api/auth/[...nextauth]/route"
 import { getServerSession } from "next-auth/next"
 import getbemannaByEmail from "../../../lib/getbemannaByEmail"
 import getbemanningsByEmail from "../../../lib/getbemanningsByEmail"

@@ -164,7 +164,7 @@ export default async function Home() {
                 <h3 className="font-gilroy-bold text-purple-500">
                Uppdragsgivare
                 </h3>
-                <p>
+                <p className=" text-lg">
                   
                 Förenkla din rekryteringsprocess med Staffnow. 
                 Upptäck en värld av kvalificerade och erfarna bemanningsföretag och frilansare, 
@@ -213,7 +213,7 @@ export default async function Home() {
               >
                
                 <h3 className="font-gilroy-bold text-orange-600">Bemanningsföretag </h3>
-                <p>
+                <p className=" text-lg">
                 Expandera din verksamhet och nå nya höjder med Staffnow. 
                 Få tillgång till en mångfald av spännande och utmanande uppdrag över hela landet. 
                 Vår plattform möjliggör för dig att bygga långsiktiga relationer med pålitliga uppdragsgivare och erbjuder dig

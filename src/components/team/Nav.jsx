@@ -38,11 +38,7 @@ export default function Nav() {
                   4. Cookie policy
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#opt5">
-                  5. Third Party Links
-                </a>
-              </li>
+             
               <li className="nav-item">
                 <a className="nav-link" href="#opt6">
                   6. GDPR

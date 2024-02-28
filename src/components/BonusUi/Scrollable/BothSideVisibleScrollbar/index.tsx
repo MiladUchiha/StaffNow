@@ -23,7 +23,7 @@ const BothSideVisibleScrollbar = () => {
                     <h6 className="pb-2">Latest trends </h6>
                     <p>You should stay current with all the most recent advances in the business whether you operate as a freelance web designer or for an agency or design studio. You may be sure youre constantly providing the most intelligent and original design solutions by doing this.</p>
                     <p>You can keep up with evolving design trends by reading web design blogs. Youll need to be able to comprehend new trends causes and how they affect user experience. Additionally, youll discover upgrades to current tools as well as new ones that have recently hit the market.</p>
-                    <div className="visible-wrapper"><Image src={`${ImagePath}/email/3.jpg`} alt="office" /></div>
+                    <div className="visible-wrapper"><Image width={50} height={50} src={`${ImagePath}/email/3.jpg`} alt="office" /></div>
                   </Col>
                   <Col sm="3">
                     <h6 className="pb-2">The best UX designer</h6>
@@ -33,7 +33,7 @@ const BothSideVisibleScrollbar = () => {
                   </Col>
                   <Col sm="3">
                     <h6 className="pb-2">How to make best website ideas </h6>
-                    <div className="visible-wrapper"><Image src={`${ImagePath}/banner/3.jpg`} alt="website" /></div>
+                    <div className="visible-wrapper"><Image width={50} height={50} src={`${ImagePath}/banner/3.jpg`} alt="website" /></div>
                     <p className="pt-3">{`-->`} Blog <br />{`-->`} Portfolio website <br />{`-->`}Event website <br />{`-->`} personal website <br />{`-->`} Fashion website <br />{`-->`} Admin dashboards <br />{`-->`} E-commerce website <br />{`-->`} Beauty website <br />{`-->`} Food website<br />{`-->`} Animation website <br />{`-->`} Financial website</p>
                   </Col>
                 </Row>

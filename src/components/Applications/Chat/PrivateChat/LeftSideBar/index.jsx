@@ -2,20 +2,20 @@ import React, { useState } from "react";
 import { Search } from "react-feather";
 import { Card, Col, Input, InputGroup, InputGroupText } from "reactstrap";
 import { ChatOptionTab } from "./ChatOptionTab";
-import { SearchHere } from "@/Constant";
-import { useAppDispatch, useAppSelector } from "@/Redux/Hooks";
-import { searchMember } from "@/Redux/Reducers/ChatSlice";
+import { SearchHere } from "../../../../../Constant";
+import { useAppDispatch, useAppSelector } from "../../../../../Redux/Hooks";
+import { searchMember } from "../../../../../Redux/Reducers/ChatSlice";
 
 export const LeftSideBar = () => {
   const [searchKeyword, setSearchKeyword] = useState("");
   const dispatch = useAppDispatch();
-  const handleSearchKeyword = (keyword: string) => {
+  const handleSearchKeyword = (keyword) => {
     setSearchKeyword(keyword);
     dispatch(searchMember(keyword));
   };
 
   return (
-    <Col xxl="3" xl="4" md="5" className="box-col-5">
+    <Col className="box-col-6 ">
       <Card className="left-sidebar-wrapper">
         <div className="left-sidebar-chat">
           <InputGroup>

@@ -3,7 +3,9 @@ import prisma from '../../../lib/prismadb'
 import { NextResponse } from 'next/server'
 import { sendEmail } from '../../../lib/sendEmail';
 import { VerifyEmailTemplate } from '../../../components/mail/verify-email';
+import { NyRegistering } from '../../../components/mail/nyRegistering';
 import crypto from 'crypto';
+import { send } from 'process';
 
 export async function POST(request) {
   const body = await request.json();
@@ -49,6 +51,12 @@ await sendEmail({
   to: [email],
   subject: 'Verifera din email',
   react: VerifyEmailTemplate({email, emailVerificationToken})
+});
+await sendEmail({
+  from: 'Admin <admin@staffnow.se>',
+  to: ['ahmadpourmilad8@gmail.com', "maftuna.tur@gmail.com"],
+  subject: 'Ny registrering',
+  react: NyRegistering({name, email, organizationNumber, branches, description, companyName, address, type: "Uppdragsgivare"})
 });
 
   return NextResponse.json(user, bemannasKonto)

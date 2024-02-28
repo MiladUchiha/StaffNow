@@ -1,9 +1,9 @@
 import { Dropdown, DropdownItem, DropdownMenu, DropdownToggle } from "reactstrap";
 import { useState } from "react";
-import SVG from "@/CommonComponent/SVG";
-import { DropClassTypes } from "@/Types/ChatType";
+import SVG from "../../../../../CommonComponent/SVG";
 
-const ContactEdit: React.FC<DropClassTypes> = ({ dropClass }) => {
+
+const ContactEdit= ({ dropClass }) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const toggle = () => setDropdownOpen((prevState) => !prevState);
 

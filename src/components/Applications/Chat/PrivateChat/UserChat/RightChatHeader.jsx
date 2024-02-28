@@ -1,5 +1,5 @@
-import { ImagePath } from "@/Constant";
-import { useAppSelector } from "@/Redux/Hooks";
+import { ImagePath } from "../../../../../Constant";
+import { useAppSelector } from "../../../../../Redux/Hooks";
 import Image from "next/image";
 import ContactEdit from "./ContactEdit";
 
@@ -11,7 +11,7 @@ const RightChatHeader = () => {
       <div className="common-space">
         <div className="chat-time">
           <div className="active-profile">
-            <Image className="img-fluid rounded-circle" src={`${ImagePath}/${selectedUser?.image ? `${selectedUser?.image}` : "avtar/3.jpg"}`} alt="user"/>
+            <Image width={50} height={50} className="img-fluid rounded-circle" src={`${ImagePath}/${selectedUser?.image ? `${selectedUser?.image}` : "avtar/3.jpg"}`} alt="user"/>
             <div className="status bg-success" />
           </div>
           <div>

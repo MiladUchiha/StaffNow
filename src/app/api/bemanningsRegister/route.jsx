@@ -4,6 +4,7 @@ import { NextResponse } from 'next/server'
 import { sendEmail } from '../../../lib/sendEmail';
 import { VerifyEmailTemplate } from '../../../components/mail/verify-email';
 import crypto from 'crypto';
+import { NyRegistering } from '../../../components/mail/nyRegistering';
 
 export async function POST(request) {
   const body = await request.json();
@@ -51,6 +52,12 @@ await sendEmail({
   to: [email],
   subject: 'Verifera din email',
   react: VerifyEmailTemplate({email, emailVerificationToken})
+});
+await sendEmail({
+  from: 'Admin <admin@staffnow.se>',
+  to: ['ahmadpourmilad8@gmail.com', "maftuna.tur@gmail.com"],
+  subject: 'Ny registrering',
+  react: NyRegistering({name, email, organizationNumber, branches, description, companyName, address, type: "Bemanningsföretag", crewNumber, areas})
 });
 
   return NextResponse.json(user, bemanningsKonto)
