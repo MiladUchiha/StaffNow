@@ -12,7 +12,7 @@ import { toast } from "sonner";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import * as Yup from 'yup';
-import { ro } from "date-fns/locale";
+
 
 const validationSchema = Yup.object({
   password: Yup.string()

@@ -1,18 +1,11 @@
 import Link from "next/link";
 import HeaderLanding from "../components/header/landing/HeaderLanding";
-
 import FaqClassic from "../components/faq/FaqClassicTwo";
-
 import FeatureNine from "../components/features/FeatureNine";
 import FancyFeatureTewentyTwo from "../components/features/FancyFeatureTewentyTwo"
-
-
 import FooterSix from "../components/footer/FooterSix";
-
 import CopyRight from "../components/footer/CopyRight";
-
 import Image from "next/image";
-
 
 
 export const metadata = {
@@ -21,12 +14,10 @@ export const metadata = {
 }
 export default async function Home() {
   return (
-
     <div className="main-page-wrapper">
       <HeaderLanding />
-
       {/* End Page SEO Content */}
-      
+
 
       {/* End Header */}
 
@@ -36,8 +27,6 @@ export default async function Home() {
   ============================================== */}
       <div className="hero-banner-one">
         <div className="hero-upper-container">
-          
-
           <div className="bubble-one"></div>
           <div className="bubble-two"></div>
           <div className="bubble-three"></div>
@@ -62,10 +51,10 @@ export default async function Home() {
             <div className="row">
               <div className="col-xl-8 col-lg-10 m-auto">
                 <h1 className=" sm:text-5xl text-3xl font-gilroy-bold">
-                <span className=" text-blue-600 underline">StaffNow</span>  -Effektiva lösningar för projektbemanning
+                  <span className=" text-blue-600 underline">StaffNow</span>  -Effektiva lösningar för projektbemanning
                 </h1>
                 <p className="hero-sub-heading">
-               Staffnow marknadens smartaste lösning för bemanning
+                  Staffnow marknadens smartaste lösning för bemanning
                 </p>
               </div>
               {/* End .col */}
@@ -76,13 +65,13 @@ export default async function Home() {
             </h4>
             <Link
               className="theme-btn-twelve btn-lg mt-50 md-mt-30 rounded-sm m-3"
-              href="bemanna-register"
+              href="/uppdrag-givare/register"
             >
               För dig som vill bemanna
             </Link>
-           
+
             <Link
-              href="bemanning-register"
+              href="/bemanning-foretag/register"
               className="theme-btn-two trial-button mt-50 md-mt-30 rounded-sm m-3"
             >
 
@@ -160,19 +149,19 @@ export default async function Home() {
                 data-aos="fade-left"
                 data-aos-duration="1200"
               >
-                
+
                 <h3 className="font-gilroy-bold text-purple-500">
-               Uppdragsgivare
+                  Uppdragsgivare
                 </h3>
                 <p className=" text-lg">
-                  
-                Förenkla din rekryteringsprocess med Staffnow. 
-                Upptäck en värld av kvalificerade och erfarna bemanningsföretag och frilansare, 
-                redo att möta dina behov. 
-                Vår plattform erbjuder enkel, snabb och pålitlig matchning för att hjälpa dig att hitta den 
-                perfekta talangen för ditt företag. Minska din arbetsbelastning och öka din organisations flexibilitet och effektivitet.
+
+                  Förenkla din rekryteringsprocess med Staffnow.
+                  Upptäck en värld av kvalificerade och erfarna bemanningsföretag och frilansare,
+                  redo att möta dina behov.
+                  Vår plattform erbjuder enkel, snabb och pålitlig matchning för att hjälpa dig att hitta den
+                  perfekta talangen för ditt företag. Minska din arbetsbelastning och öka din organisations flexibilitet och effektivitet.
                 </p>
-               
+
               </div>
               {/*  /.text-wrapper */}
             </div>{" "}
@@ -184,8 +173,8 @@ export default async function Home() {
             <div className="col-lg-6 col-md-8 m-auto order-lg-last">
               <div data-aos="fade-left" data-aos-duration="1200">
                 <div className="img-holder img-holder-two">
-                  <Image width={550} height={616} style={{ height: 'fit-content' }} src="/images/assets/11668440_20943572.jpg" alt="feature" className="screen-one"/>
-                 
+                  <Image width={550} height={616} style={{ height: 'fit-content' }} src="/images/assets/11668440_20943572.jpg" alt="feature" className="screen-one" />
+
                   <Image width={907} height={916}
                     src="/images/shape/3.svg" style={{ height: 'fit-content' }}
                     alt="feature"
@@ -211,16 +200,16 @@ export default async function Home() {
                 data-aos="fade-right"
                 data-aos-duration="1200"
               >
-               
+
                 <h3 className="font-gilroy-bold text-orange-600">Bemanningsföretag </h3>
                 <p className=" text-lg">
-                Expandera din verksamhet och nå nya höjder med Staffnow. 
-                Få tillgång till en mångfald av spännande och utmanande uppdrag över hela landet. 
-                Vår plattform möjliggör för dig att bygga långsiktiga relationer med pålitliga uppdragsgivare och erbjuder dig
-                 flexibiliteten att välja projekt som passar dina expertisområden och preferenser. 
-                Med en enkel registreringsprocess är du bara ett steg bort från att upptäcka nya möjligheter.
+                  Expandera din verksamhet och nå nya höjder med Staffnow.
+                  Få tillgång till en mångfald av spännande och utmanande uppdrag över hela landet.
+                  Vår plattform möjliggör för dig att bygga långsiktiga relationer med pålitliga uppdragsgivare och erbjuder dig
+                  flexibiliteten att välja projekt som passar dina expertisområden och preferenser.
+                  Med en enkel registreringsprocess är du bara ett steg bort från att upptäcka nya möjligheter.
                 </p>
-                
+
                 {/*  /.quote */}
               </div>
               {/*  /.text-wrapper */}
@@ -229,7 +218,7 @@ export default async function Home() {
           </div>
           {/* /.block-style-two */}
 
-         
+
           {/* /.block-style-two */}
         </div>
         {/* /.container */}
@@ -240,52 +229,52 @@ export default async function Home() {
    =============================================
     Usable Tools Section
   ============================================== */}
-      
+
       {/* /.useable-tools-section */}
 
       {/* 
    =============================================
       Fancy Feature Three
   ============================================== */}
-  <div className="fancy-feature-nine">
+      <div className="fancy-feature-nine">
         <Image
-        width={14}
-        height={19}
+          width={14}
+          height={19}
           src="/images/shape/107.svg"
           alt="shape"
           className="shapes shape-one"
         />
         <Image
-        width={20}
-        height={17}
+          width={20}
+          height={17}
           src="/images/shape/108.svg"
           alt="shape"
           className="shapes shape-two"
         />
         <Image
-        width={16}
-        height={24}
+          width={16}
+          height={24}
           src="/images/shape/109.svg"
           alt="shape"
           className="shapes shape-three"
         />
         <Image
-        width={16}
-        height={24}
+          width={16}
+          height={24}
           src="/images/shape/110.svg"
           alt="shape"
           className="shapes shape-four"
         />
         <Image
-        width={18}
-        height={22}
+          width={18}
+          height={22}
           src="/images/shape/111.svg"
           alt="shape"
           className="shapes shape-five"
         />
         <Image
-        width={23}
-        height={18}
+          width={23}
+          height={18}
           src="/images/shape/112.svg"
           alt="shape"
           className="shapes shape-six"
@@ -327,14 +316,14 @@ export default async function Home() {
           </div>
         </div>
       </div>
-     
+
       {/* /.fancy-feature-three */}
 
       {/* 
    =============================================
     Call To Action
   ============================================== */}
-      
+
       {/* /.fancy-short-banner-one */}
 
       {/* 
@@ -349,7 +338,7 @@ export default async function Home() {
                 <h6 className="font-rubik">Hitta dina svar</h6>
                 <h2>Vanliga förekommande frågor.</h2>
               </div>
-              
+
             </div>
             {/* End .col */}
             <div className="col-lg-6">
@@ -383,7 +372,7 @@ export default async function Home() {
               "
               >
                 <h2 className="font-gilroy-bold">
-                  Har du fler funderingar? Kontakta oss. 
+                  Har du fler funderingar? Kontakta oss.
                 </h2>
                 <Link href="/contact-pm">Kontakta oss</Link>
                 <div className="bubble-one"></div>

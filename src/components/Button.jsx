@@ -5,11 +5,6 @@ import { useFormStatus } from "react-dom";
 
 const ButtonEdit = ({ action, color, className }) => {
   const { pending } = useFormStatus();
-
-
-
-
-
   return (
     <Button
       type="submit"

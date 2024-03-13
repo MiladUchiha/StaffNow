@@ -18,7 +18,8 @@ export async function POST(request) {
   const user = await prisma.user.create({
     data: {
       email,
-      hashedPassword // hash password
+      hashedPassword,
+      role: "Uppdragsgivare", 
     }
   })
 
@@ -46,18 +47,18 @@ export async function POST(request) {
         emailVerificationToken: emailVerificationToken,
     }
 })
-await sendEmail({
-  from: 'Admin <admin@staffnow.se>',
-  to: [email],
-  subject: 'Verifera din email',
-  react: VerifyEmailTemplate({email, emailVerificationToken})
-});
-await sendEmail({
-  from: 'Admin <admin@staffnow.se>',
-  to: ['ahmadpourmilad8@gmail.com', "maftuna.tur@gmail.com"],
-  subject: 'Ny registrering',
-  react: NyRegistering({name, email, organizationNumber, branches, description, companyName, address, type: "Uppdragsgivare"})
-});
+// await sendEmail({
+//   from: 'Admin <admin@staffnow.se>',
+//   to: [email],
+//   subject: 'Verifera din email',
+//   react: VerifyEmailTemplate({email, emailVerificationToken})
+// });
+// await sendEmail({
+//   from: 'Admin <admin@staffnow.se>',
+//   to: ['ahmadpourmilad8@gmail.com', "maftuna.tur@gmail.com"],
+//   subject: 'Ny registrering',
+//   react: NyRegistering({name, email, organizationNumber, branches, description, companyName, address, type: "Uppdragsgivare"})
+// });
 
   return NextResponse.json(user, bemannasKonto)
 }

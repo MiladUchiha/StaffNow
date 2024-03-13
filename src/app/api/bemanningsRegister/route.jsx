@@ -7,6 +7,7 @@ import crypto from 'crypto';
 import { NyRegistering } from '../../../components/mail/nyRegistering';
 
 export async function POST(request) {
+  "use server"
   const body = await request.json();
   const { name, companyName, organizationNumber, address, branches, crewNumber, areas, email, password, description} = body;
 
@@ -17,7 +18,8 @@ export async function POST(request) {
   const user = await prisma.user.create({
     data: {
       email,
-      hashedPassword // hash password
+      hashedPassword,
+      role: "Bemanningsföretag",
     }
   })
 
@@ -47,18 +49,17 @@ export async function POST(request) {
         emailVerificationToken: emailVerificationToken,
     }
 })
-await sendEmail({
-  from: 'Admin <admin@staffnow.se>',
-  to: [email],
-  subject: 'Verifera din email',
-  react: VerifyEmailTemplate({email, emailVerificationToken})
-});
-await sendEmail({
-  from: 'Admin <admin@staffnow.se>',
-  to: ['ahmadpourmilad8@gmail.com', "maftuna.tur@gmail.com"],
-  subject: 'Ny registrering',
-  react: NyRegistering({name, email, organizationNumber, branches, description, companyName, address, type: "Bemanningsföretag", crewNumber, areas})
-});
-
+  // await sendEmail({
+  //   from: 'Admin <admin@staffnow.se>',
+  //   to: [email],
+  //   subject: 'Verifera din email',
+  //   react: VerifyEmailTemplate({ email, emailVerificationToken })
+  // });
+  // await sendEmail({
+  //   from: 'Admin <admin@staffnow.se>',
+  //   to: ['ahmadpourmilad8@gmail.com', "maftuna.tur@gmail.com"],
+  //   subject: 'Ny registrering',
+  //   react: NyRegistering({ name, email, organizationNumber, branches, description, companyName, address, type: "Bemanningsföretag", crewNumber, areas })
+  // });
   return NextResponse.json(user, bemanningsKonto)
 }

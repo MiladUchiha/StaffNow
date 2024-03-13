@@ -37,7 +37,7 @@ const FooterSix = () => {
       {/* End .col */}
 
       <div className="col-lg-4">
-        <div className="title">info@staffnow.se</div>
+        <div className="title">help@staffnow.se</div>
         <div className="text-center">
           <a href="mailto:ib-themes21@gmail.com" className="email">
           

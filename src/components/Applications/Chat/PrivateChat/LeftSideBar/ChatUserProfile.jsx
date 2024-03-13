@@ -2,7 +2,6 @@ import { ImagePath } from "../../../../../Constant";
 import { useAppDispatch, useAppSelector } from "../../../../../Redux/Hooks";
 import { changeChat, createNewChatAsync } from "../../../../../Redux/Reducers/ChatSlice";
 import { Badge } from "reactstrap";
-
 import SearchNotFoundClass from "../../../Contact/TabData/SearchNotFoundClass";
 import Image from "next/image";
 const ChatUserProfile = () => {
@@ -45,7 +44,7 @@ const ChatUserProfile = () => {
             ))}
         </ul>
       ) : (
-        <SearchNotFoundClass word="Contact" />
+        <SearchNotFoundClass word="matchningar" />
       )}
     </>
   );

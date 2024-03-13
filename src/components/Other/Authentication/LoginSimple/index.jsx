@@ -4,8 +4,7 @@ import { useRouter } from "next/navigation";
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import Link from "next/link";
 import React, { useState } from "react";
-import {  FormGroup, Label, Col, Container, Row } from "reactstrap";
-import ButtonEdit from "../../../Button";
+import {  FormGroup, Label, Col, Container, Row, Button } from "reactstrap";
 import { toast } from "sonner";
 import Image from "next/image";
 
@@ -36,9 +35,8 @@ const LoginSimpleContainer = () => {
         if (callback?.ok && !callback?.error) {
           
           toast.success('Du har loggat in!')
-          router.push('/dashboard')
-          router.refresh()
-          router.refresh('dashboard',)
+          toast.success('Skickar dig till dashboard...')
+          router.refresh("/login")
         }
       })
    
@@ -86,11 +84,19 @@ const LoginSimpleContainer = () => {
                 
                 <div className="text-end mt-3">
                   
-                  {loading ? (
-                    <ButtonEdit action="Vänta..." color="primary" className="btn-block" />
-                  ) : (
-                    <ButtonEdit action="Logga in" color="primary" className="btn-block" />
-                  )}
+                 
+                          <Button
+                            type="submit"
+                            color="primary"
+                            className="btn-block"
+                            disabled={loading}
+                          >
+                            {loading ? (
+                              "Vänta..."
+                            ) : (
+                              "Logga in"
+                            )}
+                          </Button>
                   </div>
               </FormGroup>
 

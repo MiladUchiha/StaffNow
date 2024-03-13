@@ -2,7 +2,6 @@ import NextAuth from "next-auth/next";
 import prisma from '../../../../lib/prismadb'
 import { PrismaAdapter } from "@next-auth/prisma-adapter";
 import CredentialsProvider from "next-auth/providers/credentials";
-
 import bcrypt from 'bcryptjs'
 
 export const authOptions = {
@@ -21,7 +20,7 @@ export const authOptions = {
               
                 // check to see if email and password is there
                 if(!credentials.email || !credentials.password) {
-                    throw new Error('Please enter an email and password')
+                    throw new Error('Var god fyll i alla fält')
                 }
 
                 // check to see if user exists
@@ -33,7 +32,7 @@ export const authOptions = {
                 
                 // if no user was found 
                 if (!user || !user?.hashedPassword) {
-                    throw new Error('No user found')
+                    throw new Error('Ingen användare hittades med den emailen')
                 }
                 
                 // check to see if password matches
@@ -41,7 +40,7 @@ export const authOptions = {
 
                 // if password does not match
                 if (!passwordMatch) {
-                    throw new Error('Incorrect password')
+                    throw new Error('Lösenordet matchar inte med emailen')
                 }
 
                 return user;
