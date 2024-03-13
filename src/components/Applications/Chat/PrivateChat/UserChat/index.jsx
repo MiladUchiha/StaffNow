@@ -38,7 +38,12 @@ const UserChat = ({ chat, currentUser, type, pusherKey, pusherCluster }) => {
     fetchMessages();
   }, [chat.id]);
 
-  
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      handleSendMessage();
+    }
+  };
 
   const handleSendMessage = async () => {
     if (messageInput.trim() !== '') {
@@ -64,6 +69,7 @@ const UserChat = ({ chat, currentUser, type, pusherKey, pusherCluster }) => {
         <RightChatBody
           messages={messages}
           type={type}
+          handleKeyDown={handleKeyDown}
           currentUser={currentUser}
           messageInput={messageInput}
           setMessageInput={setMessageInput}

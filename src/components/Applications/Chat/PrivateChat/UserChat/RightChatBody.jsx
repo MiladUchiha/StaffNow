@@ -7,7 +7,7 @@ import { Button, Form, Input } from "reactstrap";
 import ChatDropMenu from "./ChatDropMenu";
 import Image from "next/image";
 
-const RightChatBody = ({ chat, currentUser, messages, messageInput, setMessageInput, handleSendMessage, type }) => {
+const RightChatBody = ({ chat, currentUser, messages, messageInput, setMessageInput, handleSendMessage, type, handleKeyDown }) => {
   const [showEmojiPicker, setShowEmojiPicker] = useState(false);
   const messagesEndRef = useRef(null);
 
@@ -64,6 +64,7 @@ const RightChatBody = ({ chat, currentUser, messages, messageInput, setMessageIn
             placeholder={TypeMessageHere}
             value={messageInput}
             onChange={(e) => setMessageInput(e.target.value)}
+            onKeyDown={handleKeyDown}
           />
           <div className="open-emoji">
             {showEmojiPicker ? <Picker data={data} onEmojiSelect={(e) => addEmoji(e.native)} /> : null}
