@@ -10,8 +10,8 @@ const UserChat = ({ chat, currentUser, type, pusherKey, pusherCluster }) => {
   const [messageInput, setMessageInput] = useState("");
 
   useEffect(() => {
-    const pusher = new Pusher(pusherKey, {
-      cluster: pusherCluster,
+    const pusher = new Pusher("b937bfa0f78dc36ad1aa", {
+      cluster: "eu",
     });
     const channel = pusher.subscribe(`chat-${chat?.id}`);
 
