@@ -460,6 +460,7 @@ export const NotificationsData = [
     subTitle: "New user-only offer added",
     color: "primary",
     date: "10 Sep,2023",
+    
   },
   {
     img: "shield-dne.png",

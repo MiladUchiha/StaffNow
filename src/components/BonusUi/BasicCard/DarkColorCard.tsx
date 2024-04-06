@@ -12,7 +12,7 @@ const DarkColorText1: string = " — also called smart earbuds or hearable — a
         <CommonCardHeader title={DarkColorCards} span={DarkColorData} headClass="bg-dark" tagClass="text-white"/>
         <CardBody className="bg-dark">
           <div className="d-flex align-items-center gap-3 pills-blogger">
-            <div className="blog-wrapper"><Image className="blog-img" src={`${ImagePath}/dashboard-2/headphones.png`} alt="head-phone" /></div>
+            <div className="blog-wrapper"><Image width={40} height={40} className="blog-img" src={`${ImagePath}/dashboard-2/headphones.png`} alt="head-phone" /></div>
             <div className="blog-content">
               <p><em className="txt-danger fw-bold">{SmartHeadphones}</em>{DarkColorText1}</p>
             </div>

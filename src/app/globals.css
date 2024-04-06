@@ -79,3 +79,9 @@
   background-image: url("/public/images/assets/11668440_20943572.jpg");
 }
 
+.bg-header-background {
+
+background-image: url("/assets/cool-background.svg");
+background-attachment: fixed;
+background-size: cover;
+}

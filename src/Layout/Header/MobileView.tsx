@@ -11,8 +11,8 @@ export const MobileView = () => {
     <Col className="header-logo-wrapper col-auto">
       <div className="logo-wrapper">
         <Link href={`/${i18LangStatus}/sample_page`}>
-          <Image className="img-fluid for-light" src={`${ImagePath}/logo/logo.png`} alt="" />
-          <Image className="img-fluid for-dark" src={`${ImagePath}/logo/logo_light.png`} alt="" />
+          <Image className="img-fluid for-light" width={40} height={40} src={`${ImagePath}/logo/logo.png`} alt="" />
+          <Image className="img-fluid for-dark" width={40} height={40} src={`${ImagePath}/logo/logo_light.png`} alt="" />
         </Link>
       </div>
     </Col>

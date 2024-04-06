@@ -146,7 +146,6 @@ Primary use:  ib-themes
   position: absolute;
 }
 .ctn-preloader .animation-preloader .txt-loading .letters-loading {
-  font-family: "Rubik", sans-serif;
   font-weight: 500;
   letter-spacing: 15px;
   display: inline-block;
@@ -283,7 +282,6 @@ Primary use:  ib-themes
   color: #fff;
 }
 body {
-  font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-size: 18px;
   position: relative;
@@ -336,21 +334,8 @@ h5 {
 h6 {
   font-size: 15px;
 }
-.font-rubik {
-  font-family: "Rubik", sans-serif !important;
-}
-.font-gilroy-bold {
-  font-family: "gilroy-bold" !important;
-}
-.font-slab {
-  font-family: "Roboto Slab", serif !important;
-}
-.font-gordita {
-  font-family: "gordita" !important;
-}
-.font-recoleta {
-  font-family: "Recoleta" !important;
-}
+
+
 ::-webkit-input-placeholder {
   /* Edge */
   color: #acaeb3;
@@ -434,7 +419,7 @@ h6 {
 }
 /*^^^^^^^^^^^^^^^^^^^^^ Section Title ^^^^^^^^^^^^^^^^^^^^^^^^^*/
 .title-style-one h2 {
-  font-family: "gilroy-black";
+  
   font-size: 58px;
   line-height: 1.15em;
 }
@@ -457,7 +442,6 @@ h6 {
   padding-bottom: 7px;
 }
 .title-style-two h2 {
-  font-family: "gilroy-black";
   font-size: 58px;
   line-height: 1.15em;
 }
@@ -484,13 +468,11 @@ h6 {
   padding-bottom: 17px;
 }
 .title-style-three h6 {
-  font-family: "Roboto", sans-serif;
   font-size: 18px;
   color: #adb1b5;
   padding-bottom: 15px;
 }
 .title-style-three h2 {
-  font-family: "gilroy-black";
   font-size: 54px;
   line-height: 1.18em;
 }
@@ -504,13 +486,11 @@ h6 {
   z-index: -1;
 }
 .title-style-four h6 {
-  font-family: "Roboto", sans-serif;
   font-size: 20px;
   color: rgba(0, 0, 0, 0.55);
   padding-bottom: 15px;
 }
 .title-style-four h2 {
-  font-family: "gilroy-black";
   font-size: 58px;
   line-height: 1.15em;
   color: #2a2a2a;
@@ -544,7 +524,7 @@ h6 {
   padding-bottom: 12px;
 }
 .title-style-six h2 {
-  font-family: "Recoleta";
+  
   font-weight: normal;
   font-size: 72px;
   line-height: 1.27em;
@@ -711,7 +691,7 @@ h6 {
   padding-bottom: 16px;
 }
 .title-style-thirteen h2 {
-  font-family: "gordita";
+  
   font-weight: 700;
   font-size: 72px;
   line-height: 1.25em;
@@ -786,7 +766,7 @@ body .theme-btn-one:hover {
   background: #ffba12;
 }
 body .theme-btn-two {
-  font-family: "gilroy-semibold";
+  
   font-size: 18px;
   color: #fff;
   line-height: 48px;
@@ -801,7 +781,7 @@ body .theme-btn-two:hover {
   color: var(--red-light);
 }
 body .theme-btn-three {
-  font-family: "gilroy-semibold";
+  
   font-size: 18px;
   color: var(--red-light);
   line-height: 51px;
@@ -828,7 +808,7 @@ body .theme-btn-four:hover {
   color: #fff;
 }
 body .theme-btn-five {
-  font-family: "Rubik", sans-serif;
+  
   line-height: 56px;
   padding: 0 35px;
   text-align: center;
@@ -931,7 +911,7 @@ body .theme-btn-ten:before {
   bottom: 0;
 }
 body .theme-btn-eleven {
-  font-family: "gordita";
+  
   font-weight: 500;
   font-size: 18px;
   line-height: 48px;
@@ -946,11 +926,11 @@ body .theme-btn-eleven:hover {
   color: #fff;
 }
 body .theme-btn-twelve {
-  font-family: "gordita";
+  
   font-size: 17px;
   line-height: 48px;
-  background: #ff006b;
-  border: 2px solid #ff006b;
+  background: #a855f7;
+  border: 2px solid #a855f7;
   border-radius: 30px;
   color: #fff;
   padding: 0 32px;
@@ -958,10 +938,10 @@ body .theme-btn-twelve {
 }
 body .theme-btn-twelve:hover {
   background: transparent;
-  color: #ff006b;
+  color: #a855f7;
 }
 body .theme-btn-thirteen {
-  font-family: "gordita";
+  
   font-size: 17px;
   line-height: 50px;
   background: #232323;
@@ -974,7 +954,7 @@ body .theme-btn-thirteen:hover {
   background: #ff006b;
 }
 body .theme-btn-fourteen {
-  font-family: "gordita";
+  
   font-size: 17px;
   line-height: 54px;
   background: #000;
@@ -1008,7 +988,7 @@ body .shop-btn-two:hover {
 }
 /*-------------------- Pagination ------------------*/
 .page-pagination-one li a {
-  font-family: "Rubik", sans-serif !important;
+ 
   background: #fff;
   width: 40px;
   height: 45px;
@@ -1039,7 +1019,7 @@ body .shop-btn-two:hover {
   color: #fff;
 }
 .page-pagination-two ul li {
-  font-family: "Rubik", sans-serif;
+ 
   font-size: 22px;
   color: #bababa;
   margin: 0 11px;
@@ -1462,7 +1442,6 @@ body .shop-btn-two:hover {
 }
 .block-style-one .icon-box:after {
   content: "\f10a";
-  font-family: "Flaticon";
   position: absolute;
   top: -50px;
   left: 59%;
@@ -1913,7 +1892,6 @@ body .shop-btn-two:hover {
   margin: 0;
 }
 .useable-tools-section h2 {
-  font-family: "gilroy-black";
   font-size: 58px;
   line-height: 1.2em;
   color: #fff;
@@ -2226,7 +2204,7 @@ body .shop-btn-two:hover {
   z-index: 1;
 }
 .clients-feedback-classic .feedback-wrapper .name {
-  font-family: "gilroy-semibold";
+  
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 1.6px;
@@ -2273,7 +2251,6 @@ body .shop-btn-two:hover {
   position: relative;
 }
 .fancy-short-banner-one .form-wrapper form input {
-  font-family: "Rubik", sans-serif;
   font-size: 16px;
   width: calc(100% - 180px);
   border: none;
@@ -2411,7 +2388,6 @@ body .shop-btn-two:hover {
   width: 100%;
   text-align: left;
   padding: 20px 15px 20px 70px;
-  font-family: "Rubik", sans-serif;
   font-size: 22px;
   border: none;
   border-radius: 0;
@@ -2583,7 +2559,6 @@ body .shop-btn-two:hover {
   margin-bottom: 30px;
 }
 .theme-footer-one .top-footer .footer-title {
-  font-family: "Rubik", sans-serif;
   font-size: 24px;
   padding-bottom: 25px;
 }
@@ -2803,7 +2778,7 @@ body .shop-btn-two:hover {
   padding-left: 25px;
 }
 .fancy-text-block-one .quote-wrapper p {
-  font-family: "gilroy-semibold";
+  
   font-size: 20px;
   color: #000000;
   padding-bottom: 21px;
@@ -2947,7 +2922,7 @@ body .shop-btn-two:hover {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .fancy-text-block-three .feature-content .header h3 {
-  font-family: "gilroy-semibold";
+  
   color: #fff;
   font-size: 50px;
 }
@@ -2971,7 +2946,6 @@ body .shop-btn-two:hover {
   width: calc(100% - 55px);
 }
 .fancy-text-block-three .feature-content .feature-list h4 {
-  font-family: "gilroy-bold";
   font-size: 22px;
   color: #fff;
 }
@@ -3029,7 +3003,6 @@ body .shop-btn-two:hover {
   text-align: center;
 }
 .team-section-one .controls .control {
-  font-family: "Rubik", sans-serif;
   font-size: 20px;
   display: inline-block;
   position: relative;
@@ -3073,7 +3046,6 @@ body .shop-btn-two:hover {
   margin: 0 auto;
 }
 .team-section-one .team-member h4 {
-  font-family: "Roboto", sans-serif;
   font-size: 24px;
   padding: 25px 0 6px;
 }
@@ -3111,13 +3083,11 @@ body .shop-btn-two:hover {
   border-radius: 5px;
 }
 .feature-blog-one .post-meta .tag {
-  font-family: "Rubik", sans-serif;
   font-size: 16px;
   color: rgba(10, 10, 10, 0.54);
   padding: 25px 0 3px;
 }
 .feature-blog-one .post-meta .title {
-  font-family: "gilroy-bold";
   font-size: 30px;
   line-height: 1.2em;
   color: #000;
@@ -3192,7 +3162,6 @@ body .shop-btn-two:hover {
   height: 75px;
 }
 .block-style-three h4 {
-  font-family: "gilroy-bold";
   font-size: 22px;
   padding: 25px 0 20px;
 }
@@ -3230,7 +3199,6 @@ body .shop-btn-two:hover {
   height: 75px;
 }
 .block-style-four h4 {
-  font-family: "gilroy-bold";
   font-size: 24px;
   padding: 9px 0 20px;
 }
@@ -3273,7 +3241,6 @@ body .shop-btn-two:hover {
   border-radius: 5px;
 }
 .feature-blog-two .post-meta .title {
-  font-family: "gilroy-bold";
   font-size: 30px;
   line-height: 1.2em;
   color: #000;
@@ -3284,7 +3251,6 @@ body .shop-btn-two:hover {
   color: var(--blue-dark);
 }
 .feature-blog-two .post-meta .read-more {
-  font-family: "Rubik", sans-serif;
   font-size: 16px;
   color: rgba(10, 10, 10, 0.54);
   position: absolute;
@@ -3403,7 +3369,6 @@ body .shop-btn-two:hover {
   padding: 0 52px 0 20px;
   color: var(--heading);
   background: transparent;
-  font-family: "Rubik", sans-serif;
 }
 .form-style-light .input-group-meta textarea {
   width: 100%;
@@ -3414,7 +3379,6 @@ body .shop-btn-two:hover {
   border: solid 1px #d6d6d6;
   resize: none;
   padding: 20px;
-  font-family: "Rubik", sans-serif;
 }
 .form-style-light .input-group-meta input:focus {
   border-color: var(--blue-dark);
@@ -3475,7 +3439,6 @@ body .shop-btn-two:hover {
 }
 #contact-form .form-group .help-block li:before {
   content: "";
-  font-family: "font-awesome";
   position: absolute;
   top: -12px;
   left: 0;
@@ -3546,7 +3509,6 @@ body .shop-btn-two:hover {
   padding: 0 40px;
 }
 .hero-banner-two .hero-text-wrapper h1 {
-  font-family: "gilroy-black";
   font-size: 78px;
   line-height: 1.11em;
 }
@@ -3704,7 +3666,6 @@ body .shop-btn-two:hover {
   max-height: 100%;
 }
 .block-style-five .title {
-  font-family: "gilroy-bold";
   font-size: 20px;
   margin: 24px 0 29px;
   display: inline-block;
@@ -3815,7 +3776,6 @@ body .shop-btn-two:hover {
   width: 100%;
   text-align: left;
   padding: 22px 70px 22px 0;
-  font-family: "Rubik", sans-serif;
   font-size: 30px;
   line-height: 1.4em;
   border: none;
@@ -3828,7 +3788,6 @@ body .shop-btn-two:hover {
 .accordion-style-two .card .card-header button:before,
 .accordion .card .card-header button:before {
   content: "";
-  font-family: "font-awesome";
   position: absolute;
   font-size: 28px;
   right: 0;
@@ -4377,7 +4336,6 @@ body .shop-btn-two:hover {
   margin-bottom: 30px;
 }
 .theme-footer-two .top-footer .footer-title {
-  font-family: "Rubik", sans-serif;
   font-size: 24px;
   padding-bottom: 25px;
 }
@@ -4447,7 +4405,6 @@ body .shop-btn-two:hover {
   color: #b1b1b1;
 }
 .fancy-hero-two .heading {
-  font-family: "gilroy-black";
   font-size: 80px;
   line-height: 1.1em;
   padding: 0 0 38px;
@@ -4752,7 +4709,6 @@ body .shop-btn-two:hover {
   animation: jumpTwo 5s infinite linear;
 }
 .fancy-hero-three .heading {
-  font-family: "gilroy-black";
   font-size: 80px;
   line-height: 1.1em;
   padding: 0 0 38px;
@@ -4911,7 +4867,6 @@ body .shop-btn-two:hover {
   border-color: #000;
 }
 .block-style-eight .title {
-  font-family: "gilroy-bold";
   font-size: 20px;
   margin: 0 0 24px;
   display: inline-block;
@@ -4962,7 +4917,6 @@ body .shop-btn-two:hover {
   position: relative;
 }
 .block-style-nine .text-wrapper h6 {
-  font-family: "Roboto", sans-serif;
   font-size: 20px;
   color: rgba(0, 0, 0, 0.63);
   text-transform: uppercase;
@@ -5019,7 +4973,6 @@ body .shop-btn-two:hover {
   padding-top: 40px;
 }
 .fancy-text-block-fourteen .text-wrapper .name {
-  font-family: "gilroy-bold";
   font-size: 24px;
   color: #000;
   position: relative;
@@ -5027,7 +4980,7 @@ body .shop-btn-two:hover {
   margin-top: 40px;
 }
 .fancy-text-block-fourteen .text-wrapper .name span {
-  font-family: "gilroy-semibold";
+  
   color: #8a8a8a;
 }
 .fancy-text-block-fourteen .text-wrapper .name:before {
@@ -5076,7 +5029,6 @@ body .shop-btn-two:hover {
 }
 .pricing-nav-one .nav-item .nav-link,
 .pricing-nav-one .react-tabs__tab {
-  font-family: "Rubik", sans-serif;
   line-height: 50px;
   border: 2px solid var(--blue-dark);
   padding: 0 15px;
@@ -5136,7 +5088,7 @@ body .shop-btn-two:hover {
   transform: translateY(-5px);
 }
 .pricing-section-one .pr-table-wrapper .pack-name {
-  font-family: "gilroy-semibold";
+  
   font-size: 18px;
   text-transform: uppercase;
   color: #202020;
@@ -5167,7 +5119,6 @@ body .shop-btn-two:hover {
   margin: 19px 0 33px;
 }
 .pricing-section-one .pr-table-wrapper .pr-feature li {
-  font-family: "Rubik", sans-serif;
   font-size: 17px;
   line-height: 42px;
   color: #464646;
@@ -5245,7 +5196,7 @@ body .shop-btn-two:hover {
   margin: 0 auto;
 }
 .fancy-text-block-fifteen .text-wrapper .more-text {
-  font-family: "gilroy-semibold";
+  
   font-size: 20px;
   color: #fff;
   padding: 28px 0 20px;
@@ -5305,7 +5256,6 @@ body .shop-btn-two:hover {
   padding-bottom: 25px;
 }
 .fancy-hero-four h2 {
-  font-family: "gilroy-black";
   font-size: 80px;
   line-height: 1.1em;
 }
@@ -5373,7 +5323,6 @@ body .shop-btn-two:hover {
 }
 .pricing-nav-two .nav-item .nav-link,
 .pricing-nav-two .react-tabs__tab {
-  font-family: "Rubik", sans-serif;
   line-height: 50px;
   border: 2px solid var(--red-light);
   padding: 0 15px;
@@ -5415,14 +5364,14 @@ body .shop-btn-two:hover {
   width: 100%;
 }
 .pricing-section-two .pr-table-wrapper .pack-name {
-  font-family: "gilroy-semibold";
+  
   font-size: 18px;
   text-transform: uppercase;
   color: #202020;
   letter-spacing: 2.1px;
 }
 .pricing-section-two .pr-table-wrapper .price {
-  font-family: "gilroy-semibold";
+  
   font-size: 72px;
   color: #000;
   padding: 44px 0 20px;
@@ -5487,7 +5436,6 @@ body .shop-btn-two:hover {
   width: 100%;
   text-align: left;
   padding: 35px 35px 35px 0;
-  font-family: "Rubik", sans-serif;
   font-size: 24px;
   border: none;
   border-radius: 0;
@@ -5502,7 +5450,6 @@ body .shop-btn-two:hover {
 }
 .accordion-style-three .card .card-header button:before {
   content: "\f107";
-  font-family: "font-awesome";
   position: absolute;
   right: 10px;
   top: 50%;
@@ -5621,7 +5568,6 @@ body .shop-btn-two:hover {
   border-bottom: solid 2px #000;
   color: var(--heading);
   background: transparent;
-  font-family: "Rubik", sans-serif;
 }
 .form-style-classic .input-group-meta textarea {
   width: 100%;
@@ -5632,7 +5578,6 @@ body .shop-btn-two:hover {
   border-bottom: solid 2px #000;
   resize: none;
   padding: 20px 0;
-  font-family: "Rubik", sans-serif;
 }
 .form-style-classic .input-group-meta label {
   font-size: 14px;
@@ -5658,7 +5603,7 @@ body .shop-btn-two:hover {
   margin-right: 32px;
 }
 .faqs-header h3 {
-  font-family: "gilroy-semibold";
+  
   font-size: 36px;
 }
 .faqs-header .collection-preview {
@@ -5864,7 +5809,6 @@ body .shop-btn-two:hover {
   text-decoration: underline;
 }
 .user-data-page .form-wrapper h2 {
-  font-family: "gilroy-bold";
   font-size: 58px;
   line-height: 1.17em;
 }
@@ -5884,7 +5828,6 @@ body .shop-btn-two:hover {
   position: relative;
 }
 .user-data-form .input-group-meta input {
-  font-family: "Rubik", sans-serif;
   width: 100%;
   height: 100%;
   font-size: 18px;
@@ -6090,12 +6033,10 @@ body .shop-btn-two:hover {
   background: transparent;
 }
 .blog-sidebar-one .sidebar-title {
-  font-family: "gilroy-bold";
   font-size: 30px;
   padding-bottom: 15px;
 }
 .blog-sidebar-one .sidebar-categories ul li a {
-  font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 60px;
   color: #000;
@@ -6116,7 +6057,6 @@ body .shop-btn-two:hover {
   color: var(--red-light);
 }
 .blog-sidebar-one .sidebar-recent-news .title {
-  font-family: "gilroy-bold";
   font-size: 24px;
   line-height: 1.25em;
   color: #000;
@@ -6194,7 +6134,6 @@ body .shop-btn-two:hover {
   color: rgba(0, 0, 0, 0.63);
 }
 .feature-blog-three .post-meta .post .title {
-  font-family: "gilroy-bold";
   font-size: 30px;
   line-height: 1.26em;
   color: #000;
@@ -6237,7 +6176,6 @@ body .shop-btn-two:hover {
   color: rgba(0, 0, 0, 0.63);
 }
 .blog-v4 .post-meta .post .title {
-  font-family: "gilroy-black";
   font-size: 48px;
   line-height: 1.04em;
   color: #000;
@@ -6250,7 +6188,6 @@ body .shop-btn-two:hover {
   line-height: 1.7em;
 }
 .blog-v4 .post-meta .post .read-more {
-  font-family: "gilroy-bold";
   font-size: 18px;
   color: #2a2a2a;
   margin-top: 30px;
@@ -6267,14 +6204,12 @@ body .shop-btn-two:hover {
   padding: 45px 40px;
 }
 .blog-details-post-v1 .post-meta .mark-text {
-  font-family: "gilroy-bold";
   font-size: 23px;
   color: #000;
   line-height: 1.41em;
   padding-top: 35px;
 }
 .blog-details-post-v1 .post-meta h4 {
-  font-family: "gilroy-black";
   font-size: 36px;
   padding-top: 60px;
 }
@@ -6303,7 +6238,6 @@ body .shop-btn-two:hover {
   font-size: 20px;
 }
 .blog-details-post-v1 .tag-feature li:first-child {
-  font-family: "gilroy-bold";
   color: #000;
   font-size: 15px;
 }
@@ -6325,7 +6259,6 @@ body .shop-btn-two:hover {
   padding: 50px 40px 30px;
 }
 .blog-details-post-v1 .comment-area .title {
-  font-family: "gilroy-black";
   font-size: 36px;
   padding-bottom: 40px;
 }
@@ -6344,7 +6277,7 @@ body .shop-btn-two:hover {
   position: relative;
 }
 .blog-details-post-v1 .comment-area .name {
-  font-family: "gilroy-semibold";
+  
   font-size: 20px;
 }
 .blog-details-post-v1 .comment-area .time {
@@ -6377,7 +6310,6 @@ body .shop-btn-two:hover {
   padding: 50px 40px 60px;
 }
 .blog-details-post-v1 .comment-form-section .title {
-  font-family: "gilroy-black";
   font-size: 36px;
   padding-bottom: 15px;
 }
@@ -6913,7 +6845,6 @@ body .shop-btn-two:hover {
   padding-bottom: 13px;
 }
 .fancy-short-banner-four .title h2 {
-  font-family: "gilroy-bold";
   font-size: 52px;
   line-height: 1.15em;
   color: #fff;
@@ -6978,7 +6909,6 @@ body .shop-btn-two:hover {
   position: relative;
 }
 .theme-footer-three .top-footer .footer-title {
-  font-family: "Rubik", sans-serif;
   font-size: 24px;
   padding-bottom: 18px;
 }
@@ -7045,7 +6975,6 @@ body .shop-btn-two:hover {
   padding-bottom: 10px;
 }
 .fancy-hero-five .heading {
-  font-family: "gilroy-black";
   font-size: 80px;
   line-height: 1.08em;
 }
@@ -7209,7 +7138,6 @@ body .shop-btn-two:hover {
   z-index: 5;
 }
 .map-area-one .si-content h3 {
-  font-family: "gilroy-black";
   font-size: 42px;
 }
 .map-area-one .si-content p {
@@ -7290,7 +7218,7 @@ body .shop-btn-two:hover {
   padding-bottom: 15px;
 }
 .doc-sidebar .list-item li h4 {
-  font-family: "gilroy-semibold";
+  
   display: block;
   position: relative;
   line-height: 44px;
@@ -7330,7 +7258,6 @@ body .shop-btn-two:hover {
 .doc-sidebar .list-item li .sub-menu a.sec-menu:before {
   content: "";
   position: absolute;
-  font-family: "font-awesome";
   right: 10px;
   top: 0;
   line-height: 32px;
@@ -7366,12 +7293,11 @@ body .shop-btn-two:hover {
   padding-right: 50px;
 }
 .doc-container .doc-main-body h2 {
-  font-family: "gilroy-black";
   font-size: 42px;
   padding-bottom: 25px;
 }
 .doc-container .doc-main-body h3 {
-  font-family: "gilroy-semibold";
+  
   font-size: 28px;
   padding-bottom: 30px;
 }
@@ -7483,7 +7409,7 @@ body .shop-btn-two:hover {
   color: #fff;
 }
 .doc-pagination ul li span {
-  font-family: "gilroy-semibold";
+  
   font-size: 22px;
   color: #000;
 }
@@ -7518,7 +7444,6 @@ body .shop-btn-two:hover {
   max-width: 120px;
 }
 .theme-menu-four .navbar-nav .nav-item .nav-link {
-  font-family: "Roboto", sans-serif;
   font-size: 20px;
   margin: 0 24px;
 }
@@ -7570,7 +7495,6 @@ body .shop-btn-two:hover {
   right: 0;
 }
 .hero-banner-four h1 {
-  font-family: "Roboto Slab", serif;
   font-size: 85px;
   line-height: 1.14em;
 }
@@ -7951,7 +7875,6 @@ body .shop-btn-two:hover {
   padding-left: 18px;
 }
 .pricing-table-area-three .pr-table-wrapper ul li {
-  font-family: "Rubik", sans-serif;
   font-size: 17px;
   line-height: 42px;
   color: #464646;
@@ -8043,7 +7966,6 @@ body .shop-btn-two:hover {
   text-align: center;
 }
 .clientSliderThree p {
-  font-family: "Rubik", sans-serif;
   font-size: 28px;
   line-height: 1.71em;
   color: rgba(0, 0, 0, 0.8);
@@ -8134,7 +8056,6 @@ body .shop-btn-two:hover {
   width: 100%;
   text-align: left;
   padding: 27px 35px 27px 45px;
-  font-family: "Rubik", sans-serif;
   font-size: 24px;
   border: none;
   border-radius: 0;
@@ -8145,7 +8066,6 @@ body .shop-btn-two:hover {
 }
 .accordion-style-four .card .card-header button:before {
   content: "\f107";
-  font-family: "font-awesome";
   position: absolute;
   right: 20px;
   top: 50%;
@@ -8269,7 +8189,6 @@ body .shop-btn-two:hover {
   margin: 5px 0 21px;
 }
 .theme-footer-four .footer-list ul li a {
-  font-family: "Rubik", sans-serif;
   color: #343434;
   line-height: 40px;
   transition: all 0.2s ease-in-out;
@@ -8500,7 +8419,6 @@ body .shop-btn-two:hover {
   transform: scale3d(1.1, 1.1, 1);
 }
 .feature-blog-four .feature-article-meta .post-meta a {
-  font-family: "Roboto Slab", serif;
   font-size: 30px;
   line-height: 1.3em;
   transition: all 0.3s ease-in-out;
@@ -8649,7 +8567,7 @@ body .shop-btn-two:hover {
   border-radius: 40px 40px 0 0;
 }
 .hero-banner-five .img-gallery .screen-one {
-  width: 19%;
+  width: 10%;
   top: 26%;
   right: -10%;
   z-index: 1;
@@ -8822,7 +8740,7 @@ body .shop-btn-two:hover {
   margin-top: 40px;
 }
 .counter-box-four .number {
-  font-family: "Recoleta";
+ 
   font-size: 60px;
   color: #000;
 }
@@ -8875,7 +8793,7 @@ body .shop-btn-two:hover {
 }
 .block-style-sixteen .screen-one {
   right: 70px;
-  width: 48%;
+  width: 25%;
   top: 50%;
   transform: translateY(-50%);
   z-index: 1;
@@ -9453,7 +9371,7 @@ body .shop-btn-two:hover {
 }
 .hero-banner-six .illustration-content .screen-one {
   position: absolute;
-  width: 83%;
+  width: 50%;
   top: 10%;
   right: 17%;
   z-index: 1;
@@ -12167,7 +12085,6 @@ body .shop-btn-two:hover {
   margin: 0;
 }
 .terms_and_policy .nav-item .nav-link {
-  font-family: "Rubik", sans-serif;
   font-size: 20px;
   line-height: 60px;
   padding: 0;
@@ -12192,7 +12109,7 @@ body .shop-btn-two:hover {
   margin-bottom: 20px;
 }
 .terms_and_policy .tab-content h3 {
-  font-family: "gilroy-semibold";
+  
   font-size: 28px;
   padding: 50px 0 25px;
 }
@@ -12726,7 +12643,7 @@ body .shop-btn-two:hover {
   margin: 90px 0 0;
 }
 .hero-banner-eleven .hero-text-wrapper h1 {
-  font-family: "gordita";
+  
   font-weight: 700;
   font-size: 82px;
   line-height: 1.3em;
@@ -13164,7 +13081,6 @@ body .shop-btn-two:hover {
 }
 .accordion-style-five .card .card-header button:before {
   content: "\f107";
-  font-family: "font-awesome";
   position: absolute;
   right: 10px;
   top: 50%;
@@ -13221,7 +13137,7 @@ body .shop-btn-two:hover {
   text-align: center;
 }
 .fancy-hero-six .heading {
-  font-family: "gordita";
+  
   font-size: 68px;
   font-weight: 500;
   line-height: initial;
@@ -13288,7 +13204,6 @@ body .shop-btn-two:hover {
   transform: translateY(100%);
 }
 .portfolio-block-two .hover-content h3 a {
-  font-family: "gilroy-bold";
   font-size: 22px;
   color: #fff;
   position: relative;
@@ -13419,7 +13334,7 @@ body .shop-btn-two:hover {
   margin-bottom: 12px;
 }
 .portfolio-block-three .text a {
-  font-family: "gilroy-semibold";
+  
   font-size: 44px;
   line-height: 1.27em;
   color: #000;
@@ -13562,7 +13477,7 @@ body .shop-btn-two:hover {
   margin: -2px 0 50px;
 }
 .portfolio-details-one .main-content h4 {
-  font-family: "gordita";
+  
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 25px;
@@ -13579,7 +13494,7 @@ body .shop-btn-two:hover {
   color: rgba(0, 0, 0, 0.3);
 }
 .portfolio-details-one .portfolio-pagination .tp2 {
-  font-family: "gordita";
+  
   font-weight: 500;
   font-size: 25px;
   letter-spacing: -1px;
@@ -13947,7 +13862,6 @@ body .shop-btn-two:hover {
   height: 40px;
 }
 .block-style-thirtyThree .title {
-  font-family: "gilroy-bold";
   font-size: 24px;
   margin: 25px 0;
   display: inline-block;
@@ -14149,7 +14063,7 @@ body .shop-btn-two:hover {
   letter-spacing: -0.5px;
 }
 .service-details-one .accordion-style-three .card .card-header button {
-  font-family: "gordita";
+  
   font-weight: 500;
   font-size: 22px;
   padding: 30px 35px 30px 0;
@@ -14174,7 +14088,7 @@ body .shop-btn-two:hover {
   padding-bottom: 25px;
 }
 .service-details-one .sidebar .category-list a {
-  font-family: "gordita";
+  
   line-height: 42px;
   color: #000000;
   transition: all 0.3s ease-in-out;
@@ -14197,7 +14111,7 @@ body .shop-btn-two:hover {
 }
 .service-details-one .sidebar .sidenote p:before {
   content: "“";
-  font-family: "gordita";
+  
   font-size: 80px;
   color: #fff;
   position: absolute;
@@ -15061,7 +14975,7 @@ body .shop-btn-two:hover {
   padding-bottom: 10px;
 }
 .theme-menu-eight .signIn-action {
-  font-family: "gordita";
+  
   font-weight: 500;
   color: #000;
 }
@@ -16414,7 +16328,6 @@ body .shop-btn-two:hover {
 .checkout-form .checkbox-list li input[type="checkbox"]:checked + label:before {
   content: "\f00c";
   font-size: 10px;
-  font-family: "FontAwesome";
   background: #373737;
   color: #fff;
   border-color: #373737;
@@ -16520,7 +16433,6 @@ body .shop-btn-two:hover {
 .checkout-form .order-confirm-sheet .order-review .payment-list li input:checked + label::before {
   content: "\f00c";
   font-size: 10px;
-  font-family: "FontAwesome";
   background: #373737;
   color: #fff;
   border-color: #373737;
@@ -16585,7 +16497,6 @@ body .shop-btn-two:hover {
 .checkout-form .order-confirm-sheet .agreement-checkbox input[type="checkbox"]:checked + label:before {
   content: "\f00c";
   font-size: 10px;
-  font-family: "FontAwesome";
   background: #373737;
   color: #fff;
   border-color: #373737;

@@ -22,7 +22,7 @@ export const HeaderRight = () => {
         <DarkMode />
         <MessageBox />
         <CartData />
-        <Languages/>
+    
         <Profile/>
       </ul>
     </Col>

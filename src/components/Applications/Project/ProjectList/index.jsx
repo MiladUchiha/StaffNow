@@ -8,13 +8,14 @@ const ProjectListContainer = ({mission, type, user}) => {
 
   return (
     <Container fluid>
+      
       <Row className="project-cards">
   
         <Col md="12" className="project-list">
           <ProjectListHead type={type} />
         </Col>
 
-        
+      
         
           
         <Col sm="12">

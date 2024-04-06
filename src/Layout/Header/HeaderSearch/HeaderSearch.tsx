@@ -31,7 +31,7 @@ export const HeaderSearch = () => {
         getAllLink(child, child.icon);
       });
     });
-    setArr(suggestionArray);
+
     dispatch(getLinkItemsArray(suggestionArray));
   });
 

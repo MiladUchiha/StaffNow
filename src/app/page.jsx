@@ -8,6 +8,7 @@ import CopyRight from "../components/footer/CopyRight";
 import Image from "next/image";
 
 
+
 export const metadata = {
   title: 'StaffNow',
   description: `Staffnow är en digital plattform som effektivt matchar bemanningsföretag med lämpliga kunduppdrag. Genom smart teknik hittar bemanningsföretag enkelt potentiella uppdrag att bemanna baserat på kompetens och tillgänglighet. Plattformen erbjuder även smidig kommunikation med presumtiva kunder. Staffnow digitaliserar bemanning och förenklar för bemanningsföretag att hitta och växa med rätt uppdrag.`,
@@ -16,6 +17,7 @@ export default async function Home() {
   return (
     <div className="main-page-wrapper">
       <HeaderLanding />
+    
       {/* End Page SEO Content */}
 
 
@@ -50,21 +52,21 @@ export default async function Home() {
           <div className="container">
             <div className="row">
               <div className="col-xl-8 col-lg-10 m-auto">
-                <h1 className=" sm:text-5xl text-3xl font-gilroy-bold">
-                  <span className=" text-blue-600 underline">StaffNow</span>  -Effektiva lösningar för projektbemanning
+                <h1 className=" sm:text-5xl text-3xl ">
+                  <span className=" text-blue-600">StaffNow</span>  
                 </h1>
-                <p className="hero-sub-heading">
+                <h1 className="sm:text-4xl text-3xl ">
                   Staffnow marknadens smartaste lösning för bemanning
-                </p>
+                </h1>
               </div>
               {/* End .col */}
             </div>
             {/* End row */}
-            <h4 className="">
+            <h4 >
               Registera dig:
             </h4>
             <Link
-              className="theme-btn-twelve btn-lg mt-50 md-mt-30 rounded-sm m-3"
+              className="theme-btn-twelve  btn-lg mt-50 md-mt-30 rounded-sm m-3"
               href="/uppdrag-givare/register"
             >
               För dig som vill bemanna
@@ -109,7 +111,7 @@ export default async function Home() {
         </div>
 
         <div className="container">
-          <div className="row align-items-center block-style-two pb-250 md-pb-90">
+          <div className="row align-items-center block-style-two pb-210 md-pb-90">
             <div className="col-lg-7 col-md-8 m-auto">
               <div data-aos="fade-right" data-aos-duration="1200">
                 <div className="img-holder img-holder-two">
@@ -123,12 +125,12 @@ export default async function Home() {
                     data-aos="fade-right"
                     data-aos-duration="1200"
                   ></div>
-                  <Image width={674} height={604} style={{ height: 'fit-content' }} src="/images/assets/12643932_5031661.svg" alt="feature" className="screen-one  " />
                   <Image width={821} height={821}
                     src="/images/shape/1.svg"
                     alt="feature"
-                    className="cs-screen screen-three"
+                    className="screen-one"
                   />
+                  
                   <Image width={421} height={421}
                     src="/images/shape/2.svg"
                     alt="feature"
@@ -150,7 +152,7 @@ export default async function Home() {
                 data-aos-duration="1200"
               >
 
-                <h3 className="font-gilroy-bold text-purple-500">
+                <h3 className=" text-purple-500">
                   Uppdragsgivare
                 </h3>
                 <p className=" text-lg">
@@ -172,13 +174,13 @@ export default async function Home() {
           <div className="row align-items-center block-style-two pb-250 md-pb-90">
             <div className="col-lg-6 col-md-8 m-auto order-lg-last">
               <div data-aos="fade-left" data-aos-duration="1200">
-                <div className="img-holder img-holder-two">
-                  <Image width={550} height={616} style={{ height: 'fit-content' }} src="/images/assets/11668440_20943572.jpg" alt="feature" className="screen-one" />
+                <div className="img-holder-two ">
+                 
 
                   <Image width={907} height={916}
                     src="/images/shape/3.svg" style={{ height: 'fit-content' }}
                     alt="feature"
-                    className="cs-screen screen-two"
+                    className=" screen-one"
                   />
                   <Image width={362} height={362}
                     src="/images/shape/4.svg" style={{ height: 'fit-content' }}
@@ -201,7 +203,7 @@ export default async function Home() {
                 data-aos-duration="1200"
               >
 
-                <h3 className="font-gilroy-bold text-orange-600">Bemanningsföretag </h3>
+                <h3 className=" text-orange-600">Bemanningsföretag </h3>
                 <p className=" text-lg">
                   Expandera din verksamhet och nå nya höjder med Staffnow.
                   Få tillgång till en mångfald av spännande och utmanande uppdrag över hela landet.
@@ -281,7 +283,7 @@ export default async function Home() {
         />
 
         <div className="container">
-          <div className="title-style-five text-center mb-60 md-mb-30">
+          <div className="title-style-five text-center ">
             <h6>Kom igång med ditt bemanning</h6>
             <h2>
               <span>3 enkla steg att bemanna ditt projekt </span>

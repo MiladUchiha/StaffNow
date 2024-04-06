@@ -5,9 +5,9 @@ import ContactEdit from "./ContactEdit";
 const RightChatHeader = ({ chat, currentUser, type }) => {
   let otherUser;
                 if (type === "uppdragGivare") {
-                  otherUser = chat.bemanningsKonto;
+                  otherUser = chat?.bemanningsKonto;
                 } else {
-                  otherUser = chat.bemannasKonto;
+                  otherUser = chat?.bemannasKonto;
                 }
 
   return (

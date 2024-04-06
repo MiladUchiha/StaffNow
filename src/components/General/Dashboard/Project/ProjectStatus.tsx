@@ -15,7 +15,7 @@ const ProjectStatus = () => {
                 <div className={`btn-light1-${data.color} b-r-10`}>
                   <div className={`upcoming-box ${data.className ? data.className : ""}`}>
                     <div className={`upcoming-icon bg-${data.color}`}>
-                      <Image src={`${ImagePath}/dashboard-2/svg-icon/${data.image}`}alt="icons" />
+                      <Image width={40} height={40} src={`${ImagePath}/dashboard-2/svg-icon/${data.image}`}alt="icons" />
                     </div>
                     <h6>{data.title}</h6>
                     <p>{data.detail}</p>

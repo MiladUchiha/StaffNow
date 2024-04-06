@@ -1,3 +1,5 @@
+import { Width } from "@/Constant";
+import { h } from "@fullcalendar/core/preact";
 import { FileText, Mail, Settings, Users } from "react-feather";
 
 export const NotificationData = [
@@ -7,6 +9,7 @@ export const NotificationData = [
     title: "New daily offer added",
     text: "New user-only offer added",
     color: "primary",
+    
   },
   {
     src: "shield-dne.png",

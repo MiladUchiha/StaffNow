@@ -21,7 +21,7 @@ model User {
   hashedPassword          String   
   bemanningsKonto            BemanningsKonto?
   bemannasKonto            BemannasKonto?
-
+ 
   
   // Add any other common fields for users
 }
@@ -46,6 +46,7 @@ model BemanningsKonto {
   userId           String    @db.ObjectId @unique
   missionChats     MissionChat[] // Add this line to establish the relationship
  sentMessages       Message[]     @relation("SenderBemanningsKonto") // Add this line
+ image            Bytes?
 } 
 model BemannasKonto {
   id                  String    @id @default(auto()) @map("_id") @db.ObjectId
@@ -63,6 +64,7 @@ model BemannasKonto {
   missions            Mission[] // Add this line to establish the relationship
   missionChats     MissionChat[] // Add this line to establish the relationship
  sentMessages       Message[]     @relation("SenderBemannasKonto") // Add this line
+  image            Bytes?
 }
 
 model Mission {

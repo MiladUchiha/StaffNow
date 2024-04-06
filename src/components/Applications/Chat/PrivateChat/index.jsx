@@ -4,6 +4,7 @@ import { Container, Row } from "reactstrap";
 import { LeftSideBar } from "@/components/Applications/Chat/PrivateChat/LeftSideBar";
 import UserChat from "@/components/Applications/Chat/PrivateChat/UserChat";
 import axios from "axios";
+import Particles from "@/components/Particles";
 
 const PrivateChatContainer = ({currentUser, type, pusherKey, pusherCluster}) => {
   const [chats, setChats] = useState([]);
@@ -34,6 +35,7 @@ const PrivateChatContainer = ({currentUser, type, pusherKey, pusherCluster}) => 
   return (
    
     <Container fluid   >
+      <Particles />
       <Row className="g-0">
        
       <LeftSideBar
@@ -44,7 +46,7 @@ const PrivateChatContainer = ({currentUser, type, pusherKey, pusherCluster}) => 
           type={type}
         />
         {selectedChat && (
-          <UserChat chat={selectedChat} pusherCluster pusherKey currentUser={currentUser} type={type} />
+          <UserChat chat={selectedChat} pusherCluster={pusherCluster} pusherKey={pusherKey} currentUser={currentUser} type={type} />
         )}
       </Row>
     </Container>

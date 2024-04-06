@@ -9,7 +9,7 @@ import { NyRegistering } from '../../../components/mail/nyRegistering';
 export async function POST(request) {
   "use server"
   const body = await request.json();
-  const { name, companyName, organizationNumber, address, branches, crewNumber, areas, email, password, description} = body;
+  const { name,image, companyName, organizationNumber, address, branches, crewNumber, areas, email, password, description} = body;
 
 
   const hashedPassword = await bcrypt.hash(password, 10);
@@ -22,6 +22,12 @@ export async function POST(request) {
       role: "Bemanningsföretag",
     }
   })
+  let imageBytes = null;
+  if (image)
+  {
+    const arrayBuffer = await image.arrayBuffer();
+    imageBytes = Buffer.from(arrayBuffer);
+  }
 
   // Create new account related to user
   const bemanningsKonto = await prisma.bemanningsKonto.create({
@@ -35,6 +41,7 @@ export async function POST(request) {
       areas,
       description,
       email,
+      image: imageBytes,
       user: {
         connect: { id: user.id }
       }

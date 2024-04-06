@@ -16,7 +16,7 @@ export const Profile = () => {
   return (
     <li className="profile-nav onhover-dropdown px-0 py-0">
       <div className="d-flex profile-media align-items-center">
-        <Image className="img-30" src={`${ImagePath}/dashboard/profile.png`} alt="" />
+        <Image width={40} height={40} className="img-30" src={`${ImagePath}/dashboard/profile.png`} alt="" />
         <div className="flex-grow-1">
           <span>Alen Miller</span>
           <p className="mb-0 font-outfit">

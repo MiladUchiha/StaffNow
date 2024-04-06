@@ -20,7 +20,7 @@ const { i18LangStatus } = useAppSelector((store) => store.langSlice);
           <td className="px-0">
             <div className="d-flex align-items-center">
               <div className="flex-shrink-0">
-                <Image src={`${ImagePath}/dashboard-2/svg-icon/${data.image}`} alt="icons"/>
+                <Image width={40} height={40} src={`${ImagePath}/dashboard-2/svg-icon/${data.image}`} alt="icons"/>
               </div>
               <div className="flex-grow-1 ms-2">
                 <Link href={`/${i18LangStatus}/ecommerce/product_page`}><h5>{data.title}</h5></Link>
@@ -34,7 +34,7 @@ const { i18LangStatus } = useAppSelector((store) => store.langSlice);
               {data.images.map((item, i) => (
                 <li className="d-inline-block" key={i}>
                   {item !== "" ? (
-                    <Image className="img-30 rounded-circle" src={`${ImagePath}/dashboard-2/user/${item}`} alt="user" />
+                    <Image width={40} height={40} className="img-30 rounded-circle" src={`${ImagePath}/dashboard-2/user/${item}`} alt="user" />
                   ) : (
                     <p className="bg-light rounded-circle">5+</p>
                   )}

@@ -18,7 +18,7 @@ export const Notification = () => {
           {NotificationData.map((item, index) => (
             <li className="d-flex" key={index}>
               <div className={`flex-shrink-0 bg-light-${item.color}`}>
-                <Image src={`${ImagePath}/dashboard/icon/${item.src}`} alt={item.alt} />
+                <Image width={40} height={40} src={`${ImagePath}/dashboard/icon/${item.src}`} alt={item.alt} />
               </div>
               <div className="flex-grow-1">
                 <Link href={Href}><h6>{item.title}</h6></Link>

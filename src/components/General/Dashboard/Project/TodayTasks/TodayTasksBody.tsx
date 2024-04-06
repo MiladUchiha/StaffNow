@@ -17,15 +17,15 @@ const { i18LangStatus } = useAppSelector((store) => store.langSlice);
           <div className="d-flex align-items-center gap-2">
             <div className="flex-shrink-0">
               {!data.img1 ? (
-                <Image src={`${ImagePath}/dashboard-2/user/${data.img}`} alt="user"/>
+                <Image width={40} height={40} src={`${ImagePath}/dashboard-2/user/${data.img}`} alt="user"/>
               ) : (
                 <div className="customers social-group">
                   <ul>
                     <li className="d-inline-block">
-                      <Image className="rounded-circle border-0" src={`${ImagePath}/dashboard-2/user/${data.img}`} alt="users" />
+                      <Image width={40} height={40} className="rounded-circle border-0" src={`${ImagePath}/dashboard-2/user/${data.img}`} alt="users" />
                     </li>
                     <li className="d-inline-block">
-                      <Image className="rounded-circle" src={`${ImagePath}/dashboard-2/user/${data.img1}`} alt="users" />
+                      <Image width={40} height={40} className="rounded-circle" src={`${ImagePath}/dashboard-2/user/${data.img1}`} alt="users" />
                     </li>
                   </ul>
                 </div>

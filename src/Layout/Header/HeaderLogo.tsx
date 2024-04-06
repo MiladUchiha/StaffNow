@@ -14,7 +14,7 @@ export const HeaderLogo = () => {
     <Col className="header-logo-wrapper p-0">
       <div className="logo-wrapper">
         <Link href={`/${i18LangStatus}/sample_page`}>
-          <Image className="img-fluid" src={`${ImagePath}/logo/logo.png`} alt="" />
+          <Image width={40} height={40} className="img-fluid" src={`${ImagePath}/logo/logo.png`} alt="" />
         </Link>
       </div>
       <div className="toggle-sidebar" onClick={()=>dispatch(handleResponsiveToggle())}>

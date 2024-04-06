@@ -16,7 +16,7 @@ const UnlockerContainer = () => {
             <div className="login-card login-dark">
               <div>
                 <div><Link className="logo" href={`/${i18LangStatus}/dashboard/default_dashboard`}>
-                  <Image className="img-fluid for-light" src={`${ImagePath}/logo/logo.png`} alt="looginpage"/>
+                  <Image className="img-fluid for-light" width={40} height={40} src={`${ImagePath}/logo/logo.png`} alt="looginpage"/>
                   <Image className="img-fluid for-dark" src={`${ImagePath}/logo/logo_dark.png`} alt="looginpage"/></Link></div>
                 <div className="login-main">
                   <Form className="theme-form" onSubmit={(e)=>e.preventDefault()}>

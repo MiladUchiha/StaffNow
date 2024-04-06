@@ -15,7 +15,7 @@ const { i18LangStatus } = useAppSelector((store) => store.langSlice);
           <div>
             <div className="d-flex align-items-center gap-2">
               <div className="flex-shrink-0">
-                <Image src={`${ImagePath}/dashboard-2/user/16.png`} alt="user" />
+                <Image width={40} height={40} src={`${ImagePath}/dashboard-2/user/16.png`} alt="user" />
               </div>
               <div className="flex-grow-1">
                 <Link href={`/${i18LangStatus}/ecommerce/product_page`}><h5>{SquareDashboard}</h5></Link>

@@ -25,7 +25,7 @@ const { i18LangStatus } = useAppSelector((store) => store.langSlice);
             <ul>
               {data.images.map((item, i) => (
                 <li className="d-inline-block" key={i}>
-                  {item.image !== "" ? <Image className="img-30 rounded-circle" src={`${ImagePath}/dashboard-2/user/${item.image}`} alt="users" /> : <p className="bg-light rounded-circle">5+</p>}
+                  {item.image !== "" ? <Image width={40} height={40} className="img-30 rounded-circle" src={`${ImagePath}/dashboard-2/user/${item.image}`} alt="users" /> : <p className="bg-light rounded-circle">5+</p>}
                 </li>
               ))}
             </ul>

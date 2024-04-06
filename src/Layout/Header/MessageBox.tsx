@@ -18,7 +18,7 @@ export const MessageBox = () => {
           {MessageData.map((item, index) => (
             <li className={`d-flex b-light1-${item.color} gap-2`} key={index}>
               <div className="flex-shrink-0">
-                <Image src={`${ImagePath}/dashboard-2/user/${item.image}`} alt="Graph" />
+                <Image width={40} height={40} src={`${ImagePath}/dashboard-2/user/${item.image}`} alt="Graph" />
               </div>
               <div className="flex-grow-1">
                 <Link href={Href}>

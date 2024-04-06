@@ -9,7 +9,7 @@ const CustomersSocial = () => {
         <ul className="simple-list">
           {imgData.map((data, i) => (
             <li className="d-inline-block" key={i}>
-              <Image className="rounded-circle" src={`${ImagePath}/dashboard-2/user/${data}.png`} alt="user" />
+              <Image width={40} height={40} className="rounded-circle" src={`${ImagePath}/dashboard-2/user/${data}.png`} alt="user" />
             </li>
           ))}
           <li className="d-inline-block">

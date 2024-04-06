@@ -15,7 +15,7 @@ const FeatureContent = [
   },
   {
     icon: "123",
-    title: "Välj uppderag",
+    title: "Välj uppdrag",
     subTitle: `Välj projekt som intresserar dig, initiera dialog och nå överenskommelse.`,
     bgColor: "#FFB951",
   },

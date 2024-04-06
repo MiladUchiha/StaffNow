@@ -16,7 +16,7 @@ const SalesStatistic = () => {
               <Col xs="3" className="statistic-icon" key={i}>
                 <div className="light-card balance-card widget-hover">
                   <div className="icon-box">
-                    <Image src={`${ImagePath}/dashboard/icon/${data.img}`} alt="icons" />
+                    <Image width={40} height={40} src={`${ImagePath}/dashboard/icon/${data.img}`} alt="icons" />
                   </div>
                   <div>
                     <span className="f-w-500 f-light">{data.title}</span>

@@ -13,7 +13,7 @@ const UserChat = ({ chat, currentUser, type, pusherKey, pusherCluster }) => {
     const pusher = new Pusher(pusherKey, {
       cluster: pusherCluster,
     });
-    const channel = pusher.subscribe(`chat-${chat.id}`);
+    const channel = pusher.subscribe(`chat-${chat?.id}`);
 
     channel.bind('new-message', (data) => {
       setMessages((prevMessages) => [...prevMessages, data]);
@@ -21,9 +21,9 @@ const UserChat = ({ chat, currentUser, type, pusherKey, pusherCluster }) => {
 
     return () => {
       channel.unbind('new-message');
-      pusher.unsubscribe(`chat-${chat.id}`);
+      pusher.unsubscribe(`chat-${chat?.id}`);
     };
-  }, [chat.id]);
+  }, [chat?.id]);
 
   useEffect(() => {
     const fetchMessages = async () => {
@@ -36,7 +36,7 @@ const UserChat = ({ chat, currentUser, type, pusherKey, pusherCluster }) => {
     };
 
     fetchMessages();
-  }, [chat.id]);
+  }, [chat?.id]);
 
   const handleKeyDown = (e) => {
     if (e.key === 'Enter' && !e.shiftKey) {

@@ -30,8 +30,8 @@ export const CommonProjectListCard= ({ item, type , user }) => {
   };
   const doneHandle = async () => {
     await axios.post(`/api/missions/doneMission/`, { id: item.id }).then((res) => {
-      console.log(res);
-      toast.success(res)
+      
+      toast.success("Uppdraget är klart")
       router.refresh();
     }).catch((err) => {
       toast.error(err);
@@ -70,7 +70,7 @@ export const CommonProjectListCard= ({ item, type , user }) => {
   return (
     <Col xxl="4" lg="4" md="6">
       <div className={`project-box ${status? "b-light1-success" : "b-light1-primary"}`}>
-        <Badge color={status? 'success' : 'primary'}>{status? statusWord1 : statusWord2}</Badge>
+        <Badge color={status? 'success' : 'primary'}>{status? statusWord2 : statusWord1}</Badge>
         <h5 className="f-w-500">{item.title}</h5>
         <div className="d-flex">
          

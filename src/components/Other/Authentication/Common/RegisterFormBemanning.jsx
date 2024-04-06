@@ -77,6 +77,7 @@ export const RegisterForm = ({ logoClass }) => {
     email: "",
     password: "",
     description: "",
+    image: null,
    
   });
   const [isLoading, setIsLoading] = useState(false);
@@ -250,6 +251,10 @@ export const RegisterForm = ({ logoClass }) => {
                     </div>
                   </Col>
                 </Row>
+              </FormGroup>
+              <FormGroup>
+                <Label>Profil bild</Label>
+                <Input value={data.image} onChange={(e)=> setData({ ...data, image: e.target.value })} type="file" className="form-control" />
               </FormGroup>
 
               <FormGroup>

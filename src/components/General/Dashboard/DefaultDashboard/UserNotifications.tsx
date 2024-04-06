@@ -17,7 +17,7 @@ const { i18LangStatus } = useAppSelector((store) => store.langSlice);
             {NotificationsData.map((data, i) => (
               <li className="d-flex" key={i}>
                 <div className={`flex-shrink-0 bg-light-${data.color}`}>
-                  <Image src={`${ImagePath}/dashboard/icon/${data.img}`} alt="Wallet" />
+                  <Image width={40} height={40} src={`${ImagePath}/dashboard/icon/${data.img}`} alt="Wallet" />
                 </div>
                 <div className="flex-grow-1">
                   <Link href={`/${i18LangStatus}/chat/private_chat`}>
